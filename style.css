@@ -270,3 +270,64 @@ body {
         font-size: 1.25rem;
     }
 }
+/* =========================================
+   ABOUT SECTION CARD STYLING
+========================================= */
+
+/* Outer section with background color */
+.about-section {
+    padding: 60px 20px;
+    background-color: #f7f4ed; /* Soft cream background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White Card Container with rounded border & shadow */
+.about-card {
+    background-color: #ffffff;
+    border: 1px solid #7ea3c7; /* Subtle blue outline */
+    border-radius: 12px;
+    padding: 45px 50px;
+    max-width: 1050px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+}
+
+/* Section Title */
+.about-card h2 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2.3rem;
+    color: #1a2e40; /* Dark slate blue font */
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+/* Paragraph Formatting */
+.about-card p {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a5056;
+}
+
+/* Blue Highlighted Bold Text inside paragraph */
+.about-card strong {
+    color: #0b519a; /* Deep blue highlight */
+    font-weight: 700;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-card {
+        padding: 25px 20px;
+    }
+    
+    .about-card h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-card p {
+        font-size: 0.98rem;
+    }
+}
