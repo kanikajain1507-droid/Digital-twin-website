@@ -562,3 +562,235 @@ body {
         font-size: 2rem;
     }
 }
+:root {
+  --pi-accent: #2563eb;          /* Change to match your site accent color */
+  --pi-accent-hover: #1d4ed8;
+  --pi-bg: #f8fafc;              /* Section background */
+  --pi-card-bg: #ffffff;         /* Card background */
+  --pi-text-main: #0f172a;       /* Headings & primary text */
+  --pi-text-muted: #64748b;      /* Subtitles & captions */
+  --pi-border: #e2e8f0;          /* Subtle card/divider borders */
+  --pi-card-width: 340px;        /* Width of individual cards */
+}
+
+.pi-scroll-section {
+  background-color: var(--pi-bg);
+  padding: 4rem 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.pi-scroll-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header & Controls */
+.pi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.pi-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--pi-text-main);
+  margin: 0 0 0.5rem 0;
+}
+
+.pi-header p {
+  font-size: 1rem;
+  color: var(--pi-text-muted);
+  margin: 0;
+}
+
+.scroll-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scroll-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--pi-border);
+  background: var(--pi-card-bg);
+  color: var(--pi-text-main);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.scroll-btn:hover {
+  background: var(--pi-accent);
+  color: #ffffff;
+  border-color: var(--pi-accent);
+}
+
+/* Scrollable Track */
+.pi-cards-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem 0.25rem 1.5rem 0.25rem;
+  /* Hide scrollbar for a clean look */
+  scrollbar-width: thin;
+  scrollbar-color: var(--pi-border) transparent;
+}
+
+.pi-cards-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.pi-cards-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pi-cards-track::-webkit-scrollbar-thumb {
+  background-color: var(--pi-border);
+  border-radius: 10px;
+}
+
+/* Individual Card */
+.pi-card {
+  flex: 0 0 var(--pi-card-width);
+  scroll-snap-align: start;
+  background: var(--pi-card-bg);
+  border: 1px solid var(--pi-border);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Image & Tag */
+.pi-card-image {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  background: #e2e8f0;
+}
+
+.pi-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pi-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+/* Card Content */
+.pi-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pi-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--pi-text-main);
+  margin: 0 0 0.25rem 0;
+}
+
+.pi-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--pi-accent);
+  margin: 0 0 0.85rem 0;
+}
+
+.pi-desc {
+  font-size: 0.9rem;
+  color: var(--pi-text-muted);
+  line-height: 1.5;
+  margin: 0 0 1.25rem 0;
+  flex-grow: 1;
+}
+
+/* Major Details / Highlights Box */
+.pi-highlights {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.highlight-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.hl-label {
+  color: var(--pi-text-muted);
+  font-weight: 500;
+}
+
+.hl-val {
+  color: var(--pi-text-main);
+  font-weight: 600;
+  text-align: right;
+}
+
+.highlight-active {
+  color: #16a34a; /* Subtle green accent for recruitment status */
+}
+
+/* Action Link */
+.pi-action-btn {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--pi-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.pi-action-btn:hover {
+  color: var(--pi-accent-hover);
+  text-decoration: underline;
+}
+
+/* Responsive adjustment */
+@media (max-width: 640px) {
+  :root {
+    --pi-card-width: 280px;
+  }
+  .pi-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
