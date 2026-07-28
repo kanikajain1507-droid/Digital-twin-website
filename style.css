@@ -1130,3 +1130,123 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Color Palette Variables (matching screenshot) */
+:root {
+  --bg-cream: #f7f4ea;
+  --text-dark: #1c1d1f;
+  --text-muted: #525458;
+  --accent-gold: #b3822a;
+  --card-bg: #ffffff;
+  --card-border: #e6e2d6;
+}
+
+/* Section Wrapper */
+.objectives-section {
+  background-color: var(--bg-cream);
+  padding: 5rem 2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text-dark);
+}
+
+.objectives-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Text Styling */
+.obj-eyebrow {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.obj-main-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.15;
+  max-width: 850px;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.obj-description {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 650px;
+  margin-bottom: 3.5rem;
+}
+
+/* 2-Column Grid Layout */
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Objective Card Base */
+.objective-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+/* Gold Accent Border Style (like Card 02 in screenshot) */
+.objective-card.accented,
+.objective-card:hover {
+  border-left: 4px solid var(--accent-gold);
+  border-top: 2px solid var(--accent-gold);
+}
+
+/* Card Content Typography */
+.obj-number {
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.obj-card-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.obj-card-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 850px) {
+  .objectives-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .obj-main-title {
+    font-size: 2.2rem;
+  }
+
+  .objectives-grid {
+    grid-template-columns: 1fr;
+  }
+}
