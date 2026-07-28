@@ -1,7 +1,6 @@
 /* =========================================
-   GLOBAL SETTINGS
+   GLOBAL STYLES & RESET
 ========================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -13,750 +12,261 @@ html {
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    color: #202020;
-    background: #f7f4eb;
+    font-family: 'Inter', sans-serif;
+    background-color: #f2eee5; /* Neutral off-white background */
+    color: #2b2b2b;
     line-height: 1.6;
 }
 
-
 /* =========================================
-   HEADER
+   HEADER & NAVIGATION (WITH BLUE BORDER)
 ========================================= */
-
 .site-header {
-    width: 100%;
-    height: 100px;
-
-    background: #e9ca78;
-
-    position: relative;
+    background-color: #edd58d; /* Warm header background color matching reference */
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
     z-index: 1000;
-
-    border-bottom: 1px solid
-                rgba(0, 0, 0, 0.08);
+    
+    /* --- Blue Accent Border Under Header --- */
+    border-bottom: 4px solid #0d529c; 
 }
-
 
 .nav-container {
-
-    width: 100%;
-
-    max-width: 1500px;
-
-    height: 100%;
-
+    max-width: 1200px;
     margin: 0 auto;
-
-    padding: 0 40px;
-
+    padding: 0 20px;
     display: flex;
-
-    align-items: center;
-
     justify-content: space-between;
-
-}
-
-
-/* =========================================
-   LOGO
-========================================= */
-
-.logo-link {
-
-    display: flex;
-
     align-items: center;
-
-    flex-shrink: 0;
-
 }
 
-
-.logo {
-
-    width: 65px;
-
-    height: 65px;
-
-    object-fit: contain;
-
+.logo-link img.logo {
+    height: 52px;
+    width: auto;
     display: block;
-
 }
-
-
-/* =========================================
-   NAVIGATION
-========================================= */
 
 .main-navigation {
-
     display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    gap: 34px;
-
+    gap: 22px;
 }
-
 
 .main-navigation a {
-
-    color: #28241d;
-
     text-decoration: none;
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: 17px;
-
-    white-space: nowrap;
-
-    position: relative;
-
-    transition: color 0.3s ease;
-
+    color: #333333;
+    font-weight: 500;
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
 }
-
-
-.main-navigation a::after {
-
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-
-    bottom: -8px;
-
-    width: 0;
-
-    height: 2px;
-
-    background: #28241d;
-
-    transition: width 0.3s ease;
-
-}
-
-
-.main-navigation a:hover::after {
-
-    width: 100%;
-
-}
-
 
 .main-navigation a:hover {
-
-    color: #000;
-
+    color: #0d529c; /* Matches blue border on hover */
 }
 
-
-/* =========================================
-   MOBILE MENU BUTTON
-========================================= */
-
+/* Mobile Menu Button */
 .menu-button {
-
     display: none;
-
-    width: 42px;
-
-    height: 42px;
-
+    flex-direction: column;
+    gap: 4px;
+    background: none;
     border: none;
-
-    background: transparent;
-
     cursor: pointer;
-
 }
-
 
 .menu-button span {
-
-    display: block;
-
-    width: 26px;
-
-    height: 2px;
-
-    background: #202020;
-
-    margin: 6px auto;
-
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
 }
 
-
 /* =========================================
-   HERO SECTION
+   HERO SECTION (CAMPUS BACKGROUND)
 ========================================= */
-
 .hero-section {
-
     position: relative;
-
-    width: 100%;
-
-    min-height: 620px;
-
+    min-height: 85vh;
     display: flex;
-
-    align-items: center;
-
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: #ffffff;
 
-    overflow: hidden;
-
+    /* Dark Overlay + GitHub uploaded image 'manit-campus.png' */
+    /* If the file is inside an 'images' folder, change url('manit-campus.png') to url('images/manit-campus.png') */
+    background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), 
+                url('manit-campus.png') center/cover no-repeat;
 }
-
-
-/* =========================================
-   HERO BACKGROUND IMAGE
-========================================= */
-
-.hero-background {
-
-    position: absolute;
-
-    inset: 0;
-
-    background-image:
-        url("images/manit-campus.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    transform: scale(1.01);
-
-}
-
-
-/* =========================================
-   HERO DARK OVERLAY
-========================================= */
-
-.hero-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            rgba(12, 25, 35, 0.60),
-            rgba(12, 25, 35, 0.60)
-        );
-
-}
-
-
-/* =========================================
-   HERO CONTENT
-========================================= */
 
 .hero-content {
-
-    position: relative;
-
-    z-index: 2;
-
-    width: 90%;
-
-    max-width: 1200px;
-
+    max-width: 980px;
     margin: 0 auto;
-
-    text-align: center;
-
-    color: white;
-
-    padding: 80px 20px;
-
 }
-
-
-/* =========================================
-   PROJECT TITLE
-========================================= */
 
 .hero-content h1 {
-
-    max-width: 1150px;
-
-    margin: 0 auto 35px;
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: clamp(
-        32px,
-        4vw,
-        58px
-    );
-
-    line-height: 1.15;
-
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2.2rem;
     font-weight: 400;
-
-    letter-spacing: -0.5px;
-
-    text-shadow:
-        0 2px 8px
-        rgba(0, 0, 0, 0.35);
-
+    line-height: 1.35;
+    margin-bottom: 25px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
-
-/* =========================================
-   PROJECT META
-========================================= */
 
 .project-meta {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 50px;
-
-    margin-bottom: 40px;
-
-}
-
-
-.project-meta p {
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: 25px;
-
-    font-weight: 400;
-
-}
-
-
-/* =========================================
-   INSTITUTION
-========================================= */
-
-.hero-content h2 {
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: clamp(
-        25px,
-        3vw,
-        42px
-    );
-
-    line-height: 1.2;
-
-    font-weight: 400;
-
     margin-bottom: 25px;
-
 }
 
-
-/* =========================================
-   LOCATION
-========================================= */
-
-.location {
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: 25px;
-
-    line-height: 1.5;
-
+.project-meta .year {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
+.project-meta .sparc {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content .institution {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content .location {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.6rem;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+}
 
 /* =========================================
-   GENERAL SECTIONS
+   CONTENT SECTIONS
 ========================================= */
-
 .content-section {
-
-    padding: 110px 30px;
-
-    background: #f7f4eb;
-
+    padding: 80px 20px;
+    background-color: #f2eee5;
 }
-
 
 .light-section {
-
-    background: #ebe7dc;
-
+    background-color: #e9e3d5;
 }
-
 
 .section-container {
-
-    width: 100%;
-
-    max-width: 1100px;
-
+    max-width: 1000px;
     margin: 0 auto;
-
+    text-align: center;
 }
-
 
 .section-label {
-
-    display: block;
-
-    margin-bottom: 18px;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
+    display: inline-block;
+    font-size: 0.82rem;
     letter-spacing: 2px;
-
+    font-weight: 600;
+    color: #0d529c;
+    margin-bottom: 12px;
 }
 
-
-.content-section h2 {
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: clamp(
-        36px,
-        5vw,
-        60px
-    );
-
-    font-weight: 400;
-
-    line-height: 1.15;
-
-    margin-bottom: 30px;
-
+.section-container h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
 }
 
-
-.content-section p {
-
+.section-container p {
+    font-size: 1.05rem;
+    color: #4a4a4a;
     max-width: 800px;
-
-    font-size: 18px;
-
-    line-height: 1.8;
-
+    margin: 0 auto;
 }
 
-
-/* =========================================
-   OBJECTIVE GRID
-========================================= */
-
+/* Objective Cards Grid */
 .objective-grid {
-
-    margin-top: 60px;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 30px;
-
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
 }
-
 
 .objective-card {
-
-    padding: 40px;
-
-    border-top:
-        1px solid #333;
-
-    background: transparent;
-
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
-
 
 .objective-card h3 {
-
-    font-size: 15px;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 20px;
-
+    color: #0d529c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
-
 
 .objective-card h4 {
-
-    font-family:
-        "DM Serif Display",
-        Georgia,
-        serif;
-
-    font-size: 30px;
-
-    font-weight: 400;
-
-    margin-bottom: 15px;
-
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #222;
 }
-
 
 .objective-card p {
-
-    font-size: 16px;
-
+    font-size: 0.92rem;
+    color: #666;
 }
-
 
 /* =========================================
    FOOTER
 ========================================= */
-
 .site-footer {
-
-    padding: 50px 30px;
-
-    background: #24231f;
-
-    color: #f7f4eb;
-
+    background-color: #1f242b;
+    color: #cccccc;
     text-align: center;
-
+    padding: 30px 20px;
+    font-size: 0.9rem;
 }
-
 
 .site-footer p {
-
-    font-size: 14px;
-
-    margin: 5px 0;
-
+    margin: 4px 0;
 }
 
-
 /* =========================================
-   TABLET
+   RESPONSIVE DESIGN
 ========================================= */
-
-@media screen and (max-width: 1100px) {
-
-    .main-navigation {
-
-        gap: 20px;
-
-    }
-
-    .main-navigation a {
-
-        font-size: 15px;
-
-    }
-
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media screen and (max-width: 850px) {
-
-    .site-header {
-
-        height: 80px;
-
-    }
-
-
-    .nav-container {
-
-        padding: 0 25px;
-
-    }
-
-
-    .logo {
-
-        width: 55px;
-
-        height: 55px;
-
-    }
-
-
+@media (max-width: 850px) {
     .menu-button {
-
-        display: block;
-
+        display: flex;
     }
-
 
     .main-navigation {
-
-        position: absolute;
-
-        top: 80px;
-
-        left: 0;
-
-        width: 100%;
-
-        padding: 25px;
-
-        background: #e9ca78;
-
         display: none;
-
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #edd58d;
         flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 20px;
-
-        box-shadow:
-            0 10px 20px
-            rgba(0, 0, 0, 0.1);
-
+        padding: 20px;
+        gap: 15px;
+        border-bottom: 3px solid #0d529c;
     }
-
 
     .main-navigation.active {
-
         display: flex;
-
     }
-
-
-    .main-navigation a {
-
-        font-size: 18px;
-
-    }
-
-
-    .hero-section {
-
-        min-height: 700px;
-
-    }
-
-
-    .hero-content {
-
-        padding: 60px 15px;
-
-    }
-
 
     .hero-content h1 {
-
-        font-size: 34px;
-
+        font-size: 1.5rem;
     }
 
-
-    .project-meta {
-
-        gap: 25px;
-
+    .hero-content .institution,
+    .hero-content .location {
+        font-size: 1.25rem;
     }
-
-
-    .project-meta p {
-
-        font-size: 20px;
-
-    }
-
-
-    .hero-content h2 {
-
-        font-size: 27px;
-
-    }
-
-
-    .location {
-
-        font-size: 20px;
-
-    }
-
-
-    .objective-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-}
-
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
-@media screen and (max-width: 500px) {
-
-    .hero-content h1 {
-
-        font-size: 29px;
-
-    }
-
-
-    .hero-content h2 {
-
-        font-size: 24px;
-
-    }
-
-
-    .location {
-
-        font-size: 18px;
-
-    }
-
-
-    .content-section {
-
-        padding: 80px 25px;
-
-    }
-
 }
