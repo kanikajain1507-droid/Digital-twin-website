@@ -448,349 +448,328 @@ body {
         padding: 16px 18px;
     }
 }
-/* =========================================
-   PROJECT OBJECTIVES SECTION STYLING
-========================================= */
-
-/* Section Outer Background */
-.objectives-section {
-    padding: 70px 20px;
-    background-color: #f7f4ed; /* Cream color matching screenshots */
-    display: flex;
-    justify-content: center;
-}
-
-/* Container Width */
-.objectives-container {
-    max-width: 1100px;
-    width: 100%;
-    text-align: left;
-}
-
-/* Section Subtitle */
-.section-subtitle {
-    display: block;
-    color: #a87b1c; /* Gold header accent */
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-
-/* Main Section Heading */
-.section-title {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 2.6rem;
-    color: #222222;
-    line-height: 1.25;
-    margin-bottom: 20px;
-    max-width: 850px;
-}
-
-/* Section Description Text */
-.section-description {
-    font-family: Georgia, serif;
-    font-size: 1.05rem;
-    color: #555555;
-    line-height: 1.6;
-    margin-bottom: 45px;
-    max-width: 900px;
-}
-
-/* 2-Column Grid Layout */
-.objectives-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-}
-
-/* Individual Card Base Style */
-.objective-card {
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding: 38px 32px;
-    border: 2px solid transparent; /* Reserves border space */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
-    transition: all 0.25s ease-in-out;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Card Number */
-.card-number {
-    color: #a87b1c;
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-/* Card Title */
-.objective-card h3 {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.6rem;
-    color: #222222;
-    margin-bottom: 14px;
-    line-height: 1.3;
-}
-
-/* Card Text */
-.objective-card p {
-    font-family: Georgia, serif;
-    font-size: 0.98rem;
-    color: #555555;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* --- MOUSE HOVER EFFECT --- */
-/* Highlights card with golden left accent border & lift effect */
-.objective-card:hover {
-    border-color: #d8a331; /* Golden border outline */
-    border-left: 6px solid #d8a331; /* Thicker left accent line */
-    box-shadow: 0 12px 28px rgba(216, 163, 49, 0.15); /* Warm highlight shadow */
-    transform: translateY(-2px);
-}
-
-/* Responsive Mobile Layout */
-@media (max-width: 850px) {
-    .objectives-grid {
-        grid-template-columns: 1fr; /* Stacks cards into 1 column on smaller screens */
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-}
+/* Color Palette Variables (matching site accent) */
 :root {
-  --pi-accent: #2563eb;          /* Change to match your site accent color */
-  --pi-accent-hover: #1d4ed8;
-  --pi-bg: #f8fafc;              /* Section background */
-  --pi-card-bg: #ffffff;         /* Card background */
-  --pi-text-main: #0f172a;       /* Headings & primary text */
-  --pi-text-muted: #64748b;      /* Subtitles & captions */
-  --pi-border: #e2e8f0;          /* Subtle card/divider borders */
-  --pi-card-width: 340px;        /* Width of individual cards */
+  --pi-blue: #2563eb;           /* Professional Blue */
+  --pi-gold: #a37b2c;           /* Existing gold/brown accent */
+  --pi-accent-hover: #1d4ed8;  /* Blue on hover */
+  --pi-bg-clean: #f8fafc;       /* Clean Section Background */
+  --pi-card-bg-clean: #ffffff;  /* White Cards */
+  --pi-border-clean: #e2e8f0;   /* Light borders */
+  --pi-text-main-clean: #0f172a; /* Main Text */
+  --pi-text-muted-clean: #64748b; /* Muted Text */
+  
+  --footer-bg: #1e293b;         /* Dark Slate Gray Footer */
+  --footer-text: #f1f5f9;       /* Light Footer Text */
+  --footer-border: #334155;     /* Dark accent borders */
+  --footer-link: #e0f2fe;       /* Light blue link color */
 }
 
-.pi-scroll-section {
-  background-color: var(--pi-bg);
-  padding: 4rem 1.5rem;
+/* Base Font (system-ui) */
+body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  color: #1e293b;
 }
 
-.pi-scroll-container {
+/******************************************
+ * 1. Clean PI Section Styles
+ ******************************************/
+
+.pi-section-clean {
+  background-color: var(--pi-bg-clean);
+  padding: 5rem 1.5rem;
+}
+
+.pi-container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* Header & Controls */
-.pi-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 2rem;
-  gap: 1rem;
+.section-header-clean {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.pi-header h2 {
-  font-size: 2rem;
+.section-header-clean h2 {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: var(--pi-text-main);
-  margin: 0 0 0.5rem 0;
+  color: var(--pi-text-main-clean);
+  margin-bottom: 0.75rem;
 }
 
-.pi-header p {
-  font-size: 1rem;
-  color: var(--pi-text-muted);
-  margin: 0;
+.section-header-clean p {
+  font-size: 1.1rem;
+  color: var(--pi-text-muted-clean);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.scroll-controls {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.scroll-btn {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid var(--pi-border);
-  background: var(--pi-card-bg);
-  color: var(--pi-text-main);
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-
-.scroll-btn:hover {
-  background: var(--pi-accent);
-  color: #ffffff;
-  border-color: var(--pi-accent);
-}
-
-/* Scrollable Track */
-.pi-cards-track {
+/* Horizontal Scroll Snap Track */
+.pi-scroll-track-clean {
   display: flex;
   gap: 1.5rem;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  padding: 0.5rem 0.25rem 1.5rem 0.25rem;
-  /* Hide scrollbar for a clean look */
+  padding: 0.5rem 0.25rem 2rem 0.25rem;
+  /* Cleaner scrollbar */
   scrollbar-width: thin;
-  scrollbar-color: var(--pi-border) transparent;
+  scrollbar-color: var(--pi-border-clean) transparent;
 }
 
-.pi-cards-track::-webkit-scrollbar {
+.pi-scroll-track-clean::-webkit-scrollbar {
   height: 6px;
 }
 
-.pi-cards-track::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.pi-cards-track::-webkit-scrollbar-thumb {
-  background-color: var(--pi-border);
+.pi-scroll-track-clean::-webkit-scrollbar-thumb {
+  background-color: var(--pi-border-clean);
   border-radius: 10px;
 }
 
-/* Individual Card */
-.pi-card {
-  flex: 0 0 var(--pi-card-width);
+/* Clean PI Card */
+.pi-card-clean {
+  flex: 0 0 320px; /* Fixed width for cards in track */
   scroll-snap-align: start;
-  background: var(--pi-card-bg);
-  border: 1px solid var(--pi-border);
-  border-radius: 14px;
+  background: var(--pi-card-bg-clean);
+  border: 1.5px solid var(--pi-border-clean);
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.pi-card:hover {
+.pi-card-clean:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
 }
 
-/* Card Image & Tag */
-.pi-card-image {
-  position: relative;
-  height: 220px;
-  width: 100%;
-  background: #e2e8f0;
+.pi-image-wrapper-clean {
+  height: 200px;
+  overflow: hidden;
+  background: #f1f5f9;
 }
 
-.pi-card-image img {
+.pi-image-wrapper-clean img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.pi-tag {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  background: rgba(15, 23, 42, 0.82);
-  backdrop-filter: blur(6px);
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 20px;
-  letter-spacing: 0.02em;
-}
-
-/* Card Content */
-.pi-card-body {
-  padding: 1.25rem;
+.pi-content-clean {
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.pi-name {
-  font-size: 1.2rem;
+.pi-content-clean h3 {
+  font-size: 1.3rem;
   font-weight: 700;
-  color: var(--pi-text-main);
-  margin: 0 0 0.25rem 0;
+  color: var(--pi-text-main-clean);
+  margin-bottom: 0.25rem;
 }
 
-.pi-role {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--pi-accent);
-  margin: 0 0 0.85rem 0;
-}
-
-.pi-desc {
+.pi-title-clean {
   font-size: 0.9rem;
-  color: var(--pi-text-muted);
+  font-weight: 600;
+  color: var(--pi-blue);
+  margin-bottom: 1rem;
+}
+
+.pi-focus-clean {
+  font-size: 0.95rem;
+  color: var(--pi-text-muted-clean);
   line-height: 1.5;
-  margin: 0 0 1.25rem 0;
+  margin-bottom: 1.25rem;
   flex-grow: 1;
 }
 
-/* Major Details / Highlights Box */
-.pi-highlights {
-  background: #f8fafc;
-  border: 1px solid #f1f5f9;
-  border-radius: 8px;
-  padding: 0.85rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.25rem;
+/* Clean Metadata List */
+.pi-meta-clean {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--pi-border-clean);
+  padding-top: 1rem;
 }
 
-.highlight-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8rem;
+.pi-meta-clean li {
+  color: var(--pi-text-main-clean);
+  margin-bottom: 0.25rem;
 }
 
-.hl-label {
-  color: var(--pi-text-muted);
+.hl-label-clean {
+  color: var(--pi-text-muted-clean);
   font-weight: 500;
+  margin-right: 0.25rem;
 }
 
-.hl-val {
-  color: var(--pi-text-main);
+.pi-link-clean {
+  font-size: 0.9rem;
   font-weight: 600;
-  text-align: right;
-}
-
-.highlight-active {
-  color: #16a34a; /* Subtle green accent for recruitment status */
-}
-
-/* Action Link */
-.pi-action-btn {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--pi-accent);
+  color: var(--pi-blue);
   text-decoration: none;
   transition: color 0.2s ease;
-  display: inline-block;
-  margin-top: auto;
 }
 
-.pi-action-btn:hover {
+.pi-link-clean:hover {
   color: var(--pi-accent-hover);
   text-decoration: underline;
 }
 
-/* Responsive adjustment */
+/******************************************
+ * 2. Professional Footer Styles
+ ******************************************/
+
+.site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 5rem 1.5rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--pi-gold); /* Reuse accent color */
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-col ul a {
+  text-decoration: none;
+  color: var(--footer-link);
+  transition: color 0.2s ease;
+}
+
+.footer-col ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Specific branding column */
+.branding-col .footer-logo img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.institute-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.lab-name {
+  color: var(--pi-gold);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.affiliation-note {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Specific contact column */
+.contact-col li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  line-height: 1.4;
+}
+
+.contact-col .icon {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-col .text-link {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid var(--footer-border);
+  padding: 2rem 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bottom-container p {
+  margin: 0;
+}
+
+.legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+/* Responsiveness adjustments */
 @media (max-width: 640px) {
-  :root {
-    --pi-card-width: 280px;
+  .pi-section-clean {
+    padding: 3rem 1.5rem;
   }
-  .pi-header {
+  
+  .pi-card-clean {
+    flex: 0 0 280px;
+  }
+  
+  .site-footer {
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
+  
+  .bottom-container {
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
   }
 }
