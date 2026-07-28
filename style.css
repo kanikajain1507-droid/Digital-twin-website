@@ -1008,3 +1008,125 @@ body {
     grid-template-columns: 1fr;
   }
 }
+:root {
+  --obj-blue: #0d47a1;
+  --obj-gold: #a37b2c;
+  --obj-bg: #f8fafc;
+  --obj-card-bg: #ffffff;
+  --obj-border: #dbe3ed;
+  --obj-text-dark: #0f172a;
+  --obj-text-muted: #64748b;
+}
+
+/* Objectives Section Wrapper */
+.objectives-section {
+  background-color: var(--obj-bg);
+  padding: 4rem 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.objectives-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.objectives-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.objectives-header h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--obj-text-dark);
+  margin: 0 0 0.75rem 0;
+}
+
+.objectives-header p {
+  font-size: 1.05rem;
+  color: var(--obj-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Grid */
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Objective Card Design */
+.objective-card {
+  background-color: var(--obj-card-bg);
+  border: 1.5px solid var(--obj-border);
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.objective-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+/* Card Top Metadata */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.obj-number {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--obj-gold);
+  line-height: 1;
+}
+
+.obj-badge {
+  background-color: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Card Titles & Text */
+.objective-card h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--obj-text-dark);
+  margin: 0 0 0.75rem 0;
+}
+
+.objective-card p {
+  font-size: 0.95rem;
+  color: var(--obj-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .objectives-section {
+    padding: 3rem 1rem;
+  }
+  
+  .objectives-grid {
+    grid-template-columns: 1fr;
+  }
+}
