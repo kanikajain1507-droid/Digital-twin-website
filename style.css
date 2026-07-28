@@ -331,3 +331,120 @@ body {
         font-size: 0.98rem;
     }
 }
+/* =========================================
+   LATEST UPDATES SECTION
+========================================= */
+
+/* Outer Section Layout */
+.updates-section {
+    padding: 40px 20px;
+    background-color: #f7f4ed; /* Cream background matching about section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Outer White Card */
+.updates-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px 45px;
+    max-width: 1050px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Section Heading */
+.updates-card h2 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2.2rem;
+    color: #222222;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Scrollable Container */
+.updates-list {
+    max-height: 420px; /* Controls visible height before scrolling */
+    overflow-y: auto;
+    padding-right: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Custom Golden Scrollbar Styles */
+.updates-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.updates-list::-webkit-scrollbar-track {
+    background-color: #f7eed8;
+    border-radius: 4px;
+}
+
+.updates-list::-webkit-scrollbar-thumb {
+    background-color: #c49933; /* Golden accent scrollbar */
+    border-radius: 4px;
+}
+
+/* Firefox Scrollbar Support */
+.updates-list {
+    scrollbar-width: thin;
+    scrollbar-color: #c49933 #f7eed8;
+}
+
+/* Individual Item Box */
+.update-item {
+    background-color: #fdfbf5;
+    border: 1px solid #efe5d0;
+    border-radius: 12px;
+    padding: 20px 24px;
+    text-align: left;
+}
+
+/* Date Accent Text */
+.update-date {
+    display: block;
+    color: #a87b1c; /* Warm gold date color */
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Item Title */
+.update-item h3 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.35rem;
+    color: #222222;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Item Description */
+.update-item p {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive Scaling for Mobile Screens */
+@media (max-width: 768px) {
+    .updates-card {
+        padding: 25px 20px;
+    }
+
+    .updates-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .updates-list {
+        padding-right: 10px;
+    }
+
+    .update-item {
+        padding: 16px 18px;
+    }
+}
