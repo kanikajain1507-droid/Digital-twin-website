@@ -1,305 +1,45 @@
 /* =====================================================
-   1. GLOBAL RESET
+   ABOUT + LATEST UPDATES
 ===================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-body {
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    background-color: #f7f3e8;
-
-    color: #27384b;
-
-    line-height: 1.7;
-
-}
-
-
-
-/* =====================================================
-   2. HEADER
-===================================================== */
-
-.site-header {
+.about-updates-section {
 
     width: 100%;
 
-    min-height: 105px;
+    padding: 80px 4%;
 
-    padding: 15px 35px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    background-color: #f1d487;
+    display: grid;
 
     /*
-       SKY BLUE BORDER
+       ABOUT = 65%
+       LATEST UPDATES = 35%
     */
 
-    border-top: 5px solid #87ceeb;
+    grid-template-columns: 1.8fr 1fr;
 
-    border-bottom: 4px solid #87ceeb;
+    gap: 35px;
 
-    position: relative;
+    align-items: stretch;
 
-    z-index: 100;
-
-}
-
-
-
-/* =====================================================
-   3. LOGO
-===================================================== */
-
-.logo-area {
-
-    display: flex;
-
-    align-items: center;
-
-}
-
-
-.manit-logo {
-
-    width: 65px;
-
-    height: 65px;
-
-    object-fit: contain;
+    background-color: #f2eddc;
 
 }
 
 
 
 /* =====================================================
-   4. NAVIGATION
-===================================================== */
-
-.navigation {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    flex-wrap: wrap;
-
-    gap: 30px;
-
-}
-
-
-.navigation a {
-
-    color: #27384b;
-
-    text-decoration: none;
-
-    font-size: 17px;
-
-    transition: color 0.3s ease;
-
-}
-
-
-.navigation a:hover {
-
-    color: #1674a0;
-
-}
-
-
-
-/* =====================================================
-   5. HERO SECTION
-===================================================== */
-
-.hero {
-
-    width: 100%;
-
-    height: calc(100vh - 105px);
-
-    min-height: 650px;
-
-    position: relative;
-
-    overflow: hidden;
-
-}
-
-
-
-/* =====================================================
-   6. HERO IMAGE
-===================================================== */
-
-.hero-background {
-
-    position: absolute;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
-
-}
-
-
-
-/* =====================================================
-   7. HERO OVERLAY
-===================================================== */
-
-.hero-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    background-color: rgba(15, 28, 38, 0.52);
-
-}
-
-
-
-/* =====================================================
-   8. HERO CONTENT
-===================================================== */
-
-.hero-content {
-
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 90%;
-
-    max-width: 1450px;
-
-    text-align: center;
-
-    color: #ffffff;
-
-}
-
-
-.hero-content h1 {
-
-    font-size: clamp(30px, 3.2vw, 52px);
-
-    line-height: 1.25;
-
-    margin-bottom: 45px;
-
-    text-shadow:
-        2px 2px 6px rgba(0, 0, 0, 0.8);
-
-}
-
-
-.hero-year {
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-}
-
-
-.hero-program {
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-    margin-bottom: 25px;
-
-}
-
-
-.hero-institute {
-
-    font-size: 29px;
-
-    font-weight: bold;
-
-}
-
-
-.hero-location {
-
-    font-size: 25px;
-
-    font-weight: bold;
-
-}
-
-
-
-/* =====================================================
-   9. ABOUT SECTION
-===================================================== */
-
-.about-section {
-
-    padding: 80px 0;
-
-    background-color: #f7f3e8;
-
-}
-
-
-
-/* =====================================================
-   10. ABOUT CARD
+   ABOUT THE PROJECT
 ===================================================== */
 
 .about-card {
-
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding: 50px;
 
     background-color: #ffffff;
 
     border: 1px solid #e4d7b8;
 
     border-radius: 16px;
+
+    padding: 50px;
 
     box-shadow:
         0 4px 15px rgba(80, 65, 35, 0.04);
@@ -309,39 +49,42 @@ body {
 
 
 /* =====================================================
-   11. ABOUT HEADING
+   ABOUT HEADING
 ===================================================== */
 
 .about-card h2 {
 
-    font-size: 46px;
+    font-size: 44px;
 
     line-height: 1.2;
 
     color: #27384b;
 
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 
 }
 
 
 
 /* =====================================================
-   12. ABOUT TEXT
+   ABOUT TEXT
 ===================================================== */
 
 .about-card p {
 
     font-size: 18px;
 
+    line-height: 1.8;
+
     color: #4d5963;
 
-    margin-bottom: 18px;
-
-    max-width: 1100px;
+    margin-bottom: 22px;
 
 }
 
+
+
+/* HIGHLIGHT IMPORTANT WORDS */
 
 .about-card strong {
 
@@ -352,32 +95,10 @@ body {
 
 
 /* =====================================================
-   13. PROJECTS + UPDATES SECTION
+   LATEST UPDATES CARD
 ===================================================== */
 
-.projects-updates-section {
-
-    width: 100%;
-
-    padding: 80px 4%;
-
-    display: grid;
-
-    grid-template-columns: 0.9fr 1.4fr;
-
-    gap: 35px;
-
-    background-color: #f2eddc;
-
-}
-
-
-
-/* =====================================================
-   14. COMMON CARD STYLE
-===================================================== */
-
-.card {
+.latest-updates {
 
     background-color: #ffffff;
 
@@ -390,17 +111,26 @@ body {
     box-shadow:
         0 4px 15px rgba(80, 65, 35, 0.04);
 
+    /*
+       Keeps the card from expanding
+       when there are many updates.
+    */
+
+    min-width: 0;
+
 }
 
 
 
 /* =====================================================
-   15. CARD HEADINGS
+   LATEST UPDATES HEADING
 ===================================================== */
 
-.card h2 {
+.latest-updates h2 {
 
     font-size: 34px;
+
+    line-height: 1.2;
 
     color: #27384b;
 
@@ -411,126 +141,26 @@ body {
 
 
 /* =====================================================
-   16. ONGOING PROJECT IMAGE
-===================================================== */
-
-.project-image {
-
-    width: 100%;
-
-    height: 230px;
-
-    display: block;
-
-    object-fit: cover;
-
-    border-radius: 13px;
-
-    margin-bottom: 25px;
-
-}
-
-
-
-/* =====================================================
-   17. ONGOING PROJECT TITLE
-===================================================== */
-
-.ongoing-projects h3 {
-
-    font-size: 27px;
-
-    line-height: 1.3;
-
-    color: #17283a;
-
-    margin-bottom: 15px;
-
-}
-
-
-
-/* =====================================================
-   18. ONGOING PROJECT DESCRIPTION
-===================================================== */
-
-.ongoing-projects p {
-
-    font-size: 17px;
-
-    color: #59636b;
-
-}
-
-
-
-/* =====================================================
-   19. PROJECT STATUS
-===================================================== */
-
-.project-status {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-top: 25px;
-
-    color: #26789e;
-
-    font-size: 15px;
-
-    font-weight: bold;
-
-}
-
-
-
-/* STATUS DOT */
-
-.status-dot {
-
-    width: 10px;
-
-    height: 10px;
-
-    background-color: #26789e;
-
-    border-radius: 50%;
-
-}
-
-
-
-/* =====================================================
-   20. LATEST UPDATES
-===================================================== */
-
-.latest-updates {
-
-    /*
-       IMPORTANT:
-       The card itself stays fixed.
-       Only the update list scrolls.
-    */
-
-    overflow: hidden;
-
-}
-
-
-
-/* =====================================================
-   21. SCROLLABLE UPDATES CONTAINER
+   SCROLLABLE UPDATES AREA
 ===================================================== */
 
 .updates-scroll {
 
-    height: 350px;
+    /*
+       Fixed height of scrolling area
+    */
+
+    height: 360px;
+
+    /*
+       Vertical scrolling only
+    */
 
     overflow-y: auto;
+
+    /*
+       Space before scrollbar
+    */
 
     padding-right: 12px;
 
@@ -539,12 +169,12 @@ body {
 
 
 /* =====================================================
-   22. CUSTOM SCROLLBAR
+   CUSTOM SCROLLBAR
 ===================================================== */
 
 .updates-scroll::-webkit-scrollbar {
 
-    width: 8px;
+    width: 7px;
 
 }
 
@@ -576,18 +206,18 @@ body {
 
 
 /* =====================================================
-   23. INDIVIDUAL UPDATE
+   INDIVIDUAL UPDATE
 ===================================================== */
 
 .update-item {
 
-    padding: 20px;
+    padding: 18px;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 
     border: 1px solid #ead9ae;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     background-color: #fffefa;
 
@@ -596,12 +226,12 @@ body {
 
 
 /* =====================================================
-   24. UPDATE DATE
+   UPDATE DATE
 ===================================================== */
 
 .update-date {
 
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: bold;
 
@@ -614,12 +244,12 @@ body {
 
 
 /* =====================================================
-   25. UPDATE TITLE
+   UPDATE TITLE
 ===================================================== */
 
 .update-item h3 {
 
-    font-size: 22px;
+    font-size: 20px;
 
     line-height: 1.3;
 
@@ -632,300 +262,15 @@ body {
 
 
 /* =====================================================
-   26. UPDATE DESCRIPTION
+   UPDATE DESCRIPTION
 ===================================================== */
 
 .update-item p:last-child {
 
-    font-size: 16px;
+    font-size: 15px;
+
+    line-height: 1.6;
 
     color: #59636b;
-
-}
-
-
-
-/* =====================================================
-   27. PLACEHOLDER SECTIONS
-===================================================== */
-
-.placeholder-section {
-
-    min-height: 500px;
-
-    padding: 100px 10%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-
-    background-color: #f7f3e8;
-
-}
-
-
-.placeholder-section:nth-of-type(even) {
-
-    background-color: #eee8d8;
-
-}
-
-
-.placeholder-section h2 {
-
-    font-size: 40px;
-
-    color: #27384b;
-
-    margin-bottom: 20px;
-
-}
-
-
-.placeholder-section p {
-
-    font-size: 18px;
-
-    color: #59636b;
-
-}
-
-
-
-/* =====================================================
-   28. FOOTER
-===================================================== */
-
-.footer {
-
-    padding: 40px 20px;
-
-    background-color: #27384b;
-
-    color: #ffffff;
-
-    text-align: center;
-
-}
-
-
-.footer p {
-
-    margin: 5px 0;
-
-}
-
-
-
-/* =====================================================
-   29. TABLET RESPONSIVE
-===================================================== */
-
-@media (max-width: 1000px) {
-
-
-    .site-header {
-
-        flex-direction: column;
-
-        gap: 20px;
-
-        padding: 20px;
-
-    }
-
-
-    .navigation {
-
-        justify-content: center;
-
-        gap: 20px;
-
-    }
-
-
-    .hero {
-
-        height: 750px;
-
-    }
-
-
-    .projects-updates-section {
-
-        grid-template-columns: 1fr;
-
-        padding: 60px 6%;
-
-    }
-
-
-    .updates-scroll {
-
-        height: 350px;
-
-    }
-
-}
-
-
-
-/* =====================================================
-   30. MOBILE RESPONSIVE
-===================================================== */
-
-@media (max-width: 600px) {
-
-
-    .site-header {
-
-        padding: 15px;
-
-    }
-
-
-    .manit-logo {
-
-        width: 55px;
-
-        height: 55px;
-
-    }
-
-
-    .navigation {
-
-        gap: 12px 18px;
-
-    }
-
-
-    .navigation a {
-
-        font-size: 14px;
-
-    }
-
-
-    .hero {
-
-        height: 750px;
-
-    }
-
-
-    .hero-content {
-
-        width: 90%;
-
-    }
-
-
-    .hero-content h1 {
-
-        font-size: 27px;
-
-        margin-bottom: 35px;
-
-    }
-
-
-    .hero-year {
-
-        font-size: 25px;
-
-    }
-
-
-    .hero-program {
-
-        font-size: 25px;
-
-    }
-
-
-    .hero-institute {
-
-        font-size: 21px;
-
-    }
-
-
-    .hero-location {
-
-        font-size: 18px;
-
-    }
-
-
-    .about-section {
-
-        padding: 50px 0;
-
-    }
-
-
-    .about-card {
-
-        width: 90%;
-
-        padding: 30px;
-
-    }
-
-
-    .about-card h2 {
-
-        font-size: 34px;
-
-    }
-
-
-    .about-card p {
-
-        font-size: 16px;
-
-    }
-
-
-    .projects-updates-section {
-
-        padding: 50px 5%;
-
-    }
-
-
-    .card {
-
-        padding: 25px;
-
-    }
-
-
-    .card h2 {
-
-        font-size: 30px;
-
-    }
-
-
-    .project-image {
-
-        height: 200px;
-
-    }
-
-
-    .updates-scroll {
-
-        height: 350px;
-
-    }
 
 }
