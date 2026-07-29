@@ -3,9 +3,9 @@
 
 <head>
 
-    <!-- =========================================
-         BASIC PAGE INFORMATION
-    ========================================== -->
+    <!-- ==================================================
+         BASIC PAGE SETTINGS
+    ================================================== -->
 
     <meta charset="UTF-8">
 
@@ -16,9 +16,9 @@
     </title>
 
 
-    <!-- =========================================
+    <!-- ==================================================
          CONNECT CSS FILE
-    ========================================== -->
+    ================================================== -->
 
     <link rel="stylesheet" href="style.css">
 
@@ -28,19 +28,19 @@
 <body>
 
 
-    <!-- =========================================
+    <!-- ==================================================
          HEADER / NAVIGATION
-    ========================================== -->
+    ================================================== -->
 
     <header class="site-header">
 
 
-        <!-- =====================================
+        <!-- ==================================================
              MANIT LOGO
-             
-             CHANGE THIS IMAGE NAME
-             TO YOUR ACTUAL LOGO FILE
-        ====================================== -->
+
+             CHANGE "manit-logo.png"
+             TO YOUR ACTUAL LOGO FILE NAME
+        ================================================== -->
 
         <div class="logo-area">
 
@@ -53,10 +53,9 @@
         </div>
 
 
-
-        <!-- =====================================
-             NAVIGATION LINKS
-        ====================================== -->
+        <!-- ==================================================
+             NAVIGATION
+        ================================================== -->
 
         <nav class="navigation">
 
@@ -83,19 +82,19 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          HERO SECTION
-    ========================================== -->
+    ================================================== -->
 
     <section class="hero">
 
 
-        <!-- =====================================
+        <!-- ==================================================
              HERO IMAGE
-             
-             CHANGE THIS IMAGE NAME
-             TO YOUR ACTUAL IMAGE FILE
-        ====================================== -->
+
+             CHANGE "manit-building.jpg"
+             TO YOUR ACTUAL IMAGE FILE NAME
+        ================================================== -->
 
         <img
             src="manit-building.jpg"
@@ -109,14 +108,12 @@
         <div class="hero-overlay"></div>
 
 
-        <!-- =====================================
-             HERO CONTENT
-        ====================================== -->
+        <!-- ==================================================
+             HERO TEXT
+        ================================================== -->
 
         <div class="hero-content">
 
-
-            <!-- PROJECT TITLE -->
 
             <h1>
 
@@ -127,24 +124,15 @@
             </h1>
 
 
-
-            <!-- PROJECT YEAR -->
-
             <p class="hero-year">
                 2025–27
             </p>
 
 
-
-            <!-- PROGRAM -->
-
             <p class="hero-program">
                 SPARC
             </p>
 
-
-
-            <!-- INSTITUTE -->
 
             <p class="hero-institute">
 
@@ -152,9 +140,6 @@
 
             </p>
 
-
-
-            <!-- LOCATION -->
 
             <p class="hero-location">
 
@@ -170,148 +155,296 @@
 
 
 
-    <!-- =========================================
-         ABOUT + LATEST UPDATES
+    <!-- ==================================================
+         ABOUT THE PROJECT
          
-         THESE TWO SECTIONS ARE SIDE BY SIDE
-    ========================================== -->
+         LARGE WHITE CARD
+    ================================================== -->
 
-    <section class="intro-section">
-
-
-        <!-- =====================================
-             ABOUT THE PROJECT
-        ====================================== -->
-
-        <div class="about-box" id="about">
+    <section class="about-section" id="about">
 
 
-            <span class="section-label">
-                ABOUT THE PROJECT
-            </span>
+        <div class="about-card">
 
+
+            <!-- SECTION TITLE -->
 
             <h2>
-                Digital Twin and Data Fusion
+                About the Project
             </h2>
 
 
+            <!-- PROJECT DESCRIPTION -->
+
             <p>
 
-                This research project focuses on the integration
-                of Digital Twin technology and multi-source data
-                fusion for intelligent management of grid-integrated
-                solar photovoltaic systems supporting electric
-                vehicle charging infrastructure.
+                The rapid adoption of Electric Vehicles (EVs) and the
+                increasing integration of Solar Photovoltaic (PV) systems
+                are transforming modern energy infrastructure. This
+                research proposes an intelligent framework that combines
+                <strong>Digital Twin Technology</strong> with
+                <strong>Data Fusion</strong> to enhance the monitoring,
+                optimization, and management of grid-connected renewable
+                energy systems.
 
             </p>
 
 
             <p>
 
-                The project aims to develop an intelligent,
-                data-driven framework that can improve renewable
-                energy utilization, predictive management,
-                grid stability, and efficient EV charging.
+                By continuously synchronizing data from solar panels,
+                smart meters, battery storage, weather services, and
+                EV charging stations, the Digital Twin enables predictive
+                analytics, fault detection, and intelligent energy
+                optimization, supporting the development of resilient,
+                efficient, and sustainable smart grids.
 
             </p>
 
 
-            <!-- READ MORE BUTTON -->
+        </div>
 
-            <a href="#research-plan" class="read-more">
 
-                Explore the Research
+    </section>
 
-            </a>
+
+
+    <!-- ==================================================
+         ONGOING PROJECTS + LATEST UPDATES
+         
+         TWO COLUMNS
+    ================================================== -->
+
+    <section class="projects-updates-section">
+
+
+        <!-- ==================================================
+             ONGOING PROJECTS
+        ================================================== -->
+
+        <div class="ongoing-projects card">
+
+
+            <h2>
+                Ongoing Projects
+            </h2>
+
+
+            <!-- ==================================================
+                 PROJECT IMAGE
+
+                 CHANGE "project-image.jpg"
+                 TO YOUR ACTUAL IMAGE FILE
+            ================================================== -->
+
+            <img
+                src="project-image.jpg"
+                alt="Digital Twin Research Project"
+                class="project-image"
+            >
+
+
+            <!-- PROJECT TITLE -->
+
+            <h3>
+
+                Digital Twin Integration with
+                Data Fusion for Smart Energy Systems
+
+            </h3>
+
+
+            <!-- PROJECT DESCRIPTION -->
+
+            <p>
+
+                Development of an intelligent Digital Twin framework
+                for grid-integrated solar PV systems and EV charging
+                infrastructure.
+
+            </p>
+
+
+            <!-- PROJECT STATUS -->
+
+            <div class="project-status">
+
+                <span class="status-dot"></span>
+
+                Ongoing Research
+
+            </div>
 
 
         </div>
 
 
 
-        <!-- =====================================
+        <!-- ==================================================
              LATEST UPDATES
-        ====================================== -->
+             
+             THIS CONTAINER IS SCROLLABLE
+        ================================================== -->
 
-        <div class="updates-box">
-
-
-            <span class="section-label">
-                LATEST UPDATES
-            </span>
+        <div class="latest-updates card">
 
 
             <h2>
-                News & Announcements
+                Latest Updates
             </h2>
 
 
+            <!-- ==================================================
+                 SCROLLABLE UPDATE LIST
+            ================================================== -->
 
-            <!-- UPDATE 1 -->
-
-            <div class="update-item">
-
-                <span class="update-date">
-                    2025
-                </span>
-
-                <h3>
-                    Technical Workshop
-                </h3>
-
-                <p>
-
-                    Technical Workshop on Digital Twin and
-                    Data Fusion of PV-Powered EV Charging Systems.
-
-                </p>
-
-            </div>
+            <div class="updates-scroll">
 
 
+                <!-- ==================================================
+                     UPDATE 1
+                ================================================== -->
 
-            <!-- UPDATE 2 -->
+                <article class="update-item">
 
-            <div class="update-item">
 
-                <span class="update-date">
-                    2025
-                </span>
+                    <p class="update-date">
+                        2026
+                    </p>
 
-                <h3>
-                    Research Collaboration
-                </h3>
 
-                <p>
+                    <h3>
+                        Official Research Project Website Launched
+                    </h3>
 
-                    Collaborative research activities between
-                    MANIT Bhopal and international academic partners.
 
-                </p>
+                    <p>
 
-            </div>
+                        The official website for the Digital Twin
+                        and Data Fusion research project has been
+                        launched.
+
+                    </p>
+
+
+                </article>
 
 
 
-            <!-- UPDATE 3 -->
+                <!-- ==================================================
+                     UPDATE 2
+                ================================================== -->
 
-            <div class="update-item">
+                <article class="update-item">
 
-                <span class="update-date">
-                    2025–27
-                </span>
 
-                <h3>
-                    SPARC Research Project
-                </h3>
+                    <p class="update-date">
+                        02 Aug 2026
+                    </p>
 
-                <p>
 
-                    Research activities are being carried out
-                    under the SPARC programme.
+                    <h3>
+                        Proposal Submitted
+                    </h3>
 
-                </p>
+
+                    <p>
+
+                        SPARC proposal submitted successfully.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- ==================================================
+                     UPDATE 3
+                ================================================== -->
+
+                <article class="update-item">
+
+
+                    <p class="update-date">
+                        2025
+                    </p>
+
+
+                    <h3>
+                        Technical Workshop Conducted
+                    </h3>
+
+
+                    <p>
+
+                        Technical Workshop on Digital Twin and
+                        Data Fusion of PV-Powered EV Charging Systems
+                        was organized.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- ==================================================
+                     UPDATE 4
+                ================================================== -->
+
+                <article class="update-item">
+
+
+                    <p class="update-date">
+                        2025
+                    </p>
+
+
+                    <h3>
+                        International Research Collaboration
+                    </h3>
+
+
+                    <p>
+
+                        Collaborative research activities initiated
+                        with academic and research partners.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- ==================================================
+                     UPDATE 5
+                ================================================== -->
+
+                <article class="update-item">
+
+
+                    <p class="update-date">
+                        2025–27
+                    </p>
+
+
+                    <h3>
+                        SPARC Research Project
+                    </h3>
+
+
+                    <p>
+
+                        Research activities are being carried out
+                        under the SPARC programme.
+
+                    </p>
+
+
+                </article>
+
 
             </div>
 
@@ -323,9 +456,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          RESEARCH PLAN
-    ========================================== -->
+    ================================================== -->
 
     <section id="research-plan" class="placeholder-section">
 
@@ -334,17 +467,16 @@
         </h2>
 
         <p>
-            Research methodology and project phases will be
-            added here.
+            Research methodology and project phases will be added here.
         </p>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          EVENTS
-    ========================================== -->
+    ================================================== -->
 
     <section id="events" class="placeholder-section">
 
@@ -360,9 +492,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          OBJECTIVES
-    ========================================== -->
+    ================================================== -->
 
     <section id="objectives" class="placeholder-section">
 
@@ -378,9 +510,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          COLLABORATORS
-    ========================================== -->
+    ================================================== -->
 
     <section id="collaborators" class="placeholder-section">
 
@@ -396,9 +528,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          PRINCIPAL INVESTIGATOR
-    ========================================== -->
+    ================================================== -->
 
     <section id="pi" class="placeholder-section">
 
@@ -414,9 +546,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          GALLERY
-    ========================================== -->
+    ================================================== -->
 
     <section id="gallery" class="placeholder-section">
 
@@ -432,9 +564,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          CONTACT
-    ========================================== -->
+    ================================================== -->
 
     <section id="contact" class="placeholder-section">
 
@@ -450,9 +582,9 @@
 
 
 
-    <!-- =========================================
+    <!-- ==================================================
          FOOTER
-    ========================================== -->
+    ================================================== -->
 
     <footer class="footer">
 
