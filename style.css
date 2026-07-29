@@ -1508,3 +1508,273 @@ body {
     height: 200px;
   }
 }
+/* Color Palette Variables (matching site theme) */
+:root {
+  --sparc-bg-cream: #f7f4ea;
+  --sparc-text-dark: #1c1d1f;
+  --sparc-text-muted: #525458;
+  --sparc-accent-gold: #b3822a;
+  --sparc-card-bg: #ffffff;
+  --sparc-card-border: #e6e2d6;
+  --sparc-accent-blue: #0d47a1;
+}
+
+/* SPARC Section Base */
+.sparc-section {
+  background-color: var(--sparc-bg-cream);
+  padding: 5rem 2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--sparc-text-dark);
+}
+
+.sparc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.sparc-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sparc-badge {
+  display: inline-block;
+  background-color: #fef3c7;
+  color: var(--sparc-accent-gold);
+  border: 1px solid #fde68a;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.sparc-header h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--sparc-text-dark);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.15;
+}
+
+.sparc-header p {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1rem;
+  color: var(--sparc-text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Overview Card */
+.sparc-overview-card {
+  background: var(--sparc-card-bg);
+  border: 1px solid var(--sparc-card-border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.sparc-project-info h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--sparc-text-dark);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.project-desc {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--sparc-text-muted);
+  line-height: 1.65;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Key Details Box */
+.sparc-key-details {
+  background: #fdfbf7;
+  border: 1px solid var(--sparc-card-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sparc-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-bottom: 1px solid #eee9dc;
+  padding-bottom: 0.65rem;
+}
+
+.sparc-detail-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.detail-label {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--sparc-accent-gold);
+  letter-spacing: 0.05em;
+}
+
+.detail-val {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--sparc-text-dark);
+}
+
+/* Team & Deliverables Grid */
+.sparc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.sparc-card {
+  background: var(--sparc-card-bg);
+  border: 1px solid var(--sparc-card-border);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.sparc-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--sparc-accent-gold);
+}
+
+.sparc-card.full-width {
+  grid-column: span 2;
+}
+
+.sparc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #f2ede2;
+  padding-bottom: 0.75rem;
+}
+
+.flag-icon {
+  font-size: 1.4rem;
+}
+
+.sparc-card-header h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--sparc-text-dark);
+  margin: 0;
+}
+
+/* Investigators List */
+.investigator-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.investigator-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.investigator-list strong {
+  font-size: 1rem;
+  color: var(--sparc-accent-blue);
+  font-weight: 700;
+}
+
+.investigator-list span {
+  font-size: 0.9rem;
+  color: var(--sparc-text-muted);
+  margin-top: 0.15rem;
+}
+
+/* Deliverables Grid */
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.deliv-item {
+  background: #fdfbf7;
+  border: 1px solid var(--sparc-card-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.deliv-num {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--sparc-accent-gold);
+}
+
+.deliv-item p {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--sparc-text-dark);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 850px) {
+  .sparc-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .sparc-header h2 {
+    font-size: 2.25rem;
+  }
+
+  .sparc-overview-card {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.75rem;
+  }
+
+  .sparc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sparc-card.full-width {
+    grid-column: span 1;
+  }
+
+  .deliverables-grid {
+    grid-template-columns: 1fr;
+  }
+}
