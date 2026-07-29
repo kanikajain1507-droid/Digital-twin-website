@@ -3238,550 +3238,489 @@ MOBILE RESPONSIVE
     padding: 8px 13px;
 
 }
-```
-
-}
 /* =========================================================
-PRINCIPAL INVESTIGATORS & RESEARCH TEAM
+   PRINCIPAL INVESTIGATORS & RESEARCH TEAM
 ========================================================= */
 
 .pi-section {
 
-```
-width: 100%;
+    width: 100%;
 
-padding: 120px 6% 140px;
+    padding: 110px 0 120px;
 
-background-color: #eee8d8;
+    background-color: #eee8d8;
 
-color: #27384b;
-```
+    color: #27384b;
+
+    overflow: hidden;
 
 }
 
+
 /* =========================================================
-PI SECTION HEADER
+   PI SECTION HEADER
 ========================================================= */
 
 .pi-header {
 
-```
-max-width: 900px;
+    max-width: 1100px;
 
-margin: 0 auto 70px;
+    margin: 0 auto 65px;
 
-text-align: center;
-```
+    padding: 0 6%;
 
 }
 
-.pi-eyebrow {
 
-```
-margin-bottom: 20px;
+.pi-header .section-eyebrow {
 
-font-size: 12px;
+    display: block;
 
-font-weight: 700;
+    margin-bottom: 22px;
 
-letter-spacing: 4px;
+    font-size: 12px;
 
-color: #b07b18;
-```
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #b07b18;
 
 }
+
 
 .pi-header h2 {
 
-```
-margin: 0 0 25px;
+    margin: 0 0 25px;
 
-font-size: clamp(42px, 5vw, 68px);
+    font-size: clamp(42px, 5vw, 68px);
 
-line-height: 1.1;
+    line-height: 1.08;
 
-letter-spacing: -2px;
+    letter-spacing: -2px;
 
-color: #27384b;
-```
+    color: #27384b;
 
 }
 
-.pi-intro {
 
-```
-max-width: 750px;
+.pi-header > p:last-child {
 
-margin: 0 auto;
+    max-width: 800px;
 
-font-size: 18px;
+    margin: 0;
 
-line-height: 1.8;
+    font-size: 18px;
 
-color: #59636b;
-```
+    line-height: 1.8;
+
+    color: #59636b;
 
 }
+
 
 /* =========================================================
-HORIZONTAL SCROLL CONTAINER
+   HORIZONTAL SCROLL CONTAINER
 ========================================================= */
 
-.pi-scroll {
+.pi-scroll-container {
 
-```
-width: 100%;
+    width: 100%;
 
-max-width: 1250px;
+    display: flex;
 
-margin: 0 auto;
+    gap: 30px;
 
-display: flex;
+    overflow-x: auto;
 
-gap: 30px;
+    overflow-y: hidden;
 
-overflow-x: auto;
+    padding:
 
-overflow-y: hidden;
+        10px
 
-padding: 10px 5px 30px;
+        6%
 
-scroll-behavior: smooth;
+        35px
 
-scroll-snap-type: x mandatory;
-```
+        6%;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    -webkit-overflow-scrolling: touch;
 
 }
 
+
 /* =========================================================
-HORIZONTAL SCROLLBAR
+   CUSTOM HORIZONTAL SCROLLBAR
 ========================================================= */
 
-.pi-scroll::-webkit-scrollbar {
+.pi-scroll-container::-webkit-scrollbar {
 
-```
-height: 8px;
-```
+    height: 8px;
 
 }
 
-.pi-scroll::-webkit-scrollbar-track {
 
-```
-background-color: #e1dac8;
+.pi-scroll-container::-webkit-scrollbar-track {
 
-border-radius: 10px;
-```
+    background-color: #e1dac9;
 
-}
-
-.pi-scroll::-webkit-scrollbar-thumb {
-
-```
-background-color: #c29b38;
-
-border-radius: 10px;
-```
+    border-radius: 10px;
 
 }
 
-.pi-scroll::-webkit-scrollbar-thumb:hover {
 
-```
-background-color: #a9842e;
-```
+.pi-scroll-container::-webkit-scrollbar-thumb {
+
+    background-color: #c29b38;
+
+    border-radius: 10px;
 
 }
+
+
+.pi-scroll-container::-webkit-scrollbar-thumb:hover {
+
+    background-color: #a98229;
+
+}
+
 
 /* =========================================================
-PI CARD
+   PI CARD
 ========================================================= */
 
 .pi-card {
 
-```
-flex: 0 0 380px;
+    /*
+       IMPORTANT:
+       This prevents the cards from becoming
+       narrow and tall.
+    */
 
-background-color: #ffffff;
+    flex: 0 0 520px;
 
-border: 1px solid #e4d7b8;
+    width: 520px;
 
-border-radius: 16px;
+    min-height: 680px;
 
-overflow: hidden;
+    display: flex;
 
-scroll-snap-align: start;
+    flex-direction: column;
 
-box-shadow:
+    background-color: #ffffff;
 
-    0 5px 20px rgba(50, 45, 30, 0.06);
+    border: 1px solid #e4d7b8;
 
-transition:
+    border-radius: 16px;
 
-    transform 0.35s ease,
+    overflow: hidden;
 
-    box-shadow 0.35s ease;
-```
+    scroll-snap-align: start;
+
+    box-shadow:
+
+        0 5px 20px rgba(50, 45, 30, 0.06);
+
+    transition:
+
+        transform 0.35s ease,
+
+        box-shadow 0.35s ease;
 
 }
 
+
 /* =========================================================
-PI CARD HOVER
+   CARD HOVER
 ========================================================= */
 
 .pi-card:hover {
 
-```
-transform: translateY(-6px);
+    transform: translateY(-7px);
 
-box-shadow:
+    box-shadow:
 
-    0 15px 35px rgba(39, 56, 75, 0.12);
-```
+        0 18px 40px rgba(39, 56, 75, 0.12);
 
 }
 
+
 /* =========================================================
-PI PHOTO
+   PI PHOTO
 ========================================================= */
 
 .pi-photo {
 
-```
-width: 100%;
+    width: 100%;
 
-height: 330px;
+    height: 340px;
 
-overflow: hidden;
+    flex-shrink: 0;
 
-background-color: #e8e2d4;
-```
+    background-color: #e8e2d4;
+
+    overflow: hidden;
 
 }
+
 
 .pi-photo img {
 
-```
-width: 100%;
+    width: 100%;
 
-height: 100%;
+    height: 100%;
 
-display: block;
+    display: block;
 
-object-fit: cover;
+    object-fit: cover;
 
-object-position: center;
+    object-position: center top;
 
-transition: transform 0.5s ease;
-```
+    transition:
+
+        transform 0.5s ease;
 
 }
 
-/* Subtle image zoom */
+
+/* Slight image zoom on hover */
 
 .pi-card:hover .pi-photo img {
 
-```
-transform: scale(1.03);
-```
+    transform: scale(1.03);
 
 }
 
+
 /* =========================================================
-PI CONTENT
+   PI CONTENT
 ========================================================= */
 
 .pi-content {
 
-```
-min-height: 430px;
+    padding: 32px 35px 38px;
 
-padding: 35px;
+    display: flex;
 
-display: flex;
+    flex-direction: column;
 
-flex-direction: column;
-```
+    flex: 1;
 
 }
 
+
 /* =========================================================
-PI ROLE
+   PI ROLE
 ========================================================= */
 
 .pi-role {
 
-```
-margin-bottom: 12px;
+    display: block;
 
-font-size: 11px;
+    margin-bottom: 12px;
 
-font-weight: 700;
+    font-size: 11px;
 
-letter-spacing: 2px;
+    font-weight: 700;
 
-line-height: 1.5;
+    letter-spacing: 2px;
 
-color: #b07b18;
-```
+    line-height: 1.5;
+
+    color: #b07b18;
 
 }
 
+
 /* =========================================================
-PI NAME
+   PI NAME
 ========================================================= */
 
 .pi-content h3 {
 
-```
-margin: 0 0 8px;
+    margin: 0 0 12px;
 
-font-size: 30px;
+    font-size: 28px;
 
-line-height: 1.2;
+    line-height: 1.2;
 
-color: #27384b;
-```
+    color: #27384b;
 
 }
 
+
 /* =========================================================
-PI DESIGNATION
+   PI POSITION
 ========================================================= */
 
-.pi-designation {
+.pi-position {
 
-```
-margin-bottom: 5px;
+    margin: 0 0 20px;
 
-font-size: 17px;
+    font-size: 15px;
 
-font-weight: 600;
+    font-weight: 600;
 
-color: #27384b;
-```
+    line-height: 1.6;
 
-}
-
-/* =========================================================
-PI INSTITUTION
-========================================================= */
-
-.pi-institution {
-
-```
-margin-bottom: 25px;
-
-font-size: 14px;
-
-line-height: 1.6;
-
-color: #7a7f83;
-```
+    color: #59636b;
 
 }
 
+
 /* =========================================================
-PI DESCRIPTION
+   PI DESCRIPTION
 ========================================================= */
 
 .pi-description {
 
-```
-margin-bottom: 25px;
+    margin: 0;
 
-font-size: 16px;
+    font-size: 15px;
 
-line-height: 1.75;
+    line-height: 1.75;
 
-color: #59636b;
-```
+    color: #59636b;
 
 }
+
 
 /* =========================================================
-PI EXPERTISE TAGS
-========================================================= */
-
-.pi-expertise {
-
-```
-display: flex;
-
-flex-wrap: wrap;
-
-gap: 8px;
-
-margin-top: auto;
-```
-
-}
-
-.pi-expertise span {
-
-```
-padding: 8px 13px;
-
-border: 1px solid #d8c79e;
-
-border-radius: 20px;
-
-background-color: #fdfcf8;
-
-font-size: 12px;
-
-font-weight: 600;
-
-color: #27384b;
-```
-
-}
-
-/* =========================================================
-SCROLL INDICATOR
-========================================================= */
-
-.pi-scroll-hint {
-
-```
-max-width: 1250px;
-
-margin: 20px auto 0;
-
-text-align: right;
-
-font-size: 12px;
-
-letter-spacing: 1px;
-
-color: #7a7f83;
-```
-
-}
-
-/* =========================================================
-TABLET RESPONSIVE
+   TABLET
 ========================================================= */
 
 @media (max-width: 900px) {
 
-```
-.pi-section {
+    .pi-section {
 
-    padding: 90px 5% 110px;
+        padding: 85px 0 100px;
+
+    }
+
+
+    .pi-header {
+
+        margin-bottom: 50px;
+
+    }
+
+
+    .pi-card {
+
+        flex: 0 0 450px;
+
+        width: 450px;
+
+        min-height: 650px;
+
+    }
+
+
+    .pi-photo {
+
+        height: 300px;
+
+    }
 
 }
 
-
-.pi-card {
-
-    flex: 0 0 350px;
-
-}
-
-
-.pi-photo {
-
-    height: 300px;
-
-}
-```
-
-}
 
 /* =========================================================
-MOBILE RESPONSIVE
+   MOBILE
 ========================================================= */
 
 @media (max-width: 600px) {
 
-```
-.pi-section {
+    .pi-section {
 
-    padding: 70px 20px 90px;
+        padding: 70px 0 80px;
 
-}
-
-
-.pi-header {
-
-    margin-bottom: 50px;
-
-}
+    }
 
 
-.pi-header h2 {
+    .pi-header {
 
-    font-size: 42px;
+        padding: 0 25px;
 
-    letter-spacing: -1px;
+        margin-bottom: 40px;
 
-}
-
-
-.pi-intro {
-
-    font-size: 16px;
-
-}
+    }
 
 
-.pi-scroll {
+    .pi-header h2 {
 
-    gap: 20px;
+        font-size: 42px;
 
-    padding-bottom: 25px;
+        letter-spacing: -1px;
 
-}
-
-
-.pi-card {
-
-    flex: 0 0 85vw;
-
-}
+    }
 
 
-.pi-photo {
+    .pi-header > p:last-child {
 
-    height: 280px;
+        font-size: 16px;
 
-}
+        line-height: 1.7;
 
-
-.pi-content {
-
-    min-height: auto;
-
-    padding: 28px;
-
-}
+    }
 
 
-.pi-content h3 {
+    .pi-scroll-container {
 
-    font-size: 27px;
+        gap: 20px;
 
-}
+        padding-left: 25px;
 
+        padding-right: 25px;
 
-.pi-description {
-
-    font-size: 15px;
-
-}
+    }
 
 
-.pi-scroll-hint {
+    .pi-card {
 
-    text-align: center;
+        flex: 0 0 340px;
 
-    font-size: 11px;
+        width: 340px;
 
-    margin-top: 15px;
+        min-height: 600px;
 
-}
-```
+    }
+
+
+    .pi-photo {
+
+        height: 260px;
+
+    }
+
+
+    .pi-content {
+
+        padding: 27px 25px 30px;
+
+    }
+
+
+    .pi-content h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .pi-description {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
 
 }
-
