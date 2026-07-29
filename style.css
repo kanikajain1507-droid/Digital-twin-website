@@ -1,5 +1,5 @@
 /* =====================================================
-   GLOBAL SETTINGS
+   1. GLOBAL RESET
 ===================================================== */
 
 * {
@@ -16,131 +16,131 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
+
     background-color: #f7f4ec;
-    color: #243447;
+
+    color: #263746;
+
     line-height: 1.6;
 }
 
 
 
 /* =====================================================
-   HEADER / NAVIGATION
+   2. HEADER
 ===================================================== */
 
 .site-header {
 
-    /* Layout */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    /* Size */
     width: 100%;
-    min-height: 110px;
 
-    /* Spacing */
+    min-height: 105px;
+
     padding: 15px 35px;
 
-    /* Background */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
     background-color: #f1d487;
 
-    /* SKY-BLUE BORDER
-       Change this color if you want
-    */
+    /* SKY BLUE BORDER */
 
-    border-top: 6px solid #87ceeb;
+    border-top: 5px solid #87ceeb;
 
-    border-bottom: 3px solid #87ceeb;
+    border-bottom: 4px solid #87ceeb;
 
-    /* Keep header above hero */
     position: relative;
-    z-index: 100;
+
+    z-index: 10;
+
 }
 
 
 
 /* =====================================================
-   MANIT LOGO
+   3. LOGO
 ===================================================== */
 
-.logo-container {
+.logo-area {
+
     display: flex;
+
     align-items: center;
+
 }
 
 
 .manit-logo {
 
-    /* Logo size */
     width: 65px;
+
     height: 65px;
 
-    /* Keep original proportions */
     object-fit: contain;
 
-    /* Prevent image from looking stretched */
     display: block;
+
 }
 
 
 
 /* =====================================================
-   NAVIGATION MENU
+   4. NAVIGATION
 ===================================================== */
 
-.main-navigation {
+.navigation {
 
     display: flex;
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: flex-end;
 
-    gap: 38px;
+    flex-wrap: wrap;
+
+    gap: 30px;
+
 }
 
 
-.main-navigation a {
+.navigation a {
 
-    /* Text */
-    color: #263238;
     text-decoration: none;
+
+    color: #263746;
 
     font-size: 17px;
 
-    /* Smooth hover */
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 
-    /* Prevent wrapping */
-    white-space: nowrap;
 }
 
 
-.main-navigation a:hover {
+.navigation a:hover {
 
-    color: #1976a3;
+    color: #1877a5;
 
 }
 
 
 
 /* =====================================================
-   HERO SECTION
+   5. HERO SECTION
 ===================================================== */
 
-.hero-section {
-
-    /* Positioning */
-    position: relative;
+.hero {
 
     width: 100%;
 
-    /* Hero height */
-    height: calc(100vh - 110px);
+    height: calc(100vh - 105px);
 
     min-height: 650px;
 
-    /* Hide anything outside */
+    position: relative;
+
     overflow: hidden;
 
 }
@@ -148,30 +148,31 @@ body {
 
 
 /* =====================================================
-   HERO IMAGE
+   6. HERO BACKGROUND IMAGE
 ===================================================== */
 
-.hero-image {
+.hero-background {
 
-    /* Fill entire hero */
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
     width: 100%;
+
     height: 100%;
 
-    /* Crop image naturally */
     object-fit: cover;
 
-    /* Position image */
     object-position: center;
-
-    /* Display as block */
-    display: block;
 
 }
 
 
 
 /* =====================================================
-   HERO DARK OVERLAY
+   7. HERO OVERLAY
 ===================================================== */
 
 .hero-overlay {
@@ -179,21 +180,21 @@ body {
     position: absolute;
 
     top: 0;
+
     left: 0;
 
     width: 100%;
+
     height: 100%;
 
-    /* Dark transparent layer */
-
-    background: rgba(10, 25, 35, 0.48);
+    background-color: rgba(10, 25, 35, 0.52);
 
 }
 
 
 
 /* =====================================================
-   HERO CONTENT
+   8. HERO CONTENT
 ===================================================== */
 
 .hero-content {
@@ -201,6 +202,7 @@ body {
     position: absolute;
 
     top: 50%;
+
     left: 50%;
 
     transform: translate(-50%, -50%);
@@ -211,25 +213,25 @@ body {
 
     text-align: center;
 
-    color: #ffffff;
+    color: white;
 
 }
 
 
 
 /* =====================================================
-   PROJECT TITLE
+   9. PROJECT TITLE
 ===================================================== */
 
 .hero-content h1 {
 
-    font-size: clamp(30px, 3vw, 50px);
+    font-size: clamp(30px, 3.2vw, 52px);
 
     line-height: 1.25;
 
-    font-weight: 700;
+    font-weight: bold;
 
-    margin-bottom: 55px;
+    margin-bottom: 45px;
 
     text-shadow:
         2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -239,40 +241,107 @@ body {
 
 
 /* =====================================================
-   PROJECT YEAR
+   10. HERO DETAILS
 ===================================================== */
 
-.project-year {
+.hero-year {
 
     font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+
+.hero-program {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-institute {
+
+    font-size: 29px;
+
+    font-weight: bold;
 
     margin-bottom: 10px;
 
 }
 
 
+.hero-location {
 
-/* =====================================================
-   SPARC
-===================================================== */
+    font-size: 25px;
 
-.project-program {
-
-    font-size: 30px;
-
-    margin-bottom: 30px;
+    font-weight: bold;
 
 }
 
 
 
 /* =====================================================
-   INSTITUTE NAME
+   11. ABOUT + LATEST UPDATES SECTION
 ===================================================== */
 
-.institute-name {
+.intro-section {
 
-    font-size: 30px;
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 100px 0;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 80px;
+
+    align-items: start;
+
+}
+
+
+
+/* =====================================================
+   12. ABOUT BOX
+===================================================== */
+
+.about-box {
+
+    padding-right: 50px;
+
+    border-right: 1px solid #c8c3b5;
+
+}
+
+
+
+/* =====================================================
+   13. SECTION LABEL
+===================================================== */
+
+.section-label {
+
+    display: block;
+
+    color: #26789e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
 
     margin-bottom: 15px;
 
@@ -281,60 +350,18 @@ body {
 
 
 /* =====================================================
-   LOCATION
+   14. ABOUT + UPDATE HEADINGS
 ===================================================== */
 
-.institute-location {
+.about-box h2,
 
-    font-size: 27px;
-
-    font-weight: 600;
-
-}
-
-
-
-/* =====================================================
-   GENERAL CONTENT SECTIONS
-===================================================== */
-
-.content-section {
-
-    padding: 100px 30px;
-
-    background-color: #f7f4ec;
-
-}
-
-
-
-/* =====================================================
-   SECTION CONTAINER
-===================================================== */
-
-.section-container {
-
-    width: 90%;
-
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    text-align: center;
-
-}
-
-
-
-/* =====================================================
-   SECTION HEADINGS
-===================================================== */
-
-.section-container h2 {
+.updates-box h2 {
 
     font-size: 38px;
 
-    color: #24465a;
+    line-height: 1.2;
+
+    color: #263746;
 
     margin-bottom: 25px;
 
@@ -343,39 +370,191 @@ body {
 
 
 /* =====================================================
-   SECTION TEXT
+   15. ABOUT TEXT
 ===================================================== */
 
-.section-container p {
+.about-box p {
 
     font-size: 18px;
 
-    max-width: 850px;
+    margin-bottom: 20px;
 
-    margin: 0 auto;
+    color: #4b555c;
 
 }
 
 
 
 /* =====================================================
-   FOOTER
+   16. READ MORE BUTTON
 ===================================================== */
 
-.site-footer {
+.read-more {
 
-    background-color: #24465a;
+    display: inline-block;
 
-    color: #ffffff;
+    margin-top: 15px;
 
-    text-align: center;
+    padding: 12px 25px;
 
-    padding: 40px 20px;
+    background-color: #26789e;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: all 0.3s ease;
 
 }
 
 
-.site-footer p {
+.read-more:hover {
+
+    background-color: #1b526e;
+
+}
+
+
+
+/* =====================================================
+   17. LATEST UPDATES
+===================================================== */
+
+.updates-box {
+
+    padding-left: 10px;
+
+}
+
+
+
+/* =====================================================
+   18. INDIVIDUAL UPDATE
+===================================================== */
+
+.update-item {
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #c8c3b5;
+
+}
+
+
+.update-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.update-date {
+
+    font-size: 13px;
+
+    color: #26789e;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+.update-item h3 {
+
+    font-size: 22px;
+
+    color: #263746;
+
+    margin: 5px 0;
+
+}
+
+
+.update-item p {
+
+    font-size: 16px;
+
+    color: #5a6268;
+
+}
+
+
+
+/* =====================================================
+   19. PLACEHOLDER SECTIONS
+===================================================== */
+
+.placeholder-section {
+
+    min-height: 500px;
+
+    padding: 100px 10%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #eeeae0;
+
+}
+
+
+.placeholder-section:nth-of-type(even) {
+
+    background-color: #f7f4ec;
+
+}
+
+
+.placeholder-section h2 {
+
+    font-size: 40px;
+
+    color: #263746;
+
+    margin-bottom: 20px;
+
+}
+
+
+.placeholder-section p {
+
+    font-size: 18px;
+
+    color: #555;
+
+}
+
+
+
+/* =====================================================
+   20. FOOTER
+===================================================== */
+
+.footer {
+
+    padding: 40px 20px;
+
+    background-color: #263746;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.footer p {
 
     margin: 5px 0;
 
@@ -384,7 +563,7 @@ body {
 
 
 /* =====================================================
-   TABLET RESPONSIVE DESIGN
+   21. TABLET RESPONSIVE DESIGN
 ===================================================== */
 
 @media (max-width: 1000px) {
@@ -401,50 +580,55 @@ body {
     }
 
 
-    .main-navigation {
+    .navigation {
 
-        flex-wrap: wrap;
+        justify-content: center;
 
         gap: 20px;
 
     }
 
 
-    .hero-section {
+    .hero {
 
         height: 750px;
 
     }
 
 
-    .hero-content h1 {
+    .intro-section {
 
-        font-size: 32px;
+        grid-template-columns: 1fr;
 
-    }
-
-
-    .institute-name {
-
-        font-size: 24px;
+        gap: 60px;
 
     }
 
+
+    .about-box {
+
+        padding-right: 0;
+
+        padding-bottom: 50px;
+
+        border-right: none;
+
+        border-bottom: 1px solid #c8c3b5;
+
+    }
 
 }
 
 
 
 /* =====================================================
-   MOBILE RESPONSIVE DESIGN
+   22. MOBILE RESPONSIVE DESIGN
 ===================================================== */
 
 @media (max-width: 600px) {
 
 
     .site-header {
-
-        min-height: auto;
 
         padding: 15px;
 
@@ -460,32 +644,30 @@ body {
     }
 
 
-    .main-navigation {
+    .navigation {
 
         gap: 12px 18px;
 
     }
 
 
-    .main-navigation a {
+    .navigation a {
 
-        font-size: 15px;
+        font-size: 14px;
 
     }
 
 
-    .hero-section {
+    .hero {
 
         height: 750px;
-
-        min-height: 750px;
 
     }
 
 
     .hero-content {
 
-        width: 92%;
+        width: 90%;
 
     }
 
@@ -494,55 +676,61 @@ body {
 
         font-size: 27px;
 
-        line-height: 1.3;
-
         margin-bottom: 35px;
 
     }
 
 
-    .project-year {
+    .hero-year {
 
         font-size: 25px;
 
     }
 
 
-    .project-program {
+    .hero-program {
 
         font-size: 25px;
 
-        margin-bottom: 25px;
+    }
+
+
+    .hero-institute {
+
+        font-size: 21px;
 
     }
 
 
-    .institute-name {
+    .hero-location {
 
-        font-size: 22px;
-
-    }
-
-
-    .institute-location {
-
-        font-size: 19px;
+        font-size: 18px;
 
     }
 
 
-    .content-section {
+    .intro-section {
 
-        padding: 70px 20px;
+        width: 88%;
+
+        padding: 70px 0;
 
     }
 
 
-    .section-container h2 {
+    .about-box h2,
+
+    .updates-box h2 {
 
         font-size: 30px;
 
     }
 
+
+    .about-box p {
+
+        font-size: 16px;
+
+    }
 
 }
