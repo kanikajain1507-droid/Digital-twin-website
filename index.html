@@ -1,381 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- =========================================
+         BASIC PAGE INFORMATION
+    ========================================== -->
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Twin Integration | MANIT Bhopal</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>
+        Digital Twin Integration | MANIT Bhopal
+    </title>
 
-    <!-- Stylesheet -->
+
+    <!-- =========================================
+         CONNECT CSS FILE
+    ========================================== -->
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-<!-- HEADER / NAVIGATION -->
-<header class="site-header">
-    <div class="nav-container">
-        <!-- LOGO -->
-        <a href="#home" class="logo-link">
-            <!-- If manit-logo.png is in the same folder as index.html, use "manit-logo.png". 
-                 If it is inside an images folder, keep "images/manit-logo.png" -->
-            <img src="manit-logo.png" alt="MANIT Bhopal Logo" class="logo">
-        </a>
 
-        <!-- NAVIGATION LINKS -->
-        <nav class="main-navigation">
+    <!-- =========================================
+         HEADER / NAVIGATION
+    ========================================== -->
+
+    <header class="site-header">
+
+
+        <!-- =====================================
+             MANIT LOGO
+             
+             CHANGE THIS IMAGE NAME
+             TO YOUR ACTUAL LOGO FILE
+        ====================================== -->
+
+        <div class="logo-area">
+
+            <img
+                src="manit-logo.png"
+                alt="MANIT Bhopal Logo"
+                class="manit-logo"
+            >
+
+        </div>
+
+
+
+        <!-- =====================================
+             NAVIGATION LINKS
+        ====================================== -->
+
+        <nav class="navigation">
+
             <a href="#about">About</a>
+
             <a href="#research-plan">Research Plan</a>
+
             <a href="#events">Events</a>
+
             <a href="#objectives">Objective</a>
+
             <a href="#collaborators">Collaborators</a>
+
             <a href="#pi">PI</a>
+
             <a href="#gallery">Gallery</a>
+
             <a href="#contact">Contact</a>
+
         </nav>
 
-        <!-- MOBILE MENU BUTTON -->
-        <button class="menu-button" aria-label="Open navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
 
-<!-- HERO / HOME SECTION -->
-<main>
-<section id="home" class="hero-section">
-    <div class="hero-content">
-        <h1>
-            Digital Twin Integration With Data Fusion for Enhanced Management of Grid Integrated solar PV system for EV charging
-        </h1>
+    </header>
 
-        <div class="project-meta">
-            <p class="year">2025–27</p>
-            <p class="sparc">SPARC</p>
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <section class="hero">
+
+
+        <!-- =====================================
+             HERO IMAGE
+             
+             CHANGE THIS IMAGE NAME
+             TO YOUR ACTUAL IMAGE FILE
+        ====================================== -->
+
+        <img
+            src="manit-building.jpg"
+            alt="MANIT Bhopal Campus"
+            class="hero-background"
+        >
+
+
+        <!-- DARK OVERLAY -->
+
+        <div class="hero-overlay"></div>
+
+
+        <!-- =====================================
+             HERO CONTENT
+        ====================================== -->
+
+        <div class="hero-content">
+
+
+            <!-- PROJECT TITLE -->
+
+            <h1>
+
+                Digital Twin Integration With Data Fusion
+                for Enhanced Management of Grid Integrated
+                Solar PV System for EV Charging
+
+            </h1>
+
+
+
+            <!-- PROJECT YEAR -->
+
+            <p class="hero-year">
+                2025–27
+            </p>
+
+
+
+            <!-- PROGRAM -->
+
+            <p class="hero-program">
+                SPARC
+            </p>
+
+
+
+            <!-- INSTITUTE -->
+
+            <p class="hero-institute">
+
+                Maulana Azad National Institute of Technology
+
+            </p>
+
+
+
+            <!-- LOCATION -->
+
+            <p class="hero-location">
+
+                Bhopal – 462003 (Madhya Pradesh)
+
+            </p>
+
+
         </div>
 
-        <h2 class="institution">
-            Maulana Azad National Institute of Technology
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT + LATEST UPDATES
+         
+         THESE TWO SECTIONS ARE SIDE BY SIDE
+    ========================================== -->
+
+    <section class="intro-section">
+
+
+        <!-- =====================================
+             ABOUT THE PROJECT
+        ====================================== -->
+
+        <div class="about-box" id="about">
+
+
+            <span class="section-label">
+                ABOUT THE PROJECT
+            </span>
+
+
+            <h2>
+                Digital Twin and Data Fusion
+            </h2>
+
+
+            <p>
+
+                This research project focuses on the integration
+                of Digital Twin technology and multi-source data
+                fusion for intelligent management of grid-integrated
+                solar photovoltaic systems supporting electric
+                vehicle charging infrastructure.
+
+            </p>
+
+
+            <p>
+
+                The project aims to develop an intelligent,
+                data-driven framework that can improve renewable
+                energy utilization, predictive management,
+                grid stability, and efficient EV charging.
+
+            </p>
+
+
+            <!-- READ MORE BUTTON -->
+
+            <a href="#research-plan" class="read-more">
+
+                Explore the Research
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             LATEST UPDATES
+        ====================================== -->
+
+        <div class="updates-box">
+
+
+            <span class="section-label">
+                LATEST UPDATES
+            </span>
+
+
+            <h2>
+                News & Announcements
+            </h2>
+
+
+
+            <!-- UPDATE 1 -->
+
+            <div class="update-item">
+
+                <span class="update-date">
+                    2025
+                </span>
+
+                <h3>
+                    Technical Workshop
+                </h3>
+
+                <p>
+
+                    Technical Workshop on Digital Twin and
+                    Data Fusion of PV-Powered EV Charging Systems.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- UPDATE 2 -->
+
+            <div class="update-item">
+
+                <span class="update-date">
+                    2025
+                </span>
+
+                <h3>
+                    Research Collaboration
+                </h3>
+
+                <p>
+
+                    Collaborative research activities between
+                    MANIT Bhopal and international academic partners.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- UPDATE 3 -->
+
+            <div class="update-item">
+
+                <span class="update-date">
+                    2025–27
+                </span>
+
+                <h3>
+                    SPARC Research Project
+                </h3>
+
+                <p>
+
+                    Research activities are being carried out
+                    under the SPARC programme.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         RESEARCH PLAN
+    ========================================== -->
+
+    <section id="research-plan" class="placeholder-section">
+
+        <h2>
+            Research Plan
         </h2>
 
-        <p class="location">
-            Bhopal -462003 (Madhya Pradesh)
-        </p>
-    </div>
-</section>
-
-
-<!-- ABOUT THE PROJECT SECTION -->
-<section id="about" class="about-section">
-    <div class="about-card">
-        <h2>About the Project</h2>
         <p>
-            The rapid adoption of Electric Vehicles (EVs) and the increasing integration of Solar Photovoltaic (PV) systems are transforming modern energy infrastructure. This research proposes an intelligent framework that combines <strong>Digital Twin Technology</strong> with <strong>Data Fusion</strong> to enhance the monitoring, optimization, and management of grid-connected renewable energy systems. By continuously synchronizing data from solar panels, smart meters, battery storage, weather services, and EV charging stations, the Digital Twin enables predictive analytics, fault detection, and intelligent energy optimization, supporting the development of resilient, efficient, and sustainable smart grids.
+            Research methodology and project phases will be
+            added here.
         </p>
-    </div>
-</section>
-    <!-- LATEST UPDATES SECTION -->
-<section id="updates" class="updates-section">
-    <div class="updates-card">
-        <h2>Latest Updates</h2>
-        
-        <!-- Scrollable list container -->
-        <div class="updates-list">
-            
-            <div class="update-item">
-                <span class="update-date">15 Aug 2026</span>
-                <h3>Project Website Released</h3>
-                <p>Official research project website launched.</p>
-            </div>
 
-            <div class="update-item">
-                <span class="update-date">02 Aug 2026</span>
-                <h3>Proposal Submitted</h3>
-                <p>SPARC proposal submitted successfully.</p>
-            </div>
+    </section>
 
-            <div class="update-item">
-                <span class="update-date">18 Jul 2026</span>
-                <h3>Collaboration Started</h3>
-                <p>Research collaboration initiated with NUS Singapore.</p>
-            </div>
 
-            <div class="update-item">
-                <span class="update-date">05 Jul 2026</span>
-                <h3>Literature Review Completed</h3>
-                <p>Initial survey and literature review report finalized.</p>
-            </div>
 
-        </div>
-    </div>
-</section>
+    <!-- =========================================
+         EVENTS
+    ========================================== -->
 
-<!-- RESEARCH PLAN -->
-<section id="research-plan" class="content-section light-section">
-    <div class="section-container">
-        <span class="section-label">RESEARCH PLAN</span>
-        <h2>Research Methodology</h2>
-        <p>
-            The research is structured into systematic phases covering literature review, system design, data integration, artificial intelligence development, prototype implementation, validation, and dissemination.
-        </p>
-    </div>
-</section>
+    <section id="events" class="placeholder-section">
 
-<!-- PROJECT OBJECTIVES SECTION -->
-<section id="objectives" class="objectives-section">
-    <div class="objectives-container">
-        
-        <!-- Section Header -->
-        <span class="section-subtitle">PROJECT OBJECTIVES</span>
-        <h2 class="section-title">
-            Advancing Intelligent Energy Management through Digital Twin Technology
+        <h2>
+            Events
         </h2>
-        <p class="section-description">
-            The project aims to develop an intelligent Digital Twin framework integrating Data Fusion, Artificial Intelligence, and Renewable Energy technologies to optimize Grid-Integrated Solar PV systems for Electric Vehicle charging.
+
+        <p>
+            Workshops, seminars and events will be displayed here.
         </p>
 
-        <!-- Cards Grid -->
-        <div class="objectives-grid">
-            
-            <!-- Card 01 -->
-            <div class="objective-card">
-                <span class="card-number">01</span>
-                <h3>Digital Twin Development</h3>
-                <p>Develop a real-time Digital Twin capable of continuously synchronizing operational data with the physical Solar PV–EV charging infrastructure for monitoring, simulation and control.</p>
-            </div>
+    </section>
 
-            <!-- Card 02 -->
-            <div class="objective-card">
-                <span class="card-number">02</span>
-                <h3>Multi-source Data Fusion</h3>
-                <p>Integrate sensor measurements, weather information, battery telemetry, smart meters and EV charging data into a unified operational model.</p>
-            </div>
 
-            <!-- Card 03 -->
-            <div class="objective-card">
-                <span class="card-number">03</span>
-                <h3>Renewable Energy Optimization</h3>
-                <p>Maximize Solar PV utilization while minimizing dependence on conventional grid electricity through intelligent energy scheduling.</p>
-            </div>
 
-            <!-- Card 04 -->
-            <div class="objective-card">
-                <span class="card-number">04</span>
-                <h3>Predictive Analytics</h3>
-                <p>Apply Artificial Intelligence and Machine Learning to forecast solar generation, charging demand and system behaviour under dynamic operating conditions.</p>
-            </div>
+    <!-- =========================================
+         OBJECTIVES
+    ========================================== -->
 
-            <!-- Card 05 -->
-            <div class="objective-card">
-                <span class="card-number">05</span>
-                <h3>Grid Stability</h3>
-                <p>Improve grid reliability by balancing renewable generation, battery storage and EV charging through intelligent optimization strategies.</p>
-            </div>
+    <section id="objectives" class="placeholder-section">
 
-            <!-- Card 06 -->
-            <div class="objective-card">
-                <span class="card-number">06</span>
-                <h3>Scalable Smart Energy Framework</h3>
-                <p>Develop a scalable framework that can be deployed across future smart grid ecosystems supporting sustainable transportation and clean energy integration.</p>
-            </div>
+        <h2>
+            Objectives
+        </h2>
 
-        </div>
-    </div>
-</section>
-
-<!-- SPARC PROGRAMME SECTION -->
-<section id="sparc" class="sparc-section">
-    <div class="sparc-container">
-        
-        <!-- Section Subtitle & Title -->
-        <span class="sparc-subtitle">SUPPORTED BY</span>
-        <h2 class="sparc-title">SPARC Programme</h2>
-
-        <!-- SPARC Logo -->
-        <div class="sparc-logo-box">
-            <!-- Replace 'sparc-logo.png' with your logo file path if stored in an images folder (e.g. 'images/sparc-logo.png') -->
-            <img src="sparc-logo.png" alt="SPARC - Scheme for Promotion of Academic and Research Collaboration Logo" class="sparc-logo">
-        </div>
-
-        <!-- Description Paragraph -->
-        <p class="sparc-description">
-            This research project is supported under the <strong>Scheme for Promotion of Academic and Research Collaboration (SPARC)</strong>, an initiative of the Ministry of Education, Government of India, fostering collaborative research between Indian institutions and leading international universities.
+        <p>
+            Project objectives will be added here.
         </p>
 
-        <!-- 3-Column Info Cards -->
-        <div class="sparc-cards-grid">
-            
-            <!-- Card 1 -->
-            <div class="sparc-card">
-                <span class="sparc-card-label">THEME</span>
-                <h3>Energy, Sustainability and Climate Change</h3>
-            </div>
+    </section>
 
-            <!-- Card 2 -->
-            <div class="sparc-card">
-                <span class="sparc-card-label">INDUSTRY FOCUS</span>
-                <h3>Manufacturing & Industry 4.0</h3>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="sparc-card">
-                <span class="sparc-card-label">PARTNER COUNTRY</span>
-                <h3>Singapore</h3>
-            </div>
 
-        </div>
+    <!-- =========================================
+         COLLABORATORS
+    ========================================== -->
 
-    </div>
-</section>
-    <section class="pi-scroll-section">
-  <div class="pi-scroll-container">
-    <div class="pi-header">
-      <div>
-        <h2>Principal Investigators</h2>
-        <p>Explore our lab leads, research domains, and major scientific focus areas.</p>
-      </div>
-      <!-- Scroll Navigation Buttons -->
-      <div class="scroll-controls">
-        <button class="scroll-btn left" id="piScrollLeft" aria-label="Scroll Left">&#8592;</button>
-        <button class="scroll-btn right" id="piScrollRight" aria-label="Scroll Right">&#8594;</button>
-      </div>
-    </div>
+    <section id="collaborators" class="placeholder-section">
 
-   <section class="pi-section-clean">
-  <div class="pi-container">
-    <div class="section-header-clean">
-      <h2>Principal Investigators</h2>
-      <p>Leading research domains and shaping innovation.</p>
-    </div>
+        <h2>
+            Collaborators
+        </h2>
 
-    <!-- Scrollable Cards Track -->
-    <div class="pi-scroll-track-clean" id="piTrackClean">
-      
-      <!-- PI Card 1 -->
-      <article class="pi-card-clean">
-        <div class="pi-image-wrapper-clean">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Dr. Elena Vance">
-        </div>
-        <div class="pi-content-clean">
-          <h3>Dr. Elena Vance</h3>
-          <p class="pi-title-clean">Director, Autonomous Intelligence Lab</p>
-          <p class="pi-focus-clean">Ethical AI and Human-in-the-loop systems.</p>
-          
-          <ul class="pi-meta-clean">
-            <li><strong class="hl-label-clean">Active Grants:</strong> NSF, DARPA</li>
-            <li><strong class="hl-label-clean">Publications:</strong> 85+ Peer-Reviewed</li>
-          </ul>
-          <a href="#vance-lab" class="pi-link-clean">View Lab Profile &rarr;</a>
-        </div>
-      </article>
+        <p>
+            Information about project collaborators will be added here.
+        </p>
 
-      <!-- PI Card 2 -->
-      <article class="pi-card-clean">
-        <div class="pi-image-wrapper-clean">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Dr. Marcus Chen">
-        </div>
-        <div class="pi-content-clean">
-          <h3>Dr. Marcus Chen</h3>
-          <p class="pi-title-clean">Computational Biology Lead</p>
-          <p class="pi-focus-clean">Genomic sequencing data analysis.</p>
-          
-          <ul class="pi-meta-clean">
-            <li><strong class="hl-label-clean">Active Grants:</strong> NIH, Gates Fdn.</li>
-            <li><strong class="hl-label-clean">Publications:</strong> 110+ (Nature, Cell)</li>
-          </ul>
-          <a href="#chen-lab" class="pi-link-clean">View Lab Profile &rarr;</a>
-        </div>
-      </article>
+    </section>
 
-      <!-- PI Card 3 -->
-      <article class="pi-card-clean">
-        <div class="pi-image-wrapper-clean">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Jenkins">
-        </div>
-        <div class="pi-content-clean">
-          <h3>Dr. Sarah Jenkins</h3>
-          <p class="pi-title-clean">Director, Quantum Nanostructures Lab</p>
-          <p class="pi-focus-clean">Qubit hardware and topological insulators.</p>
-          
-          <ul class="pi-meta-clean">
-            <li><strong class="hl-label-clean">Active Grants:</strong> DOE Early Career</li>
-            <li><strong class="hl-label-clean">Publications:</strong> 70+ Peer-Reviewed</li>
-          </ul>
-          <a href="#jenkins-lab" class="pi-link-clean">View Lab Profile &rarr;</a>
-        </div>
-      </article>
 
-      <!-- PI Card 4 -->
-      <article class="pi-card-clean">
-        <div class="pi-image-wrapper-clean">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Dr. David O'Connor">
-        </div>
-        <div class="pi-content-clean">
-          <h3>Dr. David O'Connor</h3>
-          <p class="pi-title-clean">Head, Global Earth Analytics Lab</p>
-          <p class="pi-focus-clean">Climate modeling and predictive analytics.</p>
-          
-          <ul class="pi-meta-clean">
-            <li><strong class="hl-label-clean">Active Grants:</strong> NOAA, EU Horizon</li>
-            <li><strong class="hl-label-clean">Publications:</strong> 95+ Peer-Reviewed</li>
-          </ul>
-          <a href="#oconnor-lab" class="pi-link-clean">View Lab Profile &rarr;</a>
-        </div>
-      </article>
 
-      <!-- PI Card 5 -->
-      <article class="pi-card-clean">
-        <div class="pi-image-wrapper-clean">
-          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Dr. Amina Patel">
-        </div>
-        <div class="pi-content-clean">
-          <h3>Dr. Amina Patel</h3>
-          <p class="pi-title-clean">Neural Interfaces Lab Lead</p>
-          <p class="pi-focus-clean">Brain-computer interfaces and neuroprosthetics.</p>
-          
-          <ul class="pi-meta-clean">
-            <li><strong class="hl-label-clean">Active Grants:</strong> Wellcome Trust, NIH</li>
-            <li><strong class="hl-label-clean">Publications:</strong> 80+ (Cell, Neuron)</li>
-          </ul>
-          <a href="#patel-lab" class="pi-link-clean">View Lab Profile &rarr;</a>
-        </div>
-      </article>
+    <!-- =========================================
+         PRINCIPAL INVESTIGATOR
+    ========================================== -->
 
-<section class="photo-gallery-section">
-  <div class="photo-gallery-container">
-    
-    <!-- Eyebrow Tag -->
-    <span class="gallery-eyebrow">RESEARCH GALLERY</span>
+    <section id="pi" class="placeholder-section">
 
-    <!-- Scrollable Photo Track -->
-    <div class="photo-gallery-track">
-      
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar Field Research">
-      </div>
+        <h2>
+            Principal Investigator
+        </h2>
 
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="EV Charging Station">
-      </div>
+        <p>
+            PI information will be added here.
+        </p>
 
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Battery Storage Unit">
-      </div>
+    </section>
 
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1558441719-678280814902?auto=format&fit=crop&w=800&q=80" alt="Smart Grid Testing">
-      </div>
 
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Lab Telemetry Setup">
-      </div>
 
-    </div>
+    <!-- =========================================
+         GALLERY
+    ========================================== -->
 
-  </div>
-</section>
+    <section id="gallery" class="placeholder-section">
+
+        <h2>
+            Gallery
+        </h2>
+
+        <p>
+            Project photographs will be displayed here.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CONTACT
+    ========================================== -->
+
+    <section id="contact" class="placeholder-section">
+
+        <h2>
+            Contact
+        </h2>
+
+        <p>
+            Contact information will be added here.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <p>
+            Digital Twin & Data Fusion Research Project
+        </p>
+
+        <p>
+            Maulana Azad National Institute of Technology, Bhopal
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
