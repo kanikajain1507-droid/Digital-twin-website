@@ -2712,541 +2712,532 @@ body {
 
 }
 /* =========================================================
-   COLLABORATORS / INTERNATIONAL RESEARCH PARTNERSHIP
-========================================================= */
-
-#collaborators {
-    scroll-margin-top: 120px;
-}
-
-
-/* =========================================================
-   MAIN COLLABORATORS SECTION
+COLLABORATORS SECTION
 ========================================================= */
 
 .collaborators-section {
 
-    width: 100%;
+```
+width: 100%;
 
-    padding: 110px 6% 130px;
+padding: 120px 7% 140px;
 
-    background-color: #f7f3e8;
+background-color: #f7f3e8;
 
-    color: #27384b;
+color: #27384b;
+```
 
 }
 
-
 /* =========================================================
-   COLLABORATORS HEADER
+COLLABORATORS HEADER
 ========================================================= */
 
 .collaborators-header {
 
-    max-width: 1100px;
+```
+max-width: 900px;
 
-    margin: 0 auto 70px;
-
-}
-
-
-.section-subtitle {
-
-    display: block;
-
-    margin-bottom: 20px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
-
-    text-transform: uppercase;
-
-    color: #b07b18;
+margin-bottom: 80px;
+```
 
 }
 
+.collaborators-header .section-eyebrow {
 
-.section-title {
+```
+display: block;
 
-    margin: 0 0 25px;
+margin-bottom: 25px;
 
-    font-family: Georgia, "Times New Roman", serif;
+font-size: 12px;
 
-    font-size: clamp(42px, 5vw, 68px);
+font-weight: 700;
 
-    line-height: 1.1;
+letter-spacing: 4px;
 
-    letter-spacing: -1.5px;
+text-transform: uppercase;
 
-    color: #27384b;
-
-}
-
-
-.section-description {
-
-    max-width: 850px;
-
-    margin: 0;
-
-    font-size: 18px;
-
-    line-height: 1.8;
-
-    color: #59636b;
+color: #b07b18;
+```
 
 }
 
+.collaborators-header h2 {
+
+```
+margin: 0 0 25px;
+
+font-size: clamp(42px, 5vw, 70px);
+
+line-height: 1.08;
+
+letter-spacing: -2px;
+
+color: #27384b;
+```
+
+}
+
+.collaborators-intro {
+
+```
+max-width: 750px;
+
+margin: 0;
+
+font-size: 18px;
+
+line-height: 1.8;
+
+color: #59636b;
+```
+
+}
 
 /* =========================================================
-   PROJECT METADATA GRID
+PROJECT INFORMATION GRID
 ========================================================= */
 
-.meta-grid {
+.collaborator-meta-grid {
 
-    max-width: 1100px;
+```
+max-width: 1250px;
 
-    margin: 0 auto 45px;
+margin: 0 auto 60px;
 
-    display: grid;
+display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3, 1fr);
+
+gap: 20px;
+```
+
+}
+
+.collaborator-meta-card {
+
+```
+padding: 30px;
+
+background-color: #ffffff;
+
+border-top: 4px solid #d0a53c;
+
+border-bottom: 1px solid #e4d7b8;
+
+border-left: 1px solid #e4d7b8;
+
+border-right: 1px solid #e4d7b8;
+```
+
+}
+
+.collaborator-meta-card span {
+
+```
+display: block;
+
+margin-bottom: 12px;
+
+font-size: 10px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+color: #b07b18;
+```
+
+}
+
+.collaborator-meta-card h3 {
+
+```
+margin: 0;
+
+font-size: 18px;
+
+line-height: 1.5;
+
+color: #27384b;
+```
+
+}
+
+/* =========================================================
+COLLABORATORS GRID
+========================================================= */
+
+.collaborators-grid {
+
+```
+max-width: 1250px;
+
+margin: 0 auto;
+
+display: grid;
+
+grid-template-columns: repeat(2, minmax(0, 1fr));
+
+gap: 30px;
+```
+
+}
+
+/* =========================================================
+COLLABORATOR CARD
+========================================================= */
+
+.collaborator-card {
+
+```
+min-height: 520px;
+
+padding: 45px;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: space-between;
+
+background-color: #ffffff;
+
+border: 1px solid #e4d7b8;
+
+transition:
+
+    transform 0.35s ease,
+
+    box-shadow 0.35s ease,
+
+    border-color 0.35s ease;
+```
+
+}
+
+.collaborator-card:hover {
+
+```
+transform: translateY(-6px);
+
+border-color: #d0a53c;
+
+box-shadow:
+
+    0 15px 35px rgba(50, 45, 30, 0.10);
+```
+
+}
+
+/* =========================================================
+LOCATION
+========================================================= */
+
+.collaborator-location {
+
+```
+margin: 0 0 15px;
+
+font-size: 11px;
+
+font-weight: 700;
+
+letter-spacing: 3px;
+
+color: #b07b18;
+```
+
+}
+
+/* =========================================================
+INSTITUTION NAME
+========================================================= */
+
+.collaborator-card h3 {
+
+```
+max-width: 600px;
+
+margin: 0 0 25px;
+
+font-size: 32px;
+
+line-height: 1.25;
+
+color: #27384b;
+```
+
+}
+
+/* =========================================================
+DESCRIPTION
+========================================================= */
+
+.collaborator-description {
+
+```
+max-width: 650px;
+
+margin: 0;
+
+font-size: 17px;
+
+line-height: 1.8;
+
+color: #59636b;
+```
+
+}
+
+/* =========================================================
+BOTTOM CARD CONTENT
+========================================================= */
+
+.collaborator-card-bottom {
+
+```
+margin-top: 45px;
+```
+
+}
+
+/* =========================================================
+EXPERTISE TITLE
+========================================================= */
+
+.expertise-title {
+
+```
+margin: 0 0 15px;
+
+font-size: 10px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+color: #b07b18;
+```
+
+}
+
+/* =========================================================
+EXPERTISE TAGS
+========================================================= */
+
+.expertise-list {
+
+```
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 10px;
+
+margin-bottom: 35px;
+```
+
+}
+
+.expertise-list span {
+
+```
+padding: 9px 16px;
+
+background-color: #27384b;
+
+color: #ffffff;
+
+border-radius: 30px;
+
+font-size: 13px;
+
+line-height: 1.3;
+```
+
+}
+
+/* =========================================================
+INSTITUTE LINK
+========================================================= */
+
+.collaborator-link {
+
+```
+display: inline-flex;
+
+align-items: center;
+
+gap: 10px;
+
+width: fit-content;
+
+padding-bottom: 5px;
+
+border-bottom: 1px solid #b07b18;
+
+color: #27384b;
+
+text-decoration: none;
+
+font-size: 14px;
+
+font-weight: 600;
+
+transition:
+
+    color 0.3s ease,
+
+    border-color 0.3s ease;
+```
+
+}
+
+.collaborator-link span {
+
+```
+font-size: 18px;
+```
+
+}
+
+.collaborator-link:hover {
+
+```
+color: #1674a0;
+
+border-color: #1674a0;
+```
+
+}
+
+/* =========================================================
+TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+```
+.collaborators-section {
+
+    padding: 90px 5% 110px;
+
+}
+
+
+.collaborator-meta-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.collaborators-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.collaborator-card {
+
+    min-height: auto;
+
+}
+```
+
+}
+
+/* =========================================================
+MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+```
+.collaborators-section {
+
+    padding: 70px 20px 80px;
+
+}
+
+
+.collaborators-header {
+
+    margin-bottom: 55px;
+
+}
+
+
+.collaborators-header h2 {
+
+    font-size: 42px;
+
+    letter-spacing: -1px;
+
+}
+
+
+.collaborators-intro {
+
+    font-size: 16px;
+
+}
+
+
+.collaborator-meta-grid {
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.collaborator-meta-card {
+
+    padding: 25px;
+
+}
+
+
+.collaborators-grid {
 
     gap: 20px;
 
 }
 
 
-.meta-card {
+.collaborator-card {
 
-    min-height: 130px;
-
-    padding: 28px 30px;
-
-    background-color: #ffffff;
-
-    border: 1px solid #e4d7b8;
-
-    border-top: 4px solid #d0a53c;
-
-    border-radius: 12px;
-
-    box-shadow: 0 4px 15px rgba(80, 65, 35, 0.04);
+    padding: 30px;
 
 }
 
 
-.meta-card h4 {
+.collaborator-card h3 {
 
-    margin: 0 0 10px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-    color: #b07b18;
+    font-size: 27px;
 
 }
 
 
-.meta-card p {
-
-    margin: 0;
+.collaborator-description {
 
     font-size: 16px;
 
-    line-height: 1.5;
-
-    font-weight: 600;
-
-    color: #27384b;
-
 }
 
 
-/* =========================================================
-   INSTITUTIONS GRID
-========================================================= */
+.expertise-list span {
 
-.institutions-grid {
+    font-size: 12px;
 
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 30px;
+    padding: 8px 13px;
 
 }
-
-
-/* =========================================================
-   INSTITUTION CARD
-========================================================= */
-
-.institution-card {
-
-    min-width: 0;
-
-    min-height: 500px;
-
-    padding: 40px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    background-color: #ffffff;
-
-    border: 1px solid #e4d7b8;
-
-    border-radius: 16px;
-
-    box-shadow: 0 4px 15px rgba(80, 65, 35, 0.04);
-
-    transition:
-
-        transform 0.3s ease,
-
-        box-shadow 0.3s ease,
-
-        border-color 0.3s ease;
-
-}
-
-
-.institution-card:hover {
-
-    transform: translateY(-5px);
-
-    border-color: #d0a53c;
-
-    box-shadow:
-
-        0 15px 35px rgba(50, 45, 30, 0.10);
-
-}
-
-
-/* =========================================================
-   INSTITUTION LOCATION
-========================================================= */
-
-.inst-location {
-
-    display: block;
-
-    margin-bottom: 12px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-    color: #b07b18;
-
-}
-
-
-/* =========================================================
-   INSTITUTION NAME
-========================================================= */
-
-.inst-title {
-
-    margin: 0 0 20px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 30px;
-
-    line-height: 1.25;
-
-    color: #27384b;
-
-}
-
-
-/* =========================================================
-   INSTITUTION DESCRIPTION
-========================================================= */
-
-.inst-desc {
-
-    max-width: 650px;
-
-    margin: 0 0 30px;
-
-    font-size: 16px;
-
-    line-height: 1.75;
-
-    color: #59636b;
-
-}
-
-
-/* =========================================================
-   RESEARCH EXPERTISE HEADING
-========================================================= */
-
-.expertise-heading {
-
-    margin-bottom: 14px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-    color: #b07b18;
-
-}
-
-
-/* =========================================================
-   EXPERTISE TAGS
-========================================================= */
-
-.expertise-tags {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-    margin-bottom: 35px;
-
-}
-
-
-.tag {
-
-    padding: 8px 16px;
-
-    background-color: #27384b;
-
-    color: #ffffff;
-
-    border-radius: 30px;
-
-    font-size: 13px;
-
-    font-weight: 500;
-
-}
-
-
-/* =========================================================
-   VISIT INSTITUTE BUTTON
-========================================================= */
-
-.btn-visit {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    width: fit-content;
-
-    padding-bottom: 4px;
-
-    border-bottom: 1px solid #b07b18;
-
-    color: #27384b;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition:
-
-        color 0.3s ease,
-
-        border-color 0.3s ease;
-
-}
-
-
-.btn-visit:hover {
-
-    color: #1674a0;
-
-    border-color: #1674a0;
-
-}
-
-
-/* =========================================================
-   TABLET RESPONSIVE
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .collaborators-section {
-
-        padding: 90px 5% 110px;
-
-    }
-
-
-    .collaborators-header {
-
-        margin-bottom: 55px;
-
-    }
-
-
-    .meta-grid {
-
-        grid-template-columns: 1fr;
-
-        margin-bottom: 30px;
-
-    }
-
-
-    .institutions-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .institution-card {
-
-        min-height: auto;
-
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE RESPONSIVE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .collaborators-section {
-
-        padding: 70px 20px 80px;
-
-    }
-
-
-    .collaborators-header {
-
-        margin-bottom: 45px;
-
-    }
-
-
-    .section-subtitle {
-
-        font-size: 10px;
-
-        letter-spacing: 2px;
-
-    }
-
-
-    .section-title {
-
-        font-size: 40px;
-
-        line-height: 1.15;
-
-        letter-spacing: -1px;
-
-    }
-
-
-    .section-description {
-
-        font-size: 16px;
-
-        line-height: 1.7;
-
-    }
-
-
-    .meta-grid {
-
-        gap: 15px;
-
-    }
-
-
-    .meta-card {
-
-        padding: 25px;
-
-    }
-
-
-    .institutions-grid {
-
-        gap: 20px;
-
-    }
-
-
-    .institution-card {
-
-        padding: 30px;
-
-    }
-
-
-    .inst-title {
-
-        font-size: 27px;
-
-    }
-
-
-    .inst-desc {
-
-        font-size: 16px;
-
-    }
-
-
-    .expertise-tags {
-
-        gap: 8px;
-
-    }
-
-
-    .tag {
-
-        font-size: 12px;
-
-        padding: 7px 13px;
-
-    }
+```
 
 }
