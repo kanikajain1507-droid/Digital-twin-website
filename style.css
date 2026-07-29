@@ -2711,114 +2711,214 @@ body {
     }
 
 }
-<!-- ==========================================================================
-     MAIN COLLABORATORS SECTION
-     ========================================================================== -->
-<section class="collaborators-section">
+/* ==========================================================================
+   1. GLOBAL VARIABLES & COLOR PALETTE
+   ========================================================================== */
+:root {
+  /* Primary background matching the off-white/cream design */
+  --bg-color: #f7f4eb;
+  
+  /* Component backgrounds */
+  --card-bg: #ffffff;
+  
+  /* Typography colors */
+  --text-primary: #1f2b37;    /* Deep navy/black for main headers and body */
+  --text-muted: #5a6578;      /* Slate gray for body paragraphs */
+  
+  /* Brand accents */
+  --accent-gold: #c29b38;     /* Muted gold for section labels & subtitles */
+  --accent-navy: #1f2b37;     /* Dark navy for tags & primary buttons */
+  
+  /* Layout & Spacing */
+  --border-radius-lg: 20px;   /* Roundness for main institution cards */
+  --border-radius-sm: 12px;   /* Roundness for smaller metadata cards */
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* Soft elevation shadow */
+}
 
-  <!-- ----------------------------------------------------------------------
-       SECTION HEADER & INTRODUCTION
-       ---------------------------------------------------------------------- -->
-  <div class="section-subtitle">Supported By SPARC Programme</div>
-  <h2 class="section-title">International Research Partnership</h2>
-  <p class="section-description">
-    This research project is supported under the Scheme for Promotion of Academic and Research Collaboration (SPARC), an initiative of the Ministry of Education, Government of India, fostering collaborative research between Indian institutions and leading international universities.
-  </p>
+/* ==========================================================================
+   2. PAGE SETUP
+   ========================================================================== */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- ----------------------------------------------------------------------
-       PROJECT OVERVIEW METADATA CARDS
-       ---------------------------------------------------------------------- -->
-  <div class="meta-grid">
-    <!-- Card 1: Theme -->
-    <div class="meta-card">
-      <h4>Theme</h4>
-      <p>Energy, Sustainability & Climate Change</p>
-    </div>
+/* Main Container */
+.collaborators-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
 
-    <!-- Card 2: Industry Focus -->
-    <div class="meta-card">
-      <h4>Industry Focus</h4>
-      <p>Manufacturing & Industry 4.0</p>
-    </div>
+/* ==========================================================================
+   3. TYPOGRAPHY & SECTION HEADERS
+   ========================================================================== */
+/* Uppercase Gold Subtitle (e.g., "SUPPORTED BY SPARC PROGRAMME") */
+.section-subtitle {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
 
-    <!-- Card 3: Partner Country -->
-    <div class="meta-card">
-      <h4>Partner Country</h4>
-      <p>Singapore</p>
-    </div>
-  </div>
+/* Main Serif Heading (e.g., "International Research Partnership") */
+.section-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
 
-  <!-- Partnership Sub-description -->
-  <p class="section-description">
-    This project brings together leading researchers from India and Singapore to advance Digital Twin technologies for smart grids, renewable energy, and intelligent EV charging infrastructure.
-  </p>
+/* Main Paragraph Description */
+.section-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
 
-  <!-- ----------------------------------------------------------------------
-       PARTNER INSTITUTIONS GRID
-       ---------------------------------------------------------------------- -->
-  <div class="institutions-grid">
-    
-    <!-- ================= INSTITUTION 1: MANIT BHOPAL ================= -->
-    <div class="institution-card">
-      <!-- Top Content Block -->
-      <div class="card-body">
-        <div class="inst-location">Bhopal, India</div>
-        <h3 class="inst-title">Maulana Azad National Institute of Technology</h3>
-        <p class="inst-desc">
-          MANIT Bhopal is one of India's premier National Institutes of Technology, recognized for excellence in electrical engineering, renewable energy, power electronics, and smart grid research. The institute leads the Indian component of this collaborative project.
-        </p>
-      </div>
+/* ==========================================================================
+   4. METADATA CARDS GRID (Theme, Industry Focus, Partner Country)
+   ========================================================================== */
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
 
-      <!-- Bottom Content Block: Tags & Link -->
-      <div class="card-footer">
-        <div class="expertise-heading">Research Expertise</div>
-        <div class="expertise-tags">
-          <span class="tag">Smart Grid Technologies</span>
-          <span class="tag">Renewable Energy Systems</span>
-          <span class="tag">Power Electronics</span>
-          <span class="tag">Energy Management</span>
-        </div>
-        <a href="https://www.manit.ac.in/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-          Visit Institute &rarr;
-        </a>
-      </div>
-    </div>
-    <!-- =============== END INSTITUTION 1: MANIT BHOPAL =============== -->
+/* Individual Metadata Card */
+.meta-card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--box-shadow);
+  border-top: 4px solid var(--accent-gold); /* Gold top border highlight */
+}
 
+.meta-card h4 {
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 8px 0;
+}
 
-    <!-- ================= INSTITUTION 2: NUS SINGAPORE ================= -->
-    <div class="institution-card">
-      <!-- Top Content Block -->
-      <div class="card-body">
-        <div class="inst-location">Singapore</div>
-        <h3 class="inst-title">National University of Singapore</h3>
-        <p class="inst-desc">
-          The National University of Singapore is internationally recognized for research in Digital Twin technology, artificial intelligence, cyber-physical systems, and sustainable smart energy, contributing global expertise to this collaboration.
-        </p>
-      </div>
+.meta-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
 
-      <!-- Bottom Content Block: Tags & Link -->
-      <div class="card-footer">
-        <div class="expertise-heading">Research Expertise</div>
-        <div class="expertise-tags">
-          <span class="tag">Digital Twin Technology</span>
-          <span class="tag">Artificial Intelligence</span>
-          <span class="tag">Data Fusion</span>
-          <span class="tag">Cyber-Physical Systems</span>
-        </div>
-        <a href="https://nus.edu.sg/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-          Visit Institute &rarr;
-        </a>
-      </div>
-    </div>
-    <!-- =============== END INSTITUTION 2: NUS SINGAPORE =============== -->
+/* ==========================================================================
+   5. INSTITUTION CARDS GRID (MANIT Bhopal & NUS)
+   ========================================================================== */
+.institutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
 
-  </div>
-  <!-- ----------------------------------------------------------------------
-       END PARTNER INSTITUTIONS GRID
-       ---------------------------------------------------------------------- -->
+/* Card Container */
+.institution-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-</section>
-<!-- ==========================================================================
-     END MAIN COLLABORATORS SECTION
-     ========================================================================== -->
+/* Location Tag (e.g., "BHOPAL, INDIA") */
+.inst-location {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* Institution Name */
+.inst-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin: 0 0 16px 0;
+}
+
+/* Institution Description */
+.inst-desc {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   6. RESEARCH EXPERTISE TAGS & BUTTONS
+   ========================================================================== */
+.expertise-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Tag Container */
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* Dark Pill Badge Tag */
+.tag {
+  background-color: var(--accent-navy);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Link Button ("Visit Institute ->") */
+.btn-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-navy);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.btn-visit:hover {
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE DESIGN (MOBILE ADAPTATION)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .institutions-grid {
+    grid-template-columns: 1fr; /* Stacks cards vertically on small screens */
+  }
+  
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
