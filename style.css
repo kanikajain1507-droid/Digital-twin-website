@@ -1517,7 +1517,9 @@ body {
 
     max-width: 1150px;
 
-    margin: 0 auto;
+    margin: 0 auto 90px;
+
+    text-align: center;
 
 }
 
