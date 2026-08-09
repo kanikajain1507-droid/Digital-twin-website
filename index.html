@@ -46,18 +46,9 @@
     </div>
 
 
-    <!-- MOBILE MENU BUTTON -->
-    <input type="checkbox" id="menu-toggle">
+    <!-- DESKTOP + MOBILE NAVIGATION -->
 
-    <label for="menu-toggle" class="menu-button">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
-
-    <!-- NAVIGATION -->
-    <nav class="navigation">
+    <nav class="navigation" id="main-navigation">
 
         <a href="#about">About</a>
 
@@ -74,6 +65,21 @@
         <a href="#gallery">Gallery</a>
 
     </nav>
+
+
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+        class="menu-button"
+        id="menu-button"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
 
 </header>
 ```
