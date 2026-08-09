@@ -46,9 +46,9 @@ body {
 
     width: 100%;
 
-    min-height: 105px;
+    min-height: 90px;
 
-    padding: 15px 35px;
+    padding: 12px 35px;
 
     display: flex;
 
@@ -56,26 +56,26 @@ body {
 
     justify-content: space-between;
 
+    /* KEEP ORIGINAL YELLOW */
     background-color: #f1d487;
 
-
-    /* =================================================
-       SKY BLUE BORDER
-    ================================================= */
-
-    border-top: 5px solid #87ceeb;
-
+    /* BLUE BORDER ONLY AT THE BOTTOM */
     border-bottom: 4px solid #87ceeb;
 
+    /* No top border */
+    border-top: none;
 
-    /* Keep header above other elements */
+    /* Stay visible while scrolling */
+    position: sticky;
 
-    position: relative;
+    top: 0;
 
-    z-index: 100;
+    z-index: 1000;
+
+    /* Subtle professional shadow */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
 
 }
-
 
 
 /* =====================================================
@@ -88,11 +88,14 @@ body {
 
     align-items: center;
 
+    flex-shrink: 0;
+
 }
 
 
-
-/* MANIT LOGO */
+/* =====================================================
+   MANIT LOGO
+===================================================== */
 
 .manit-logo {
 
@@ -107,7 +110,6 @@ body {
 }
 
 
-
 /* =====================================================
    4. NAVIGATION MENU
 ===================================================== */
@@ -120,31 +122,41 @@ body {
 
     justify-content: flex-end;
 
-    flex-wrap: wrap;
+    gap: 28px;
 
-    gap: 30px;
+    margin-left: 30px;
 
 }
 
 
-
-/* Navigation links */
+/* =====================================================
+   NAVIGATION LINKS
+===================================================== */
 
 .navigation a {
+
+    position: relative;
 
     color: #27384b;
 
     text-decoration: none;
 
-    font-size: 17px;
+    font-size: 16px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+
+    padding: 8px 0;
 
     transition: color 0.3s ease;
 
 }
 
 
-
-/* Navigation hover effect */
+/* =====================================================
+   HOVER EFFECT
+===================================================== */
 
 .navigation a:hover {
 
@@ -152,6 +164,116 @@ body {
 
 }
 
+
+/* =====================================================
+   BLUE UNDERLINE ANIMATION
+===================================================== */
+
+.navigation a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background-color: #1674a0;
+
+    transition: width 0.3s ease;
+
+}
+
+
+.navigation a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .site-header {
+
+        padding: 12px 25px;
+
+    }
+
+    .navigation {
+
+        gap: 18px;
+
+    }
+
+    .navigation a {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 750px) {
+
+    .site-header {
+
+        min-height: auto;
+
+        padding: 12px 18px;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .manit-logo {
+
+        width: 55px;
+
+        height: 55px;
+
+    }
+
+
+    .navigation {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 18px;
+
+        margin-left: 0;
+
+    }
+
+
+    .navigation a {
+
+        font-size: 13px;
+
+    }
+
+}
 
 
 /* =====================================================
