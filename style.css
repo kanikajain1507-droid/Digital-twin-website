@@ -38,6 +38,7 @@ body {
 
 
 
+```css
 /* =====================================================
    2. HEADER / NAVIGATION BAR
 ===================================================== */
@@ -56,30 +57,28 @@ body {
 
     justify-content: space-between;
 
-    /* KEEP ORIGINAL YELLOW */
     background-color: #f1d487;
 
-    /* BLUE BORDER ONLY AT THE BOTTOM */
+    /* BLUE BORDER ONLY AT BOTTOM */
     border-bottom: 4px solid #87ceeb;
 
-    /* No top border */
     border-top: none;
 
-    /* Stay visible while scrolling */
+    /* STICKY HEADER */
     position: sticky;
 
     top: 0;
 
     z-index: 1000;
 
-    /* Subtle professional shadow */
+    /* SUBTLE SHADOW */
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
 
 }
 
 
 /* =====================================================
-   3. LOGO AREA
+   3. LOGO
 ===================================================== */
 
 .logo-area {
@@ -92,10 +91,6 @@ body {
 
 }
 
-
-/* =====================================================
-   MANIT LOGO
-===================================================== */
 
 .manit-logo {
 
@@ -111,7 +106,7 @@ body {
 
 
 /* =====================================================
-   4. NAVIGATION MENU
+   4. DESKTOP NAVIGATION
 ===================================================== */
 
 .navigation {
@@ -128,10 +123,6 @@ body {
 
 }
 
-
-/* =====================================================
-   NAVIGATION LINKS
-===================================================== */
 
 .navigation a {
 
@@ -154,10 +145,6 @@ body {
 }
 
 
-/* =====================================================
-   HOVER EFFECT
-===================================================== */
-
 .navigation a:hover {
 
     color: #1674a0;
@@ -165,9 +152,7 @@ body {
 }
 
 
-/* =====================================================
-   BLUE UNDERLINE ANIMATION
-===================================================== */
+/* BLUE UNDERLINE */
 
 .navigation a::after {
 
@@ -198,7 +183,58 @@ body {
 
 
 /* =====================================================
-   TABLET
+   5. MOBILE MENU BUTTON
+===================================================== */
+
+/* Hide checkbox */
+
+#menu-toggle {
+
+    display: none;
+
+}
+
+
+/* Hamburger button */
+
+.menu-button {
+
+    display: none;
+
+    width: 42px;
+
+    height: 38px;
+
+    cursor: pointer;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.menu-button span {
+
+    display: block;
+
+    width: 24px;
+
+    height: 2px;
+
+    background-color: #27384b;
+
+    transition: all 0.3s ease;
+
+}
+
+
+/* =====================================================
+   6. TABLET
 ===================================================== */
 
 @media (max-width: 1000px) {
@@ -225,55 +261,150 @@ body {
 
 
 /* =====================================================
-   MOBILE
+   7. MOBILE NAVIGATION
 ===================================================== */
 
 @media (max-width: 750px) {
 
     .site-header {
 
-        min-height: auto;
+        width: 100%;
 
-        padding: 12px 18px;
+        min-height: 70px;
 
-        flex-direction: column;
+        padding: 8px 16px;
 
-        gap: 12px;
+        display: flex;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        position: sticky;
+
+        top: 0;
 
     }
 
+
+    /* Smaller logo */
 
     .manit-logo {
 
-        width: 55px;
+        width: 52px;
 
-        height: 55px;
+        height: 52px;
 
     }
 
+
+    /* Show hamburger */
+
+    .menu-button {
+
+        display: flex;
+
+    }
+
+
+    /* Navigation becomes dropdown */
 
     .navigation {
 
         width: 100%;
 
-        justify-content: center;
+        display: none;
 
-        flex-wrap: wrap;
+        flex-direction: column;
 
-        gap: 10px 18px;
+        align-items: stretch;
 
-        margin-left: 0;
+        gap: 0;
+
+        margin: 8px 0 0 0;
+
+        padding: 8px 0 4px 0;
+
+        border-top: 1px solid rgba(39, 56, 75, 0.15);
 
     }
 
 
+    /* Navigation links */
+
     .navigation a {
 
-        font-size: 13px;
+        width: 100%;
+
+        padding: 11px 8px;
+
+        font-size: 14px;
+
+        text-align: left;
+
+    }
+
+
+    /* Remove desktop underline */
+
+    .navigation a::after {
+
+        display: none;
+
+    }
+
+
+    /* Hover */
+
+    .navigation a:hover {
+
+        background-color: rgba(255, 255, 255, 0.25);
+
+        color: #1674a0;
+
+    }
+
+
+    /* =================================================
+       OPEN MENU
+    ================================================= */
+
+    #menu-toggle:checked ~ .navigation {
+
+        display: flex;
+
+    }
+
+
+    /* =================================================
+       HAMBURGER → X
+    ================================================= */
+
+    #menu-toggle:checked + .menu-button span:nth-child(1) {
+
+        transform: translateY(7px) rotate(45deg);
+
+    }
+
+
+    #menu-toggle:checked + .menu-button span:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+
+    #menu-toggle:checked + .menu-button span:nth-child(3) {
+
+        transform: translateY(-7px) rotate(-45deg);
 
     }
 
 }
+```
+
 
 
 /* =====================================================
