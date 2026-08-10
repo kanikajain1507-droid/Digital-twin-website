@@ -2178,6 +2178,7 @@ body {
 
     margin-bottom: 22px;
 
+
 }
 
 
@@ -4156,3 +4157,33 @@ MOBILE RESPONSIVE
     }
 
 }
+```css
+/* =====================================================
+   CONSISTENT MAJOR SECTION HEADINGS
+   Events | Objectives | Collaborators | PI | Gallery
+===================================================== */
+
+/* Main section heading */
+.placeholder-section h2 {
+    font-size: 52px;
+    color: #27384b;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Keep all placeholder sections centered */
+.placeholder-section {
+    text-align: center;
+}
+
+/* Responsive heading size */
+@media (max-width: 700px) {
+
+    .placeholder-section h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+}
+```
