@@ -3259,33 +3259,33 @@ EXPERTISE TAGS
 
 .expertise-list {
 
-```
+
 display: flex;
 
 flex-wrap: wrap;
 
 gap: 20px;
 
-margin-bottom: 35px;
-```
+margin-bottom: 40px;
+
 
 }
 
 .expertise-list span {
 
-```
-padding: 11px 16px;
+
+padding: 11px 20px;
 
 background-color: #27384b;
 
 color: #ffffff;
 
-border-radius: 30px;
+border-radius: 40px;
 
 font-size: 10px;
 
 line-height: 1.3;
-```
+
 
 }
 
