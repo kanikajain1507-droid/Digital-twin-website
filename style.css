@@ -4422,4 +4422,280 @@ MOBILE RESPONSIVE
 
 }
 
+/* =====================================================
+   FOOTER
+===================================================== */
 
+.site-footer {
+    width: 100%;
+
+    background-color: #27384b;
+    color: #f7f3e8;
+
+    border-top: 5px solid #87ceeb;
+
+    padding-top: 60px;
+}
+
+
+/* =====================================================
+   MAIN FOOTER
+===================================================== */
+
+.footer-container {
+    width: 92%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 80px;
+
+    padding-bottom: 55px;
+}
+
+
+/* =====================================================
+   PROJECT INFORMATION
+===================================================== */
+
+.footer-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.footer-label {
+    color: #87ceeb;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+.footer-project h2 {
+    color: #f7f3e8;
+
+    font-size: 27px;
+
+    line-height: 1.45;
+
+    font-weight: 500;
+
+    max-width: 800px;
+
+    margin: 0 0 25px 0;
+}
+
+
+.footer-institution {
+    color: #dfe7ec;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin: 0 0 6px 0;
+}
+
+
+.footer-location {
+    color: #bfcbd3;
+
+    font-size: 15px;
+
+    margin: 0 0 12px 0;
+}
+
+
+.footer-website {
+    color: #87ceeb;
+
+    font-size: 15px;
+
+    text-decoration: underline;
+
+    transition: color 0.2s ease;
+}
+
+
+.footer-website:hover {
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   QUICK LINKS
+===================================================== */
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.footer-links h3 {
+    color: #87ceeb;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    margin: 0 0 25px 0;
+
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid #87ceeb;
+}
+
+
+.footer-links a {
+    color: #dfe7ec;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    margin-bottom: 14px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.footer-links a::before {
+    content: "›";
+
+    color: #87ceeb;
+
+    margin-right: 10px;
+
+    font-size: 20px;
+}
+
+
+.footer-links a:hover {
+    color: #87ceeb;
+
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.footer-bottom {
+    width: 100%;
+
+    border-top: 1px solid rgba(247, 243, 232, 0.2);
+
+    padding: 22px 5% 25px;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    color: #bfcbd3;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0 auto;
+
+    max-width: 1000px;
+}
+
+
+/* =====================================================
+   MOBILE FOOTER
+===================================================== */
+
+@media (max-width: 750px) {
+
+    .site-footer {
+        padding-top: 45px;
+    }
+
+
+    .footer-container {
+        width: 88%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding-bottom: 40px;
+    }
+
+
+    .footer-project h2 {
+        font-size: 21px;
+
+        line-height: 1.45;
+    }
+
+
+    .footer-label {
+        font-size: 11px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .footer-institution {
+        font-size: 15px;
+    }
+
+
+    .footer-location,
+    .footer-website {
+        font-size: 14px;
+    }
+
+
+    .footer-links {
+        width: 100%;
+    }
+
+
+    .footer-links h3 {
+        font-size: 16px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .footer-links a {
+        font-size: 15px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .footer-bottom {
+        padding: 20px 8% 25px;
+    }
+
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+}
