@@ -1357,7 +1357,7 @@ body {
 
     padding: 100px 6%;
 
-    background-color: #27384b;
+    background-color:#eee8d8;
 
 }
 
@@ -1990,7 +1990,7 @@ body {
 
     padding: 100px 4% 120px;
 
-    background-color: #27384b;
+    background-color: #eee8d8;
 
 }
 
@@ -3282,7 +3282,7 @@ color: #ffffff;
 
 border-radius: 30px;
 
-font-size: 13px;
+font-size: 10px;
 
 line-height: 1.3;
 ```
