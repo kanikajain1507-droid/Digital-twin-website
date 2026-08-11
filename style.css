@@ -4451,7 +4451,7 @@ MOBILE RESPONSIVE
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    gap: 80px;
+    gap: 150px;
 
     padding-bottom: 55px;
 }
