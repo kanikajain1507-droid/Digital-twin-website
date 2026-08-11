@@ -4157,7 +4157,7 @@ MOBILE RESPONSIVE
     }
 
 }
-```css
+
 /* =====================================================
    CONSISTENT MAJOR SECTION HEADINGS
    Events | Objectives | Collaborators | PI | Gallery
@@ -4186,4 +4186,58 @@ MOBILE RESPONSIVE
     }
 
 }
-```
+
+/* =====================================================
+   FIX HERO / ABOUT SECTION OVERLAP
+===================================================== */
+
+/* Keep the hero contained within its own section */
+.hero {
+    position: relative;
+    height: 750px;
+    min-height: 750px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Hero background stays inside the hero */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Hero dark overlay stays above the image */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Hero text stays above the overlay */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1450px;
+    z-index: 2;
+}
+
+/* About + Latest Updates must come after the hero */
+.about-updates-section {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    background-color: #f2eddc;
+}
+
+
