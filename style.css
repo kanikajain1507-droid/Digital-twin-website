@@ -4239,3 +4239,187 @@ MOBILE RESPONSIVE
 }
 
 
+/* =====================================================
+   MOBILE HEADER + HAMBURGER MENU
+===================================================== */
+
+@media (max-width: 750px) {
+
+    /* ---------------------------------------------
+       HEADER
+       LOGO LEFT — HAMBURGER RIGHT
+    --------------------------------------------- */
+
+    .site-header {
+        width: 100%;
+        min-height: 68px;
+        height: auto;
+
+        padding: 7px 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+        background-color: #f1d487;
+        border-bottom: 5px solid #87ceeb;
+
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+
+
+    /* ---------------------------------------------
+       LOGO — LEFT
+    --------------------------------------------- */
+
+    .logo-area {
+        display: flex;
+        align-items: center;
+
+        flex: 0 0 auto;
+    }
+
+    .manit-logo {
+        width: 52px;
+        height: 52px;
+
+        object-fit: contain;
+        display: block;
+    }
+
+
+    /* ---------------------------------------------
+       HAMBURGER — RIGHT
+    --------------------------------------------- */
+
+    .menu-button {
+        display: flex;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+        margin: 0;
+
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        gap: 5px;
+
+        flex: 0 0 auto;
+
+        z-index: 10001;
+    }
+
+
+    /* Hamburger lines */
+
+    .menu-button span {
+        display: block;
+
+        width: 25px;
+        height: 2px;
+
+        background-color: #27384b;
+
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+
+    /* ---------------------------------------------
+       NAVIGATION — CLOSED
+    --------------------------------------------- */
+
+    .navigation {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        margin-top: 8px;
+        padding-top: 6px;
+
+        border-top: 1px solid rgba(39, 56, 75, 0.18);
+
+        order: 3;
+    }
+
+
+    /* ---------------------------------------------
+       NAVIGATION — OPEN
+    --------------------------------------------- */
+
+    .navigation.active {
+        display: flex;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE NAVIGATION LINKS
+    --------------------------------------------- */
+
+    .navigation a {
+        display: block;
+
+        width: 100%;
+
+        padding: 12px 8px;
+
+        font-size: 15px;
+        text-align: left;
+
+        color: #27384b;
+        text-decoration: none;
+
+        border-bottom: 1px solid rgba(39, 56, 75, 0.10);
+    }
+
+
+    .navigation a:hover {
+        color: #1674a0;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+
+    /* Remove desktop underline */
+
+    .navigation a::after {
+        display: none;
+    }
+
+
+    /* ---------------------------------------------
+       HAMBURGER → X
+    --------------------------------------------- */
+
+    .menu-button.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-button.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+}
+
+
