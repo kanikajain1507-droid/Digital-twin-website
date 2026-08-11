@@ -3,7 +3,70 @@
 
 <head>
 
- 
+ <!-- =========================================
+         BASIC PAGE INFORMATION
+    ========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Digital Twin Integration | MANIT Bhopal
+    </title>
+
+
+    <!-- =========================================
+         CONNECT CSS FILE
+    ========================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- =====================================================
+     MOBILE NAVIGATION JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    const menuButton = document.getElementById("menu-button");
+    const navigation = document.getElementById("main-navigation");
+
+    /* Open / close menu */
+    menuButton.addEventListener("click", function () {
+
+        menuButton.classList.toggle("active");
+        navigation.classList.toggle("active");
+
+        const isOpen = navigation.classList.contains("active");
+
+        menuButton.setAttribute("aria-expanded", isOpen);
+
+    });
+
+
+    /* Close menu after clicking a navigation link */
+
+    const navigationLinks = navigation.querySelectorAll("a");
+
+    navigationLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            menuButton.classList.remove("active");
+            navigation.classList.remove("active");
+
+            menuButton.setAttribute("aria-expanded", "false");
+
+        });
+
+    });
+
+</script>
+</body>
+</html>
+
 
 
 <body>
@@ -1870,66 +1933,4 @@
     </div>
 
 </footer>
-   <!-- =========================================
-         BASIC PAGE INFORMATION
-    ========================================== -->
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Digital Twin Integration | MANIT Bhopal
-    </title>
-
-
-    <!-- =========================================
-         CONNECT CSS FILE
-    ========================================== -->
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<!-- =====================================================
-     MOBILE NAVIGATION JAVASCRIPT
-===================================================== -->
-
-<script>
-
-    const menuButton = document.getElementById("menu-button");
-    const navigation = document.getElementById("main-navigation");
-
-    /* Open / close menu */
-    menuButton.addEventListener("click", function () {
-
-        menuButton.classList.toggle("active");
-        navigation.classList.toggle("active");
-
-        const isOpen = navigation.classList.contains("active");
-
-        menuButton.setAttribute("aria-expanded", isOpen);
-
-    });
-
-
-    /* Close menu after clicking a navigation link */
-
-    const navigationLinks = navigation.querySelectorAll("a");
-
-    navigationLinks.forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            menuButton.classList.remove("active");
-            navigation.classList.remove("active");
-
-            menuButton.setAttribute("aria-expanded", "false");
-
-        });
-
-    });
-
-</script>
-</body>
-</html>
+   
