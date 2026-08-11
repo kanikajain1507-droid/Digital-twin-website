@@ -3,162 +3,111 @@
 
 <head>
 
- <!-- =========================================
+    <!-- =====================================================
          BASIC PAGE INFORMATION
-    ========================================== -->
+    ====================================================== -->
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>
         Digital Twin Integration | MANIT Bhopal
     </title>
 
 
-    <!-- =========================================
+    <!-- =====================================================
          CONNECT CSS FILE
-    ========================================== -->
+    ====================================================== -->
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<!-- =====================================================
-     MOBILE NAVIGATION JAVASCRIPT
-===================================================== -->
-
-<script>
-
-    const menuButton = document.getElementById("menu-button");
-    const navigation = document.getElementById("main-navigation");
-
-    /* Open / close menu */
-    menuButton.addEventListener("click", function () {
-
-        menuButton.classList.toggle("active");
-        navigation.classList.toggle("active");
-
-        const isOpen = navigation.classList.contains("active");
-
-        menuButton.setAttribute("aria-expanded", isOpen);
-
-    });
-
-
-    /* Close menu after clicking a navigation link */
-
-    const navigationLinks = navigation.querySelectorAll("a");
-
-    navigationLinks.forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            menuButton.classList.remove("active");
-            navigation.classList.remove("active");
-
-            menuButton.setAttribute("aria-expanded", "false");
-
-        });
-
-    });
-
-</script>
-</body>
-</html>
-
-
 
 <body>
 
 
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <!-- MANIT LOGO -->
+        <div class="logo-area">
+
+            <img
+                src="images/manit-logo.png"
+                alt="MANIT Bhopal Logo"
+                class="manit-logo">
+
+        </div>
 
 
-<!-- =====================================================
-     HEADER / NAVIGATION
-===================================================== -->
+        <!-- DESKTOP + MOBILE NAVIGATION -->
+        <nav
+            class="navigation"
+            id="main-navigation">
 
-<header class="site-header">
+            <a href="#about">About</a>
 
-    <!-- MANIT LOGO -->
-    <div class="logo-area">
-        <img
-            src="images/manit-logo.png"
-            alt="MANIT Bhopal Logo"
-            class="manit-logo">
-    </div>
+            <a href="#research-plan">Research Plan</a>
 
+            <a href="#events">Events</a>
 
-    <!-- DESKTOP + MOBILE NAVIGATION -->
-    <nav class="navigation" id="main-navigation">
+            <a href="#objectives">Objective</a>
 
-        <a href="#about">About</a>
-        <a href="#research-plan">Research Plan</a>
-        <a href="#events">Events</a>
-        <a href="#objectives">Objective</a>
-        <a href="#collaborators">Collaborators</a>
-        <a href="#pi">PI</a>
-        <a href="#gallery">Gallery</a>
+            <a href="#collaborators">Collaborators</a>
 
-    </nav>
+            <a href="#pi">PI</a>
+
+            <a href="#gallery">Gallery</a>
+
+        </nav>
 
 
-    <!-- MOBILE HAMBURGER BUTTON -->
-    <button
-        class="menu-button"
-        id="menu-button"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false">
+        <!-- MOBILE HAMBURGER BUTTON -->
+        <button
+            class="menu-button"
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
 
-        <span></span>
-        <span></span>
-        <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-    </button>
+        </button>
 
-</header>
+    </header>
 
 
 
 
-
-
-    <!-- =========================================
+    <!-- =====================================================
          HERO SECTION
-    ========================================== -->
+    ====================================================== -->
 
     <section class="hero">
 
-
-        <!-- =====================================
-             HERO IMAGE
-             
-             CHANGE THIS IMAGE NAME
-             TO YOUR ACTUAL IMAGE FILE
-        ====================================== -->
-
+        <!-- HERO IMAGE -->
         <img
             src="images/hero.jpeg"
             alt="MANIT Bhopal Campus"
-            class="hero-background"
-        >
+            class="hero-background">
 
 
         <!-- DARK OVERLAY -->
-
         <div class="hero-overlay"></div>
 
 
-        <!-- =====================================
-             HERO CONTENT
-        ====================================== -->
-
+        <!-- HERO CONTENT -->
         <div class="hero-content">
 
-
             <!-- PROJECT TITLE -->
-
             <h1>
 
                 Digital Twin Integration With Data Fusion
@@ -168,25 +117,19 @@
             </h1>
 
 
-
             <!-- PROJECT YEAR -->
-
             <p class="hero-year">
                 2025–27
             </p>
 
 
-
             <!-- PROGRAM -->
-
             <p class="hero-program">
                 SPARC
             </p>
 
 
-
             <!-- INSTITUTE -->
-
             <p class="hero-institute">
 
                 Maulana Azad National Institute of Technology
@@ -194,1743 +137,1901 @@
             </p>
 
 
-
             <!-- LOCATION -->
-
             <p class="hero-location">
 
                 Bhopal – 462003 (Madhya Pradesh)
 
             </p>
 
-
         </div>
-
 
     </section>
 
 
 
-    <!-- ==================================================
-     ABOUT + LATEST UPDATES SECTION
-     
-     ABOUT = WIDER
-     LATEST UPDATES = NARROWER + SCROLLABLE
-================================================== -->
-      
-<section class="about-updates-section">
 
+    <!-- =====================================================
+         ABOUT + LATEST UPDATES
+    ====================================================== -->
 
-    <!-- ==================================================
-         ABOUT THE PROJECT
-    ================================================== -->
+    <section class="about-updates-section">
 
-    <div class="about-card" id="about">
 
-        <h2>
-            About the Project
-        </h2>
+        <!-- =================================================
+             ABOUT THE PROJECT
+        ================================================== -->
 
-        <p>
+        <div
+            class="about-card"
+            id="about">
 
-            The rapid adoption of Electric Vehicles (EVs) and the
-            increasing integration of Solar Photovoltaic (PV) systems
-            are transforming modern energy infrastructure. This
-            research proposes an intelligent framework that combines
-            <strong>Digital Twin Technology</strong> with
-            <strong>Data Fusion</strong> to enhance the monitoring,
-            optimization, and management of grid-connected renewable
-            energy systems.
+            <h2>
+                About the Project
+            </h2>
 
-        </p>
+            <p>
 
-        <p>
+                The rapid adoption of Electric Vehicles (EVs) and the
+                increasing integration of Solar Photovoltaic (PV) systems
+                are transforming modern energy infrastructure. This
+                research proposes an intelligent framework that combines
+                <strong>Digital Twin Technology</strong> with
+                <strong>Data Fusion</strong> to enhance the monitoring,
+                optimization, and management of grid-connected renewable
+                energy systems.
 
-            By continuously synchronizing data from solar panels,
-            smart meters, battery storage, weather services, and
-            EV charging stations, the Digital Twin enables predictive
-            analytics, fault detection, and intelligent energy
-            optimization, supporting the development of resilient,
-            efficient, and sustainable smart grids.
+            </p>
 
-        </p>
+            <p>
 
-    </div>
+                By continuously synchronizing data from solar panels,
+                smart meters, battery storage, weather services, and
+                EV charging stations, the Digital Twin enables predictive
+                analytics, fault detection, and intelligent energy
+                optimization, supporting the development of resilient,
+                efficient, and sustainable smart grids.
 
-
-
-    <!-- ==================================================
-         LATEST UPDATES
-         
-         NARROWER CARD
-         ONLY CONTENT INSIDE SCROLLS
-    ================================================== -->
-
-    <div class="latest-updates">
-
-        <h2>
-            Latest Updates
-        </h2>
-
-
-        <!-- SCROLLABLE CONTENT -->
-
-        <div class="updates-scroll">
-
-
-            <!-- UPDATE 1 -->
-
-            <article class="update-item">
-
-                <p class="update-date">
-                    2026
-                </p>
-
-                <h3>
-                    Official Research Project Website Launched
-                </h3>
-
-                <p>
-
-                    The official website for the Digital Twin
-                    and Data Fusion research project has been
-                    launched.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- UPDATE 2 -->
-
-            <article class="update-item">
-
-                <p class="update-date">
-                    02 Aug 2026
-                </p>
-
-                <h3>
-                    Proposal Submitted
-                </h3>
-
-                <p>
-
-                    SPARC proposal submitted successfully.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- UPDATE 3 -->
-
-            <article class="update-item">
-
-                <p class="update-date">
-                    2025
-                </p>
-
-                <h3>
-                    Technical Workshop Conducted
-                </h3>
-
-                <p>
-
-                    Technical Workshop on Digital Twin and
-                    Data Fusion of PV-Powered EV Charging Systems
-                    was organized.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- UPDATE 4 -->
-
-            <article class="update-item">
-
-                <p class="update-date">
-                    2025
-                </p>
-
-                <h3>
-                    International Research Collaboration
-                </h3>
-
-                <p>
-
-                    Collaborative research activities initiated
-                    with academic and research partners.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- UPDATE 5 -->
-
-            <article class="update-item">
-
-                <p class="update-date">
-                    2025–27
-                </p>
-
-                <h3>
-                    SPARC Research Project
-                </h3>
-
-                <p>
-
-                    Research activities are being carried out
-                    under the SPARC programme.
-
-                </p>
-
-            </article>
-
+            </p>
 
         </div>
 
-    </div>
 
 
-</section>
+
+        <!-- =================================================
+             LATEST UPDATES
+        ================================================== -->
+
+        <div class="latest-updates">
+
+            <h2>
+                Latest Updates
+            </h2>
 
 
-    <!-- =========================================
+            <!-- SCROLLABLE CONTENT -->
+
+            <div class="updates-scroll">
+
+
+                <!-- UPDATE 1 -->
+
+                <article class="update-item">
+
+                    <p class="update-date">
+                        2026
+                    </p>
+
+                    <h3>
+                        Official Research Project Website Launched
+                    </h3>
+
+                    <p>
+
+                        The official website for the Digital Twin
+                        and Data Fusion research project has been
+                        launched.
+
+                    </p>
+
+                </article>
+
+
+
+                <!-- UPDATE 2 -->
+
+                <article class="update-item">
+
+                    <p class="update-date">
+                        02 Aug 2026
+                    </p>
+
+                    <h3>
+                        Proposal Submitted
+                    </h3>
+
+                    <p>
+
+                        SPARC proposal submitted successfully.
+
+                    </p>
+
+                </article>
+
+
+
+                <!-- UPDATE 3 -->
+
+                <article class="update-item">
+
+                    <p class="update-date">
+                        2025
+                    </p>
+
+                    <h3>
+                        Technical Workshop Conducted
+                    </h3>
+
+                    <p>
+
+                        Technical Workshop on Digital Twin and
+                        Data Fusion of PV-Powered EV Charging Systems
+                        was organized.
+
+                    </p>
+
+                </article>
+
+
+
+                <!-- UPDATE 4 -->
+
+                <article class="update-item">
+
+                    <p class="update-date">
+                        2025
+                    </p>
+
+                    <h3>
+                        International Research Collaboration
+                    </h3>
+
+                    <p>
+
+                        Collaborative research activities initiated
+                        with academic and research partners.
+
+                    </p>
+
+                </article>
+
+
+
+                <!-- UPDATE 5 -->
+
+                <article class="update-item">
+
+                    <p class="update-date">
+                        2025–27
+                    </p>
+
+                    <h3>
+                        SPARC Research Project
+                    </h3>
+
+                    <p>
+
+                        Research activities are being carried out
+                        under the SPARC programme.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
          RESEARCH PLAN
-    ========================================== -->
+    ====================================================== -->
 
-  <!-- ==================================================
-     RESEARCH PLAN
-================================================== -->
-
-<section class="research-plan" id="research-plan">
+    <section
+        class="research-plan"
+        id="research-plan">
 
 
-    <!-- SECTION INTRO -->
+        <!-- SECTION INTRO -->
 
-    <div class="research-plan-header">
+        <div class="research-plan-header">
 
-        <p class="section-label">
-            RESEARCH METHODOLOGY
-        </p>
+            <p class="section-label">
+                RESEARCH METHODOLOGY
+            </p>
 
-        <h2>
-            Research Plan
-        </h2>
+            <h2>
+                Research Plan
+            </h2>
 
-        <p class="research-intro">
+            <p class="research-intro">
 
-            Development and validation of a real-time Digital Twin
-            for PV–EV grid-integrated systems using multi-source
-            data fusion for optimized energy management and
-            reliable operation.
+                Development and validation of a real-time Digital Twin
+                for PV–EV grid-integrated systems using multi-source
+                data fusion for optimized energy management and
+                reliable operation.
 
-        </p>
-
-    </div>
-
-
-
-    <!-- ==================================================
-         RESEARCH WORKFLOW
-    ================================================== -->
-
-    <div class="research-workflow">
-
-
-        <!-- STEP 01 -->
-
-        <div class="workflow-step">
-
-            <span class="step-number">
-                01
-            </span>
-
-            <h3>
-                System Modeling
-            </h3>
-
-            <p>
-                Physics-informed and hybrid ML models
-                for PV, grid, EV and storage systems.
             </p>
 
         </div>
 
 
-        <div class="workflow-line"></div>
-
-
-        <!-- STEP 02 -->
-
-        <div class="workflow-step">
-
-            <span class="step-number">
-                02
-            </span>
-
-            <h3>
-                Data Acquisition
-            </h3>
-
-            <p>
-                Sensors, SCADA, IoT telemetry and
-                standardized communication protocols.
-            </p>
-
-        </div>
-
-
-        <div class="workflow-line"></div>
-
-
-        <!-- STEP 03 -->
-
-        <div class="workflow-step">
-
-            <span class="step-number">
-                03
-            </span>
-
-            <h3>
-                Data Fusion & Analytics
-            </h3>
-
-            <p>
-                Kalman, Bayesian and ML-based fusion
-                for state estimation and forecasting.
-            </p>
-
-        </div>
-
-
-        <div class="workflow-line"></div>
-
-
-        <!-- STEP 04 -->
-
-        <div class="workflow-step">
-
-            <span class="step-number">
-                04
-            </span>
-
-            <h3>
-                Energy Management
-            </h3>
-
-            <p>
-                MPC and MILP for EV charging, V2G
-                and battery storage optimization.
-            </p>
-
-        </div>
-
-
-        <div class="workflow-line"></div>
-
-
-        <!-- STEP 05 -->
-
-        <div class="workflow-step">
-
-            <span class="step-number">
-                05
-            </span>
-
-            <h3>
-                Validation & Deployment
-            </h3>
-
-            <p>
-                Historical data testing, HIL simulation
-                and field pilot validation.
-            </p>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- ==================================================
-         DATA / TECHNOLOGY / OPTIMIZATION
-    ================================================== -->
-
-    <div class="research-info-grid">
-
-
-        <!-- DATA SOURCES -->
-
-        <div class="research-info-card">
-
-            <p class="info-label">
-                DATA SOURCES
-            </p>
-
-            <h3>
-                Multi-Source Data
-            </h3>
-
-            <ul>
-
-                <li>PV & inverter data</li>
-
-                <li>Grid meter data</li>
-
-                <li>EV charging sessions</li>
-
-                <li>Weather data</li>
-
-                <li>Battery telemetry</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <!-- TECHNOLOGY -->
-
-        <div class="research-info-card">
-
-            <p class="info-label">
-                TECHNOLOGY & ALGORITHMS
-            </p>
-
-            <h3>
-                Digital Infrastructure
-            </h3>
-
-            <ul>
-
-                <li>Python & Machine Learning</li>
-
-                <li>Kalman / UKF</li>
-
-                <li>Bayesian Data Fusion</li>
-
-                <li>LSTM / CNN</li>
-
-                <li>MQTT / OPC-UA</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <!-- OPTIMIZATION -->
-
-        <div class="research-info-card">
-
-            <p class="info-label">
-                OPTIMIZATION
-            </p>
-
-            <h3>
-                Intelligent Energy Management
-            </h3>
-
-            <ul>
-
-                <li>MPC / MILP</li>
-
-                <li>Smart EV Charging</li>
-
-                <li>Vehicle-to-Grid (V2G)</li>
-
-                <li>Battery Storage</li>
-
-                <li>PV Utilization</li>
-
-            </ul>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- ==================================================
-         KEY PERFORMANCE TARGETS
-    ================================================== -->
-
-    <div class="performance-section">
-
-
-        <p class="section-label">
-            PERFORMANCE TARGETS
-        </p>
-
-
-        <h3>
-            Key Performance Targets
-        </h3>
-
-
-        <div class="performance-grid">
-
-
-            <div class="performance-item">
-
-                <strong>
-                    ≥70%
-                </strong>
-
-                <span>
-                    PV Utilization
-                </span>
-
-            </div>
-
-
-
-            <div class="performance-item">
-
-                <strong>
-                    ≥30%
-                </strong>
-
-                <span>
-                    Peak Grid Reduction
-                </span>
-
-            </div>
-
-
-
-            <div class="performance-item">
-
-                <strong>
-                    ≤1 sec
-                </strong>
-
-                <span>
-                    Digital Twin Latency
-                </span>
-
-            </div>
-
-
-
-            <div class="performance-item">
-
-                <strong>
-                    ≥95%
-                </strong>
-
-                <span>
-                    Service Availability
-                </span>
-
-            </div>
-
-
-
-            <div class="performance-item">
-
-                <strong>
-                    ≥20%
-                </strong>
-
-                <span>
-                    CO₂ Reduction
-                </span>
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- ==================================================
-         EXPECTED DELIVERABLES
-    ================================================== -->
-
-    <div class="deliverables-section">
-
-
-        <p class="section-label">
-            EXPECTED OUTCOMES
-        </p>
-
-
-        <h3>
-            Expected Deliverables
-        </h3>
-
-
-        <div class="deliverables-list">
-
-
-            <span>
-                Digital Twin Framework
-            </span>
-
-            <span>
-                Multi-Source Data Fusion
-            </span>
-
-            <span>
-                Smart Energy Management
-            </span>
-
-            <span>
-                Predictive & Reliability Tools
-            </span>
-
-            <span>
-                Sustainable EV Charging
-            </span>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-
-
-    <!-- =========================================
-         EVENTS
-    ========================================== -->
-
-    <!-- =========================================================
-     EVENTS SECTION
-     COMPLETED EVENT
-========================================================= -->
-
-<section class="events-section" id="events">
-
-    <!-- Section Heading -->
-    <div class="events-header">
-
-        <span class="section-eyebrow">
-            EVENTS
-        </span>
-
-        <h2>
-            Academic Workshops & International Collaborations
-        </h2>
-
-        <p>
-            A record of workshops, technical programmes, and
-            collaborative initiatives supporting research,
-            innovation, and knowledge exchange.
-        </p>
-
-    </div>
-
-
-    <!-- =====================================================
-         FEATURED COMPLETED EVENT
-    ===================================================== -->
-
-    <article class="completed-event">
-
-        <!-- Event Header -->
-        <div class="event-heading">
-
-            <div class="event-number">
-                01
-                <span>— COMPLETED EVENT</span>
-            </div>
-
-            <div class="event-date">
-                13–18 JULY 2026
-            </div>
-
-        </div>
-
-
-        <!-- Event Title -->
-        <div class="event-title">
-
-            <h3>
-                Bharat–Singapore SPARC
-                <br>
-                International Workshop
-            </h3>
-
-            <p class="event-subtitle">
-                Digital Twins and Data Fusion for Smart
-                Grid-Integrated Solar Energy and EV
-                Charging Systems
-            </p>
-
-        </div>
 
 
         <!-- =================================================
-             EVENT IMAGE
-
-             Replace "images/workshop.jpg" with your
-             actual image path.
+             RESEARCH WORKFLOW
         ================================================== -->
 
-        <div class="event-image">
-
-            <img
-                src="images/workshop.png"
-                alt="Bharat–Singapore SPARC International Workshop"
-            >
-
-        </div>
+        <div class="research-workflow">
 
 
-        <!-- =================================================
-             ORGANIZATION INFORMATION
-        ================================================== -->
+            <!-- STEP 01 -->
 
-        <div class="event-organizations">
+            <div class="workflow-step">
 
-            <div class="organization-item">
-
-                <span>
-                    ORGANIZED BY
+                <span class="step-number">
+                    01
                 </span>
 
-                <strong>
-                    Maulana Azad National Institute
-                    of Technology, Bhopal
-                </strong>
-
-            </div>
-
-
-            <div class="organization-item">
-
-                <span>
-                    IN COLLABORATION WITH
-                </span>
-
-                <strong>
-                    National University of Singapore
-                    (NUS), Singapore
-                </strong>
-
-            </div>
-
-
-            <div class="organization-item">
-
-                <span>
-                    SPONSORED BY
-                </span>
-
-                <strong>
-                    SPARC · Ministry of Education,
-                    Government of India
-                </strong>
-
-            </div>
-
-        </div>
-
-
-        <!-- =================================================
-             EVENT OVERVIEW
-        ================================================== -->
-
-        <div class="event-overview">
-
-            <div class="overview-heading">
-
-                <span>
-                    EVENT OVERVIEW
-                </span>
-
-            </div>
-
-
-            <div class="overview-content">
+                <h3>
+                    System Modeling
+                </h3>
 
                 <p>
-                    A six-day international workshop bringing
-                    together researchers, academicians, industry
-                    experts, and students to explore emerging
-                    technologies for intelligent and sustainable
-                    energy systems.
-                </p>
-
-                <p>
-                    The programme covered Digital Twins,
-                    Data Fusion, AI/ML, renewable energy
-                    integration, smart grids, cybersecurity,
-                    predictive technologies, and EV charging
-                    systems, alongside technical lectures,
-                    panel discussions, practical sessions,
-                    field visits, and prototype demonstrations.
+                    Physics-informed and hybrid ML models
+                    for PV, grid, EV and storage systems.
                 </p>
 
             </div>
 
-        </div>
+
+            <div class="workflow-line"></div>
 
 
-        <!-- =================================================
-             KEY THEMES
-        ================================================== -->
+            <!-- STEP 02 -->
 
-        <div class="event-themes">
+            <div class="workflow-step">
 
-            <div class="themes-heading">
-
-                <span>
-                    KEY THEMES
+                <span class="step-number">
+                    02
                 </span>
+
+                <h3>
+                    Data Acquisition
+                </h3>
+
+                <p>
+                    Sensors, SCADA, IoT telemetry and
+                    standardized communication protocols.
+                </p>
 
             </div>
 
 
-            <div class="themes-list">
+            <div class="workflow-line"></div>
 
-                <span>Digital Twins</span>
 
-                <span>Data Fusion</span>
+            <!-- STEP 03 -->
 
-                <span>AI / ML</span>
+            <div class="workflow-step">
 
-                <span>Smart Grids</span>
+                <span class="step-number">
+                    03
+                </span>
 
-                <span>Solar PV</span>
+                <h3>
+                    Data Fusion & Analytics
+                </h3>
 
-                <span>EV Charging</span>
+                <p>
+                    Kalman, Bayesian and ML-based fusion
+                    for state estimation and forecasting.
+                </p>
 
             </div>
 
-        </div>
 
+            <div class="workflow-line"></div>
 
-    </article>
 
-</section>
+            <!-- STEP 04 -->
 
+            <div class="workflow-step">
 
-
-    <!-- =========================================
-         OBJECTIVES
-    ========================================== -->
-
-  <!-- ==================================================
-     PROJECT OBJECTIVES SECTION
-================================================== -->
-
-<section class="objectives-section" id="objectives">
-
-
-    <!-- ==================================================
-         OBJECTIVES INTRODUCTION
-    ================================================== -->
-
-    <div class="objectives-intro">
-
-        <p class="objectives-label">
-            PROJECT OBJECTIVES
-        </p>
-
-        <h1>
-            Advancing Intelligent Energy
-            Management through Digital Twin
-            Technology
-        </h1>
-
-        <p class="objectives-description">
-
-            The project aims to develop an intelligent Digital Twin
-            framework integrating Data Fusion, Artificial Intelligence,
-            and Renewable Energy technologies to optimize Grid-Integrated
-            Solar PV systems for Electric Vehicle charging.
-
-        </p>
-
-    </div>
-
-
-
-    <!-- ==================================================
-         OBJECTIVES GRID
-    ================================================== -->
-
-    <div class="objectives-grid">
-
-
-        <!-- ==================================================
-             OBJECTIVE 01
-        ================================================== -->
-
-        <article class="objective-card">
-
-            <span class="objective-number">
-                01
-            </span>
-
-            <h2>
-                Digital Twin Development
-            </h2>
-
-            <p>
-
-                Develop a real-time Digital Twin capable of
-                continuously synchronizing operational data with
-                the physical Solar PV–EV charging infrastructure
-                for monitoring, simulation and control.
-
-            </p>
-
-        </article>
-
-
-
-        <!-- ==================================================
-             OBJECTIVE 02
-        ================================================== -->
-
-        <article class="objective-card featured-objective">
-
-            <span class="objective-number">
-                02
-            </span>
-
-            <h2>
-                Multi-source Data Fusion
-            </h2>
-
-            <p>
-
-                Integrate sensor measurements, weather information,
-                battery telemetry, smart meters and EV charging data
-                into a unified operational model.
-
-            </p>
-
-        </article>
-
-
-
-        <!-- ==================================================
-             OBJECTIVE 03
-        ================================================== -->
-
-        <article class="objective-card">
-
-            <span class="objective-number">
-                03
-            </span>
-
-            <h2>
-                Renewable Energy Optimization
-            </h2>
-
-            <p>
-
-                Maximize Solar PV utilization while minimizing
-                dependence on conventional grid electricity through
-                intelligent energy scheduling.
-
-            </p>
-
-        </article>
-
-
-
-        <!-- ==================================================
-             OBJECTIVE 04
-        ================================================== -->
-
-        <article class="objective-card">
-
-            <span class="objective-number">
-                04
-            </span>
-
-            <h2>
-                Predictive Analytics
-            </h2>
-
-            <p>
-
-                Apply Artificial Intelligence and Machine Learning
-                to forecast solar generation, charging demand and
-                system behaviour under dynamic operating conditions.
-
-            </p>
-
-        </article>
-
-
-
-        <!-- ==================================================
-             OBJECTIVE 05
-        ================================================== -->
-
-        <article class="objective-card">
-
-            <span class="objective-number">
-                05
-            </span>
-
-            <h2>
-                Grid Stability
-            </h2>
-
-            <p>
-
-                Improve grid reliability by balancing renewable
-                generation, battery storage and EV charging through
-                intelligent optimization strategies.
-
-            </p>
-
-        </article>
-
-
-
-        <!-- ==================================================
-             OBJECTIVE 06
-        ================================================== -->
-
-        <article class="objective-card">
-
-            <span class="objective-number">
-                06
-            </span>
-
-            <h2>
-                Scalable Smart Energy Framework
-            </h2>
-
-            <p>
-
-                Develop a scalable framework that can be deployed
-                across future smart grid ecosystems supporting
-                sustainable transportation and clean energy
-                integration.
-
-            </p>
-
-        </article>
-
-
-    </div>
-
-
-</section>
-
-<!-- =========================================================
-     COLLABORATORS / INTERNATIONAL RESEARCH PARTNERSHIP
-========================================================= -->
-
-<section class="collaborators-section" id="collaborators">
-
-
-<!-- SECTION HEADER -->
-
-<div class="collaborators-header">
-
-    <p class="section-eyebrow">
-        COLLABORATORS
-    </p>
-
-    <h2>
-        International Research Partnership
-    </h2>
-
-    <p class="collaborators-intro">
-
-        This research project brings together academic and
-        research expertise from India and Singapore to advance
-        Digital Twin technologies, multi-source data fusion,
-        renewable energy integration, and intelligent EV charging
-        systems.
-
-    </p>
-
-</div>
-
-
-<!-- =========================================================
-     PROJECT INFORMATION
-========================================================= -->
-
-<div class="collaborator-meta-grid">
-
-    <div class="collaborator-meta-card">
-
-        <span>
-            SUPPORTED BY
-        </span>
-
-        <h3>
-            SPARC Programme
-        </h3>
-
-    </div>
-
-
-    <div class="collaborator-meta-card">
-
-        <span>
-            RESEARCH THEME
-        </span>
-
-        <h3>
-            Energy, Sustainability & Climate Change
-        </h3>
-
-    </div>
-
-
-    <div class="collaborator-meta-card">
-
-        <span>
-            PARTNER COUNTRY
-        </span>
-
-        <h3>
-            Singapore
-        </h3>
-
-    </div>
-
-</div>
-
-
-
-<!-- =========================================================
-     PARTNER INSTITUTIONS
-========================================================= -->
-
-<div class="collaborators-grid">
-
-
-    <!-- =====================================================
-         MANIT BHOPAL
-    ===================================================== -->
-
-    <article class="collaborator-card">
-
-        <div class="collaborator-card-top">
-
-            <p class="collaborator-location">
-                BHOPAL, INDIA
-            </p>
-
-            <h3>
-                Maulana Azad National Institute of Technology
-            </h3>
-
-            <p class="collaborator-description">
-
-                Maulana Azad National Institute of Technology
-                (MANIT), Bhopal, serves as the Indian partner
-                institution, contributing expertise in renewable
-                energy systems, smart grids, power electronics,
-                electric vehicle charging, and intelligent
-                energy management.
-
-            </p>
-
-        </div>
-
-
-        <!-- RESEARCH EXPERTISE -->
-
-        <div class="collaborator-card-bottom">
-
-            <p class="expertise-title">
-                RESEARCH EXPERTISE
-            </p>
-
-            <div class="expertise-list">
-
-                <span>
-                    Smart Grid Technologies
+                <span class="step-number">
+                    04
                 </span>
 
-                <span>
-                    Renewable Energy
-                </span>
-
-                <span>
-                    Solar PV Systems
-                </span>
-
-                <span>
-                    EV Charging
-                </span>
-
-                <span>
+                <h3>
                     Energy Management
-                </span>
+                </h3>
+
+                <p>
+                    MPC and MILP for EV charging, V2G
+                    and battery storage optimization.
+                </p>
 
             </div>
 
 
-            <a
-                href="https://www.manit.ac.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="collaborator-link"
-            >
-                Visit Institute
-                <span>→</span>
-            </a>
+            <div class="workflow-line"></div>
+
+
+            <!-- STEP 05 -->
+
+            <div class="workflow-step">
+
+                <span class="step-number">
+                    05
+                </span>
+
+                <h3>
+                    Validation & Deployment
+                </h3>
+
+                <p>
+                    Historical data testing, HIL simulation
+                    and field pilot validation.
+                </p>
+
+            </div>
 
         </div>
 
-    </article>
 
 
 
-    <!-- =====================================================
-         NUS SINGAPORE
-    ===================================================== -->
+        <!-- =================================================
+             DATA / TECHNOLOGY / OPTIMIZATION
+        ================================================== -->
 
-    <article class="collaborator-card">
+        <div class="research-info-grid">
 
-        <div class="collaborator-card-top">
 
-            <p class="collaborator-location">
-                SINGAPORE
+            <!-- DATA SOURCES -->
+
+            <div class="research-info-card">
+
+                <p class="info-label">
+                    DATA SOURCES
+                </p>
+
+                <h3>
+                    Multi-Source Data
+                </h3>
+
+                <ul>
+
+                    <li>PV & inverter data</li>
+
+                    <li>Grid meter data</li>
+
+                    <li>EV charging sessions</li>
+
+                    <li>Weather data</li>
+
+                    <li>Battery telemetry</li>
+
+                </ul>
+
+            </div>
+
+
+
+
+            <!-- TECHNOLOGY -->
+
+            <div class="research-info-card">
+
+                <p class="info-label">
+                    TECHNOLOGY & ALGORITHMS
+                </p>
+
+                <h3>
+                    Digital Infrastructure
+                </h3>
+
+                <ul>
+
+                    <li>Python & Machine Learning</li>
+
+                    <li>Kalman / UKF</li>
+
+                    <li>Bayesian Data Fusion</li>
+
+                    <li>LSTM / CNN</li>
+
+                    <li>MQTT / OPC-UA</li>
+
+                </ul>
+
+            </div>
+
+
+
+
+            <!-- OPTIMIZATION -->
+
+            <div class="research-info-card">
+
+                <p class="info-label">
+                    OPTIMIZATION
+                </p>
+
+                <h3>
+                    Intelligent Energy Management
+                </h3>
+
+                <ul>
+
+                    <li>MPC / MILP</li>
+
+                    <li>Smart EV Charging</li>
+
+                    <li>Vehicle-to-Grid (V2G)</li>
+
+                    <li>Battery Storage</li>
+
+                    <li>PV Utilization</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- =================================================
+             KEY PERFORMANCE TARGETS
+        ================================================== -->
+
+        <div class="performance-section">
+
+            <p class="section-label">
+                PERFORMANCE TARGETS
             </p>
 
             <h3>
-                National University of Singapore
+                Key Performance Targets
             </h3>
 
-            <p class="collaborator-description">
 
-                The National University of Singapore (NUS)
-                contributes international research expertise
-                in electrical and computer engineering,
-                Digital Twin technologies, artificial
-                intelligence, data-driven systems, and
-                sustainable smart energy infrastructure.
+            <div class="performance-grid">
+
+                <div class="performance-item">
+
+                    <strong>
+                        ≥70%
+                    </strong>
+
+                    <span>
+                        PV Utilization
+                    </span>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <strong>
+                        ≥30%
+                    </strong>
+
+                    <span>
+                        Peak Grid Reduction
+                    </span>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <strong>
+                        ≤1 sec
+                    </strong>
+
+                    <span>
+                        Digital Twin Latency
+                    </span>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <strong>
+                        ≥95%
+                    </strong>
+
+                    <span>
+                        Service Availability
+                    </span>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <strong>
+                        ≥20%
+                    </strong>
+
+                    <span>
+                        CO₂ Reduction
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- =================================================
+             EXPECTED DELIVERABLES
+        ================================================== -->
+
+        <div class="deliverables-section">
+
+            <p class="section-label">
+                EXPECTED OUTCOMES
+            </p>
+
+            <h3>
+                Expected Deliverables
+            </h3>
+
+
+            <div class="deliverables-list">
+
+                <span>
+                    Digital Twin Framework
+                </span>
+
+                <span>
+                    Multi-Source Data Fusion
+                </span>
+
+                <span>
+                    Smart Energy Management
+                </span>
+
+                <span>
+                    Predictive & Reliability Tools
+                </span>
+
+                <span>
+                    Sustainable EV Charging
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+         EVENTS
+    ====================================================== -->
+
+    <section
+        class="events-section"
+        id="events">
+
+
+        <!-- SECTION HEADING -->
+
+        <div class="events-header">
+
+            <span class="section-eyebrow">
+                EVENTS
+            </span>
+
+            <h2>
+                Academic Workshops & International Collaborations
+            </h2>
+
+            <p>
+
+                A record of workshops, technical programmes, and
+                collaborative initiatives supporting research,
+                innovation, and knowledge exchange.
 
             </p>
 
         </div>
 
 
-        <!-- RESEARCH EXPERTISE -->
 
-        <div class="collaborator-card-bottom">
 
-            <p class="expertise-title">
-                RESEARCH EXPERTISE
+        <!-- =================================================
+             FEATURED COMPLETED EVENT
+        ================================================== -->
+
+        <article class="completed-event">
+
+
+            <!-- EVENT HEADER -->
+
+            <div class="event-heading">
+
+                <div class="event-number">
+
+                    01
+
+                    <span>
+                        — COMPLETED EVENT
+                    </span>
+
+                </div>
+
+                <div class="event-date">
+                    13–18 JULY 2026
+                </div>
+
+            </div>
+
+
+
+
+            <!-- EVENT TITLE -->
+
+            <div class="event-title">
+
+                <h3>
+
+                    Bharat–Singapore SPARC
+                    <br>
+                    International Workshop
+
+                </h3>
+
+                <p class="event-subtitle">
+
+                    Digital Twins and Data Fusion for Smart
+                    Grid-Integrated Solar Energy and EV
+                    Charging Systems
+
+                </p>
+
+            </div>
+
+
+
+
+            <!-- EVENT IMAGE -->
+
+            <div class="event-image">
+
+                <img
+                    src="images/workshop.png"
+                    alt="Bharat–Singapore SPARC International Workshop">
+
+            </div>
+
+
+
+
+            <!-- ORGANIZATION INFORMATION -->
+
+            <div class="event-organizations">
+
+
+                <div class="organization-item">
+
+                    <span>
+                        ORGANIZED BY
+                    </span>
+
+                    <strong>
+
+                        Maulana Azad National Institute
+                        of Technology, Bhopal
+
+                    </strong>
+
+                </div>
+
+
+                <div class="organization-item">
+
+                    <span>
+                        IN COLLABORATION WITH
+                    </span>
+
+                    <strong>
+
+                        National University of Singapore
+                        (NUS), Singapore
+
+                    </strong>
+
+                </div>
+
+
+                <div class="organization-item">
+
+                    <span>
+                        SPONSORED BY
+                    </span>
+
+                    <strong>
+
+                        SPARC · Ministry of Education,
+                        Government of India
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- EVENT OVERVIEW -->
+
+            <div class="event-overview">
+
+                <div class="overview-heading">
+
+                    <span>
+                        EVENT OVERVIEW
+                    </span>
+
+                </div>
+
+
+                <div class="overview-content">
+
+                    <p>
+
+                        A six-day international workshop bringing
+                        together researchers, academicians, industry
+                        experts, and students to explore emerging
+                        technologies for intelligent and sustainable
+                        energy systems.
+
+                    </p>
+
+                    <p>
+
+                        The programme covered Digital Twins,
+                        Data Fusion, AI/ML, renewable energy
+                        integration, smart grids, cybersecurity,
+                        predictive technologies, and EV charging
+                        systems, alongside technical lectures,
+                        panel discussions, practical sessions,
+                        field visits, and prototype demonstrations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- KEY THEMES -->
+
+            <div class="event-themes">
+
+                <div class="themes-heading">
+
+                    <span>
+                        KEY THEMES
+                    </span>
+
+                </div>
+
+
+                <div class="themes-list">
+
+                    <span>
+                        Digital Twins
+                    </span>
+
+                    <span>
+                        Data Fusion
+                    </span>
+
+                    <span>
+                        AI / ML
+                    </span>
+
+                    <span>
+                        Smart Grids
+                    </span>
+
+                    <span>
+                        Solar PV
+                    </span>
+
+                    <span>
+                        EV Charging
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+         PROJECT OBJECTIVES
+    ====================================================== -->
+
+    <section
+        class="objectives-section"
+        id="objectives">
+
+
+        <!-- OBJECTIVES INTRO -->
+
+        <div class="objectives-intro">
+
+            <p class="objectives-label">
+                PROJECT OBJECTIVES
             </p>
 
-            <div class="expertise-list">
+            <h1>
 
-                <span>
-                    Digital Twin Technology
-                </span>
+                Advancing Intelligent Energy
+                Management through Digital Twin
+                Technology
 
-                <span>
-                    Artificial Intelligence
-                </span>
+            </h1>
 
-                <span>
-                    Data Fusion
-                </span>
+            <p class="objectives-description">
 
-                <span>
-                    Smart Energy Systems
-                </span>
+                The project aims to develop an intelligent Digital Twin
+                framework integrating Data Fusion, Artificial Intelligence,
+                and Renewable Energy technologies to optimize Grid-Integrated
+                Solar PV systems for Electric Vehicle charging.
 
-                <span>
-                    Cyber-Physical Systems
-                </span>
-
-            </div>
-
-
-            <a
-                href="https://www.nus.edu.sg/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="collaborator-link"
-            >
-                Visit Institute
-                <span>→</span>
-            </a>
+            </p>
 
         </div>
 
-    </article>
 
 
-</div>
+
+        <!-- OBJECTIVES GRID -->
+
+        <div class="objectives-grid">
 
 
-</section>
-<!-- =========================================================
-     PRINCIPAL INVESTIGATOR
-========================================================= -->
-<!-- =========================================================
-     PRINCIPAL INVESTIGATORS & CO-INVESTIGATORS
-========================================================= -->
+            <!-- OBJECTIVE 01 -->
 
-<section class="pi-section" id="pi">
+            <article class="objective-card">
 
-    <!-- SECTION HEADER -->
-    <div class="pi-header">
+                <span class="objective-number">
+                    01
+                </span>
 
-        <p class="section-eyebrow">
-            RESEARCH TEAM
-        </p>
+                <h2>
+                    Digital Twin Development
+                </h2>
 
-        <h2>
-            Principal Investigators & Collaborators
-        </h2>
+                <p>
 
-        <p>
-            The project brings together researchers from MANIT Bhopal
-            and the National University of Singapore with expertise in
-            power electronics, renewable energy, smart grids,
-            artificial intelligence, and electric mobility.
-        </p>
+                    Develop a real-time Digital Twin capable of
+                    continuously synchronizing operational data with
+                    the physical Solar PV–EV charging infrastructure
+                    for monitoring, simulation and control.
 
-    </div>
+                </p>
+
+            </article>
+
+
+
+
+            <!-- OBJECTIVE 02 -->
+
+            <article class="objective-card featured-objective">
+
+                <span class="objective-number">
+                    02
+                </span>
+
+                <h2>
+                    Multi-source Data Fusion
+                </h2>
+
+                <p>
+
+                    Integrate sensor measurements, weather information,
+                    battery telemetry, smart meters and EV charging data
+                    into a unified operational model.
+
+                </p>
+
+            </article>
+
+
+
+
+            <!-- OBJECTIVE 03 -->
+
+            <article class="objective-card">
+
+                <span class="objective-number">
+                    03
+                </span>
+
+                <h2>
+                    Renewable Energy Optimization
+                </h2>
+
+                <p>
+
+                    Maximize Solar PV utilization while minimizing
+                    dependence on conventional grid electricity through
+                    intelligent energy scheduling.
+
+                </p>
+
+            </article>
+
+
+
+
+            <!-- OBJECTIVE 04 -->
+
+            <article class="objective-card">
+
+                <span class="objective-number">
+                    04
+                </span>
+
+                <h2>
+                    Predictive Analytics
+                </h2>
+
+                <p>
+
+                    Apply Artificial Intelligence and Machine Learning
+                    to forecast solar generation, charging demand and
+                    system behaviour under dynamic operating conditions.
+
+                </p>
+
+            </article>
+
+
+
+
+            <!-- OBJECTIVE 05 -->
+
+            <article class="objective-card">
+
+                <span class="objective-number">
+                    05
+                </span>
+
+                <h2>
+                    Grid Stability
+                </h2>
+
+                <p>
+
+                    Improve grid reliability by balancing renewable
+                    generation, battery storage and EV charging through
+                    intelligent optimization strategies.
+
+                </p>
+
+            </article>
+
+
+
+
+            <!-- OBJECTIVE 06 -->
+
+            <article class="objective-card">
+
+                <span class="objective-number">
+                    06
+                </span>
+
+                <h2>
+                    Scalable Smart Energy Framework
+                </h2>
+
+                <p>
+
+                    Develop a scalable framework that can be deployed
+                    across future smart grid ecosystems supporting
+                    sustainable transportation and clean energy
+                    integration.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
 
 
     <!-- =====================================================
-         HORIZONTAL SCROLLING CARDS
+         COLLABORATORS / INTERNATIONAL RESEARCH PARTNERSHIP
     ====================================================== -->
 
-    <div class="pi-scroll-container">
+    <section
+        class="collaborators-section"
+        id="collaborators">
 
 
-        <!-- =================================================
-             CARD 1 — INDIAN PI
-        ================================================== -->
+        <!-- SECTION HEADER -->
 
-        <article class="pi-card">
+        <div class="collaborators-header">
 
-            <div class="pi-photo">
+            <p class="section-eyebrow">
+                COLLABORATORS
+            </p>
 
-                <img
-                    src="images/amit-ojha.png"
-                    alt="Dr. Amit Ojha"
-                >
+            <h2>
+                International Research Partnership
+            </h2>
 
-            </div>
+            <p class="collaborators-intro">
 
-            <div class="pi-content">
+                This research project brings together academic and
+                research expertise from India and Singapore to advance
+                Digital Twin technologies, multi-source data fusion,
+                renewable energy integration, and intelligent EV charging
+                systems.
 
-                <span class="pi-role">
-                    INDIAN PRINCIPAL INVESTIGATOR
-                </span>
+            </p>
 
-                <h3>
-                    Dr. Amit Ojha
-                </h3>
-
-                <p class="pi-position">
-                    Associate Professor<br>
-                    Department of Electrical Engineering<br>
-                    MANIT Bhopal
-                </p>
-
-                <p class="pi-description">
-
-                    Dr. Amit Ojha is an Associate Professor in the
-                    Department of Electrical Engineering at MANIT Bhopal.
-                    He specializes in Power Electronics, multilevel
-                    converters, and electric vehicle drives. An active
-                    researcher, he supervises Ph.D. scholars, manages
-                    key grid-integrated solar PV projects, and teaches
-                    advanced electrical engineering courses.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- =================================================
-             CARD 2 — COPI
-        ================================================== -->
-
-        <article class="pi-card">
-
-            <div class="pi-photo">
-
-                <img
-                    src="images/arvind-mittal.png"
-                    alt="Dr. Arvind Mittal"
-                >
-
-            </div>
-
-            <div class="pi-content">
-
-                <span class="pi-role">
-                    INDIAN CO-PRINCIPAL INVESTIGATOR
-                </span>
-
-                <h3>
-                    Dr. Arvind Mittal
-                </h3>
-
-                <p class="pi-position">
-                    Professor & Head<br>
-                    Department of Energy Science & Engineering<br>
-                    MANIT Bhopal
-                </p>
-
-                <p class="pi-description">
-
-                    Dr. Arvind Mittal is a Professor and Head of the
-                    Department of Energy Science & Engineering at MANIT
-                    Bhopal. With over three decades of academic
-                    experience, he specializes in Power Electronics
-                    applications, smart microgrids, and renewable
-                    energy systems. He actively leads advanced research
-                    and sponsored projects in solar PV and EV integration.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- =================================================
-             CARD 3 — OTHER INDIAN CO-PI
-        ================================================== -->
-
-        <article class="pi-card">
-
-            <div class="pi-photo">
-
-                <img
-                    src="images/vijay-semwal.png"
-                    alt="Dr. Vijay Bhaskar Semwal"
-                >
-
-            </div>
-
-            <div class="pi-content">
-
-                <span class="pi-role">
-                    INDIAN CO-PRINCIPAL INVESTIGATOR
-                </span>
-
-                <h3>
-                    Dr. Vijay Bhaskar Semwal
-                </h3>
-
-                <p class="pi-position">
-                    Assistant Professor<br>
-                    Department of Computer Science & Engineering<br>
-                    MANIT Bhopal
-                </p>
-
-                <p class="pi-description">
-
-                    Dr. Vijay Bhaskar Semwal is an Assistant Professor
-                    in the Department of Computer Science and Engineering
-                    at MANIT Bhopal. He specializes in Robotics, Artificial
-                    Intelligence, and Deep Learning, with a core focus on
-                    bipedal locomotion, human gait analysis, and wearable
-                    sensor-based healthcare IoT systems.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- =================================================
-             CARD 4 — INTERNATIONAL PI
-        ================================================== -->
-
-        <article class="pi-card">
-
-            <div class="pi-photo">
-
-                <img
-                    src="images/dipti-srinivasan.png"
-                    alt="Dr. Dipti Srinivasan"
-                >
-
-            </div>
-
-            <div class="pi-content">
-
-                <span class="pi-role">
-                    INTERNATIONAL PRINCIPAL INVESTIGATOR
-                </span>
-
-                <h3>
-                    Dr. Dipti Srinivasan
-                </h3>
-
-                <p class="pi-position">
-                    Provost's Chair Professor<br>
-                    Department of Electrical & Computer Engineering<br>
-                    National University of Singapore
-                </p>
-
-                <p class="pi-description">
-
-                    Dr. Dipti Srinivasan is a Provost's Chair Professor
-                    in the Department of Electrical & Computer Engineering
-                    at the National University of Singapore. She is an
-                    IEEE Fellow and Director of the Centre for Green Energy
-                    Management & Smart Grid. Her pioneering research
-                    integrates AI and computational intelligence into
-                    microgrids, renewable energy forecasting, and electric
-                    vehicle charging optimization.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- =================================================
-             CARD 5 — INTERNATIONAL CO-PI
-        ================================================== -->
-
-        <article class="pi-card">
-
-            <div class="pi-photo">
-
-                <img
-                    src="images/sanjib-panda.png"
-                    alt="Dr. Sanjib Kumar Panda"
-                >
-
-            </div>
-
-            <div class="pi-content">
-
-                <span class="pi-role">
-                    INTERNATIONAL CO-PRINCIPAL INVESTIGATOR
-                </span>
-
-                <h3>
-                    Dr. Sanjib Kumar Panda
-                </h3>
-
-                <p class="pi-position">
-                    Associate Professor & Area Director<br>
-                    Power & Energy Research Group<br>
-                    National University of Singapore
-                </p>
-
-                <p class="pi-description">
-
-                    Dr. Sanjib Kumar Panda is an Associate Professor
-                    and the Area Director of the Power & Energy Research
-                    Group at the National University of Singapore. An
-                    IEEE Fellow, his research focuses on power electronic
-                    converters, electric motor drives, renewable energy
-                    integration, and smart grids.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     GALLERY
-========================================================= -->
-
-<!-- =========================================================
-     PROJECT IMAGE GALLERY
-========================================================= -->
-
-<section class="gallery-section" id="gallery">
-
-    <!-- SECTION HEADING -->
-    <div class="gallery-heading">
-
-        <span class="gallery-label">
-            PROJECT GALLERY
-        </span>
-
-        <h2>
-            Research in Focus
-        </h2>
-
-        <p>
-            A visual overview of the technologies, infrastructure,
-            and research activities associated with the project.
-        </p>
-
-    </div>
-
-
-    <!-- =====================================================
-         HORIZONTAL SCROLLING GALLERY
-    ====================================================== -->
-
-    <div class="gallery-track">
-
-        <!-- IMAGE 1 -->
-        <div class="gallery-card">
-            <img
-                src="images/image1.jpeg"
-                alt="Solar PV Infrastructure"
-            >
         </div>
 
 
-        <!-- IMAGE 2 -->
-        <div class="gallery-card">
-            <img
-                src="images/image2.jpeg"
-                alt="Digital Twin Model"
-            >
-        </div>
 
-
-        <!-- IMAGE 3 -->
-        <div class="gallery-card">
-            <img
-                src="images/image3.jpeg"
-                alt="Smart Grid"
-            >
-        </div>
-
-
-        <!-- IMAGE 4 -->
-        <div class="gallery-card">
-            <img
-                src="images/image4.jpeg"
-                alt="EV Charging System"
-            >
-        </div>
-
-
-        <!-- IMAGE 5 -->
-        <div class="gallery-card">
-            <img
-                src="images/image5.jpeg"
-                alt="Data Fusion and Analytics"
-            >
-        </div>
-
-
-        <!-- IMAGE 6 -->
-        <div class="gallery-card">
-            <img
-                src="images/image6.jpeg"
-                alt="Research Activities"
-            >
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="site-footer">
-
-    <div class="footer-container">
 
         <!-- PROJECT INFORMATION -->
-        <div class="footer-project">
 
-            <p class="footer-label">DIGITAL TWIN RESEARCH PROJECT</p>
+        <div class="collaborator-meta-grid">
+
+
+            <div class="collaborator-meta-card">
+
+                <span>
+                    SUPPORTED BY
+                </span>
+
+                <h3>
+                    SPARC Programme
+                </h3>
+
+            </div>
+
+
+            <div class="collaborator-meta-card">
+
+                <span>
+                    RESEARCH THEME
+                </span>
+
+                <h3>
+                    Energy, Sustainability & Climate Change
+                </h3>
+
+            </div>
+
+
+            <div class="collaborator-meta-card">
+
+                <span>
+                    PARTNER COUNTRY
+                </span>
+
+                <h3>
+                    Singapore
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- PARTNER INSTITUTIONS -->
+
+        <div class="collaborators-grid">
+
+
+            <!-- MANIT BHOPAL -->
+
+            <article class="collaborator-card">
+
+                <div class="collaborator-card-top">
+
+                    <p class="collaborator-location">
+                        BHOPAL, INDIA
+                    </p>
+
+                    <h3>
+                        Maulana Azad National Institute of Technology
+                    </h3>
+
+                    <p class="collaborator-description">
+
+                        Maulana Azad National Institute of Technology
+                        (MANIT), Bhopal, serves as the Indian partner
+                        institution, contributing expertise in renewable
+                        energy systems, smart grids, power electronics,
+                        electric vehicle charging, and intelligent
+                        energy management.
+
+                    </p>
+
+                </div>
+
+
+                <!-- RESEARCH EXPERTISE -->
+
+                <div class="collaborator-card-bottom">
+
+                    <p class="expertise-title">
+                        RESEARCH EXPERTISE
+                    </p>
+
+                    <div class="expertise-list">
+
+                        <span>
+                            Smart Grid Technologies
+                        </span>
+
+                        <span>
+                            Renewable Energy
+                        </span>
+
+                        <span>
+                            Solar PV Systems
+                        </span>
+
+                        <span>
+                            EV Charging
+                        </span>
+
+                        <span>
+                            Energy Management
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.manit.ac.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="collaborator-link">
+
+                        Visit Institute
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- NUS SINGAPORE -->
+
+            <article class="collaborator-card">
+
+                <div class="collaborator-card-top">
+
+                    <p class="collaborator-location">
+                        SINGAPORE
+                    </p>
+
+                    <h3>
+                        National University of Singapore
+                    </h3>
+
+                    <p class="collaborator-description">
+
+                        The National University of Singapore (NUS)
+                        contributes international research expertise
+                        in electrical and computer engineering,
+                        Digital Twin technologies, artificial
+                        intelligence, data-driven systems, and
+                        sustainable smart energy infrastructure.
+
+                    </p>
+
+                </div>
+
+
+                <!-- RESEARCH EXPERTISE -->
+
+                <div class="collaborator-card-bottom">
+
+                    <p class="expertise-title">
+                        RESEARCH EXPERTISE
+                    </p>
+
+                    <div class="expertise-list">
+
+                        <span>
+                            Digital Twin Technology
+                        </span>
+
+                        <span>
+                            Artificial Intelligence
+                        </span>
+
+                        <span>
+                            Data Fusion
+                        </span>
+
+                        <span>
+                            Smart Energy Systems
+                        </span>
+
+                        <span>
+                            Cyber-Physical Systems
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.nus.edu.sg/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="collaborator-link">
+
+                        Visit Institute
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+         PRINCIPAL INVESTIGATORS & CO-INVESTIGATORS
+    ====================================================== -->
+
+    <section
+        class="pi-section"
+        id="pi">
+
+
+        <!-- SECTION HEADER -->
+
+        <div class="pi-header">
+
+            <p class="section-eyebrow">
+                RESEARCH TEAM
+            </p>
 
             <h2>
-                Digital Twin Integration With Data Fusion for
-                Enhanced Management of Grid-Integrated Solar PV
-                System for EV Charging
+                Principal Investigators & Collaborators
             </h2>
 
-            <p class="footer-institution">
-                Maulana Azad National Institute of Technology
-                (MANIT), Bhopal
-            </p>
+            <p>
 
-            <p class="footer-location">
-                Bhopal, Madhya Pradesh, India
-            </p>
+                The project brings together researchers from MANIT Bhopal
+                and the National University of Singapore with expertise in
+                power electronics, renewable energy, smart grids,
+                artificial intelligence, and electric mobility.
 
-            <a
-                href="https://www.manit.ac.in"
-                target="_blank"
-                class="footer-website">
-                https://www.manit.ac.in
-            </a>
+            </p>
 
         </div>
 
 
-        <!-- QUICK LINKS -->
-        <div class="footer-links">
 
-            <h3>QUICK LINKS</h3>
 
-            <a href="#about">About</a>
-            <a href="#objectives">Objectives</a>
-            <a href="#research-plan">Research Plan</a>
-            <a href="#events">Events</a>
-            <a href="#collaborators">Collaborators</a>
-            <a href="#pi">PI</a>
-            <a href="#gallery">Gallery</a>
+        <!-- =================================================
+             HORIZONTAL SCROLLING CARDS
+        ================================================== -->
+
+        <div class="pi-scroll-container">
+
+
+            <!-- CARD 1 — INDIAN PI -->
+
+            <article class="pi-card">
+
+                <div class="pi-photo">
+
+                    <img
+                        src="images/amit-ojha.png"
+                        alt="Dr. Amit Ojha">
+
+                </div>
+
+                <div class="pi-content">
+
+                    <span class="pi-role">
+                        INDIAN PRINCIPAL INVESTIGATOR
+                    </span>
+
+                    <h3>
+                        Dr. Amit Ojha
+                    </h3>
+
+                    <p class="pi-position">
+
+                        Associate Professor<br>
+                        Department of Electrical Engineering<br>
+                        MANIT Bhopal
+
+                    </p>
+
+                    <p class="pi-description">
+
+                        Dr. Amit Ojha is an Associate Professor in the
+                        Department of Electrical Engineering at MANIT Bhopal.
+                        He specializes in Power Electronics, multilevel
+                        converters, and electric vehicle drives. An active
+                        researcher, he supervises Ph.D. scholars, manages
+                        key grid-integrated solar PV projects, and teaches
+                        advanced electrical engineering courses.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- CARD 2 — INDIAN CO-PI -->
+
+            <article class="pi-card">
+
+                <div class="pi-photo">
+
+                    <img
+                        src="images/arvind-mittal.png"
+                        alt="Dr. Arvind Mittal">
+
+                </div>
+
+                <div class="pi-content">
+
+                    <span class="pi-role">
+                        INDIAN CO-PRINCIPAL INVESTIGATOR
+                    </span>
+
+                    <h3>
+                        Dr. Arvind Mittal
+                    </h3>
+
+                    <p class="pi-position">
+
+                        Professor & Head<br>
+                        Department of Energy Science & Engineering<br>
+                        MANIT Bhopal
+
+                    </p>
+
+                    <p class="pi-description">
+
+                        Dr. Arvind Mittal is a Professor and Head of the
+                        Department of Energy Science & Engineering at MANIT
+                        Bhopal. With over three decades of academic
+                        experience, he specializes in Power Electronics
+                        applications, smart microgrids, and renewable
+                        energy systems. He actively leads advanced research
+                        and sponsored projects in solar PV and EV integration.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- CARD 3 — OTHER INDIAN CO-PI -->
+
+            <article class="pi-card">
+
+                <div class="pi-photo">
+
+                    <img
+                        src="images/vijay-semwal.png"
+                        alt="Dr. Vijay Bhaskar Semwal">
+
+                </div>
+
+                <div class="pi-content">
+
+                    <span class="pi-role">
+                        INDIAN CO-PRINCIPAL INVESTIGATOR
+                    </span>
+
+                    <h3>
+                        Dr. Vijay Bhaskar Semwal
+                    </h3>
+
+                    <p class="pi-position">
+
+                        Assistant Professor<br>
+                        Department of Computer Science & Engineering<br>
+                        MANIT Bhopal
+
+                    </p>
+
+                    <p class="pi-description">
+
+                        Dr. Vijay Bhaskar Semwal is an Assistant Professor
+                        in the Department of Computer Science and Engineering
+                        at MANIT Bhopal. He specializes in Robotics, Artificial
+                        Intelligence, and Deep Learning, with a core focus on
+                        bipedal locomotion, human gait analysis, and wearable
+                        sensor-based healthcare IoT systems.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- CARD 4 — INTERNATIONAL PI -->
+
+            <article class="pi-card">
+
+                <div class="pi-photo">
+
+                    <img
+                        src="images/dipti-srinivasan.png"
+                        alt="Dr. Dipti Srinivasan">
+
+                </div>
+
+                <div class="pi-content">
+
+                    <span class="pi-role">
+                        INTERNATIONAL PRINCIPAL INVESTIGATOR
+                    </span>
+
+                    <h3>
+                        Dr. Dipti Srinivasan
+                    </h3>
+
+                    <p class="pi-position">
+
+                        Provost's Chair Professor<br>
+                        Department of Electrical & Computer Engineering<br>
+                        National University of Singapore
+
+                    </p>
+
+                    <p class="pi-description">
+
+                        Dr. Dipti Srinivasan is a Provost's Chair Professor
+                        in the Department of Electrical & Computer Engineering
+                        at the National University of Singapore. She is an
+                        IEEE Fellow and Director of the Centre for Green Energy
+                        Management & Smart Grid. Her pioneering research
+                        integrates AI and computational intelligence into
+                        microgrids, renewable energy forecasting, and electric
+                        vehicle charging optimization.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- CARD 5 — INTERNATIONAL CO-PI -->
+
+            <article class="pi-card">
+
+                <div class="pi-photo">
+
+                    <img
+                        src="images/sanjib-panda.png"
+                        alt="Dr. Sanjib Kumar Panda">
+
+                </div>
+
+                <div class="pi-content">
+
+                    <span class="pi-role">
+                        INTERNATIONAL CO-PRINCIPAL INVESTIGATOR
+                    </span>
+
+                    <h3>
+                        Dr. Sanjib Kumar Panda
+                    </h3>
+
+                    <p class="pi-position">
+
+                        Associate Professor & Area Director<br>
+                        Power & Energy Research Group<br>
+                        National University of Singapore
+
+                    </p>
+
+                    <p class="pi-description">
+
+                        Dr. Sanjib Kumar Panda is an Associate Professor
+                        and the Area Director of the Power & Energy Research
+                        Group at the National University of Singapore. An
+                        IEEE Fellow, his research focuses on power electronic
+                        converters, electric motor drives, renewable energy
+                        integration, and smart grids.
+
+                    </p>
+
+                </div>
+
+            </article>
 
         </div>
 
-    </div>
+    </section>
 
 
-    <!-- FOOTER BOTTOM -->
 
-    <div class="footer-bottom">
 
-        <p>
-            © 2026 Digital Twin Integration with Data Fusion for
-            Grid-Integrated Solar PV EV Charging Systems.
-            All Rights Reserved.
-        </p>
+    <!-- =====================================================
+         PROJECT IMAGE GALLERY
+    ====================================================== -->
 
-    </div>
+    <section
+        class="gallery-section"
+        id="gallery">
 
-</footer>
-   
+
+        <!-- SECTION HEADING -->
+
+        <div class="gallery-heading">
+
+            <span class="gallery-label">
+                PROJECT GALLERY
+            </span>
+
+            <h2>
+                Research in Focus
+            </h2>
+
+            <p>
+
+                A visual overview of the technologies, infrastructure,
+                and research activities associated with the project.
+
+            </p>
+
+        </div>
+
+
+
+
+        <!-- =================================================
+             HORIZONTAL SCROLLING GALLERY
+        ================================================== -->
+
+        <div class="gallery-track">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="images/image1.jpeg"
+                    alt="Solar PV Infrastructure">
+
+            </div>
+
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="images/image2.jpeg"
+                    alt="Digital Twin Model">
+
+            </div>
+
+
+
+            <!-- IMAGE 3 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="images/image3.jpeg"
+                    alt="Smart Grid">
+
+            </div>
+
+
+
+            <!-- IMAGE 4 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="images/image4.jpeg"
+                    alt="EV Charging System">
+
+            </div>
+
+
+
+            <!-- IMAGE 5 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="images/image5.jpeg"
+                    alt="Data Fusion and Analytics">
+
+            </div>
+
+
+
+            <!-- IMAGE 6 -->
+
+            <div class="gallery-card">
+
+                <img
+                    src="images/image6.jpeg"
+                    alt="Research Activities">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- PROJECT INFORMATION -->
+
+            <div class="footer-project">
+
+                <p class="footer-label">
+                    DIGITAL TWIN RESEARCH PROJECT
+                </p>
+
+                <h2>
+
+                    Digital Twin Integration With Data Fusion for
+                    Enhanced Management of Grid-Integrated Solar PV
+                    System for EV Charging
+
+                </h2>
+
+                <p class="footer-institution">
+
+                    Maulana Azad National Institute of Technology
+                    (MANIT), Bhopal
+
+                </p>
+
+                <p class="footer-location">
+
+                    Bhopal, Madhya Pradesh, India
+
+                </p>
+
+
+                <a
+                    href="https://www.manit.ac.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-website">
+
+                    MANIT Bhopal Website
+
+                </a>
+
+            </div>
+
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-links">
+
+                <h3>
+                    QUICK LINKS
+                </h3>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#objectives">
+                    Objectives
+                </a>
+
+                <a href="#research-plan">
+                    Research Plan
+                </a>
+
+                <a href="#events">
+                    Events
+                </a>
+
+                <a href="#collaborators">
+                    Collaborators
+                </a>
+
+                <a href="#pi">
+                    PI
+                </a>
+
+                <a href="#gallery">
+                    Gallery
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Digital Twin Integration with Data Fusion for
+                Grid-Integrated Solar PV EV Charging Systems.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- =====================================================
+         MOBILE NAVIGATION JAVASCRIPT
+         IMPORTANT:
+         This must remain BEFORE </body>
+    ====================================================== -->
+
+    <script>
+
+        /* =================================================
+           GET MENU ELEMENTS
+        ================================================== */
+
+        const menuButton =
+            document.getElementById("menu-button");
+
+        const navigation =
+            document.getElementById("main-navigation");
+
+
+
+        /* =================================================
+           OPEN / CLOSE MOBILE MENU
+        ================================================== */
+
+        menuButton.addEventListener("click", function () {
+
+            menuButton.classList.toggle("active");
+
+            navigation.classList.toggle("active");
+
+
+            const isOpen =
+                navigation.classList.contains("active");
+
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+        });
+
+
+
+        /* =================================================
+           CLOSE MENU AFTER CLICKING A LINK
+        ================================================== */
+
+        const navigationLinks =
+            navigation.querySelectorAll("a");
+
+
+        navigationLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                menuButton.classList.remove("active");
+
+                navigation.classList.remove("active");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
